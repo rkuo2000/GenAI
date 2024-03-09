@@ -11,17 +11,17 @@
 ---
 ## ASR
 
-* Speech Recognition with **OpenAI/Whisper**:
+* Speech Recognition with **OpenAI/Whisper** :
 `python asr.py`<br>
 
-* Speech Recognition with **Faster-Whisper**:
+* Speech Recognition with **Faster-Whisper** : 
 `python faster_asr.py`<br>
 
 ---
 ### HTTP Servers
 
 * To test **Whisper** server:
-`python whisper_server.py` - running Whiserp http-server<br>
+`python whisper_server.py` - running Whisper http-server<br>
 `python post_audio.py` - running http-post audio file to server<br>
 
 * To test **Whisper+LLM** server:
