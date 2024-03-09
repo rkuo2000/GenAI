@@ -37,7 +37,7 @@ pip install -e .
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/TripoSR_gradio_server.png?raw=true)
 
 ### Text-to-3D ( = Text-to-Image + Image-to-3D)
-To modify gradio_app.py to include **sdxl-lightning-lora.py** funciton
+To modify `gradio_app.py` to add *sdxl-lightning-lora.py* funciton
 
 
 
