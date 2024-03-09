@@ -10,4 +10,5 @@ pipe.to("cuda")
 prompt = "An astronaut riding a horse"
 
 images = pipe(prompt=prompt).images[0]
+images.save("output.png")
 images.show()
