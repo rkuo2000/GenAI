@@ -8,7 +8,7 @@
 ---
 ## Text-to-Text (LLMs)
 * `bloom-zh.py`
-* `mammba-130m.py`
+* `mamba-130m.py`
 * `mistral-7b-instruct.py`
 * `phi-2.py`
 * `qwen1.5-7b-chat.py`
