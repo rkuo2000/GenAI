@@ -11,10 +11,10 @@
 ---
 ## ASR
 
-* Speech Recognition by **OpenAI/Whisper**
+* Speech Recognition with **OpenAI/Whisper**:
 `python asr.py`<br>
 
-* Speech Recognition by **Faster-Whisper**
+* Speech Recognition with **Faster-Whisper**:
 `python faster_asr.py`<br>
 
 ---
