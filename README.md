@@ -34,6 +34,7 @@ pip install -e .
 (output/0/mesh.obj can be viewed by using F3D viewer, Blender (Game Engine), or Cura(3D-print Slicer)<br>
 * To run a Gradio server 
 `python gradio_app.py` : running GUI server<br>
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/TripoSR_gradio_server.png?raw=true)
 
 ### Text-to-3D ( = Text-to-Image + Image-to-3D)
 To modify gradio_app.py to include **sdxl-lightning-lora.py** funciton
