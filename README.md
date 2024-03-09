@@ -31,6 +31,10 @@ pip install -e .
 ```
 * To run
 `python run.py examples/chair.png`<br>
-* To view .obj file with F3D viewer, or Blender (Game Engine), or Slicer (3D-printer)
+(output/0/mesh.obj can be viewed by using F3D viewer, Blender (Game Engine), or Cura(3D-print Slicer)<br>
+
+`python gradio_app.py` : running GUI server<br>
+
+* 
 
 
