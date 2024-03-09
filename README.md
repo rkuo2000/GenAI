@@ -6,19 +6,21 @@
 * `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
 
 ---
+## Text-to-Text (LLMs)
+* `bloom-zh.py`
+* `mammba-130m.py`
+* `mistral-7b-instruct.py`
+* `phi-2.py`
+* `qwen1.5-7b-chat.py`
+* `taiwan-llm.py`
+* `vicuna-7b-v1.5.py`
+
+---
 ## Text-to-Speech
 
-### Bark TTA
-`bark_en.py` (English)<br> 
-`bark_cn.py` (Simplified Chinese)<br>
-`bark_zh.py` (Traditional Chinese)<br>
-
-### Coqui TTS
-`coqui_en.py` (English)<br>
-`coqui_zh.py` (Traditional Chinese)<br>
-
-### text-to-speech 
-`text_to_speech.py` (English)<br>
+* **Bark TTA**:`bark_en.py`, `bark_cn.py`, `bark_zh.py`
+* **coqui TTS**: `coqui_en.py`, `coqui_zh.py`
+* **text-to-speech**: `text_to_speech.py`
 
 ---
 ## Image-to-Text
