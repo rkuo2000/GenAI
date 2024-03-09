@@ -8,6 +8,7 @@
 ---
 ## Text-to-Text (LLMs)
 * `bloom-zh.py`
+* `breeze-7b-instruct.py`
 * `mamba-130m.py`
 * `mistral-7b-instruct.py`
 * `phi-2.py`
