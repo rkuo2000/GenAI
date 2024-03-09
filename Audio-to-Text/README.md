@@ -20,11 +20,11 @@
 ---
 ### HTTP Servers
 
-**To test Whisper server:**<br>
+* To test **Whisper** server:
 `python whisper_server.py` - running Whiserp http-server<br>
 `python post_audio.py` - running http-post audio file to server<br>
 
-**To test Whisper+LLM server:**<br>
+* To test **Whisper+LLM** server:
 `python whisper_llm_server.py` - running Whiserp+LLM http-server<br>
 `python post_audio.py` - running http-post audio file to server<br>
 
