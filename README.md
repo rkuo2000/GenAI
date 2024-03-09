@@ -6,6 +6,21 @@
 * `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
 
 ---
+## Text-to-Speech
+
+### Bark TTA
+`bark_en.py` (English)<br> 
+`bark_cn.py` (Simplified Chinese)<br>
+`bark_zh.py` (Traditional Chinese)<br>
+
+### Coqui TTS
+`coqui_en.py` (English)<br>
+`coqui_zh.py` (Traditional Chinese)<br>
+
+### text-to-speech 
+`text_to_speech.py` (English)<br>
+
+---
 ## Image-to-Text
 * `llava-1.5-7b.py` - test LLaVA model
 * `llava_server.py` - run a LLaVA http server
