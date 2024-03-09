@@ -35,7 +35,7 @@ pip install -e .
 * To run a Gradio server 
 `python gradio_app.py` : running GUI server<br>
 
-#### Text-to-3D ( = Text-to-Image + Image-to-3D)
+### Text-to-3D ( = Text-to-Image + Image-to-3D)
 To modify gradio_app.py to include **sdxl-lightning-lora.py** funciton
 
 
