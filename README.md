@@ -19,9 +19,10 @@
 ---
 ## Text-to-Speech
 
-* **Bark TTA**:`bark_en.py`, `bark_cn.py`, `bark_zh.py`
-* **coqui TTS**: `coqui_en.py`, `coqui_zh.py`
-* **text-to-speech**: `text_to_speech.py`
+* **Bark TTA**: `python bark_en.py`, `python bark_cn.py`
+* **coqui TTS**: `python coqui_en.py`, `python coqui_zh.py`
+* **text-to-speech**: `python text_to_speech.py`
+* **gTTS**: `python gTTS.py "你好?" zh`
 
 ---
 ## Image-to-Text
