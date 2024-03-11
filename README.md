@@ -23,7 +23,8 @@
 * **coqui TTS**: `python coqui_en.py`, `python coqui_zh.py`
 * **text-to-speech**: `python text_to_speech.py`
 * **gTTS**: `python gTTS.py "你好?" zh`
-
+* **gTranslate**: `python gTranslate.py`
+* 
 ---
 ## Image-to-Text
 * `llava-1.5-7b.py` - test LLaVA model
