@@ -29,7 +29,7 @@
 ## Image-to-Text
 * **LLaVA**
 * `llava-1.5-7b.py` - test LLaVA model
-* `post_imgtxt.py`  - http post the image + text to http server (LLaVA server)
+* `post_imgtxt.py`  - http post the image + text to LLaVA server
 
 
 ---
