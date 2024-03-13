@@ -7,6 +7,7 @@
 ## Installaltion
 `pip install requests flask`<br>
 `pip install git+https://github.com/openai/whisper.git`<br>
+`pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git` (whisper large v2)
 
 ---
 ## ASR
