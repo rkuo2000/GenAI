@@ -20,7 +20,7 @@ To display `output/0/mesh.obj`: [Online 3D Viewer](https://3dviewer.net/), F3D /
 
 ---
 ## Text-to-3D
-Translate + SDXL-Lightning + TripoSR + AppInventor2 / Blender<br>
+Translate + SDXL-Lightning + TripoSR + FreeCAD / AppInventor2 / Blender<br>
 
 ### Translate 
 `pip install googletrans==4.0.0rc1`<br>
