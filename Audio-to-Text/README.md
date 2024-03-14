@@ -4,7 +4,7 @@
 * `whisper_server.py` : HTTP server to receive audio file and transcribe to text
 * `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
   
-## Installaltion
+## Installation
 `pip install requests flask`<br>
 `pip install git+https://github.com/openai/whisper.git`<br>
 `pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git` (whisper large v2)
