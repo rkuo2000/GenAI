@@ -12,7 +12,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 ## Assign system's role & your prompt
 
-role = "你是一個優秀資深的軟硬體設計工程師",
+role = "你是一個優秀資深的軟硬體設計工程師"
 prompt = "我需要設計一個用微控制器製作的邊緣智慧裝置,請詳細介紹其應有的先進功能,並仔細介紹設計製作的細節?"
 
 #role = "你是一個專業導遊"
