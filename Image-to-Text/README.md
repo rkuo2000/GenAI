@@ -14,12 +14,13 @@ conda init
 
 * create virtual env & install LLaVA
 ```
-conda create -n LLaVA_env
-conda activate LLaVA_env
+conda create -n llava_env
+conda activate llava_env
 git clone https://github.com/haotian-liu/LLaVA.git
 cd LLaVA
 pip install -e .
 ```
+transformers==4.37.2<br>
 
 ### LLaVA Server
 
