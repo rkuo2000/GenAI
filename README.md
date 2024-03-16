@@ -7,9 +7,12 @@
 
 ---
 ## Text-to-Text (LLMs)
+* `post_text.py` for HTTP POST text to the LLM Server
+* `llm_server.py` for runing a LLM Server
 * `bloom-zh.py`
 * `breeze-7b-instruct.py`
-* `mamba-130m.py`
+* `faraday-7b.py`
+* `mamba-130m.py` # also for -370M, -790M, -1B, -3B, -3B-slimpj
 * `mistral-7b-instruct.py`
 * `phi-2.py`
 * `qwen1.5-7b-chat.py`
