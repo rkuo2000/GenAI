@@ -18,6 +18,10 @@
 * `qwen1.5-7b-chat.py`
 * `taiwan-llm.py`
 * `vicuna-7b-v1.5.py`
+### post_text from PC to a LLM_Server
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
+### pyngrok_LLM_Server (on Colab T4)
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server.png?raw=true)
 
 ---
 ## Text-to-Speech
