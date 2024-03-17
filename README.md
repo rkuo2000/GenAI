@@ -11,6 +11,21 @@
 
 ---
 ## Text-to-Text (LLMs)
+
+### ollama
+git clone [https://github.com/ollama/ollama](https://github.com/ollama/ollama)<br>
+`cd ollama`
+
+#### Install ollama on Linux
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
+#### To run ollama client
+`ollama_chat.py`
+`ollama_generate.py`
+
+#### Python sample codes
+python breeze-7b-instruct.py<br>
 * `bloom-zh.py`
 * `breeze-7b-instruct.py`
 * `faraday-7b.py`
@@ -24,10 +39,12 @@
 
 * `post_text.py`
 * `llm_server.py`
-  
-### post_text from PC to a LLM_Server
+
+---
+### pyngrok-LLM server & client
+#### post_text from PC to a LLM_Server
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
-### pyngrok_LLM_Server (on Colab T4)
+#### pyngrok_LLM_Server (on Colab T4)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server.png?raw=true)
 
 ---
