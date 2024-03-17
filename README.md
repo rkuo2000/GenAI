@@ -10,8 +10,6 @@
 
 ---
 ## Text-to-Text (LLMs)
-* `post_text.py` for HTTP POST text to the LLM Server
-* `llm_server.py` for runing a LLM Server
 * `bloom-zh.py`
 * `breeze-7b-instruct.py`
 * `faraday-7b.py`
@@ -21,7 +19,10 @@
 * `qwen1.5-7b-chat.py`
 * `taiwan-llm.py`
 * `vicuna-7b-v1.5.py`
-
+  
+* `post_text.py`
+* `llm_server.py`
+  
 ### post_text from PC to a LLM_Server
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 ### pyngrok_LLM_Server (on Colab T4)
