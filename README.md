@@ -5,6 +5,9 @@
 * `whisper_server.py` : HTTP server to receive audio file and transcribe to text
 * `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
 
+### post_audio
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
+
 ---
 ## Text-to-Text (LLMs)
 * `post_text.py` for HTTP POST text to the LLM Server
@@ -18,6 +21,7 @@
 * `qwen1.5-7b-chat.py`
 * `taiwan-llm.py`
 * `vicuna-7b-v1.5.py`
+
 ### post_text from PC to a LLM_Server
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 ### pyngrok_LLM_Server (on Colab T4)
