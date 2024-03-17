@@ -1,6 +1,7 @@
 # Generative AI sample codes
 
 ## Audio-to-Text
+* `gTTS.py` : generate gTTS.mp3, ex. `python gTTS.py "please make me a coffe" en`
 * `post_audio.py` : HTTP Post audio file to a http-server
 * `whisper_server.py` : HTTP server to receive audio file and transcribe to text
 * `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
