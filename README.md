@@ -5,7 +5,7 @@
 * `whisper_server.py` : HTTP server to receive audio file and transcribe to text
 * `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
 
-### post_audio
+### post_audio to Whisper_LLM_Server
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
 
 ---
