@@ -22,6 +22,8 @@
 `python ../gTTS.py "這是什麼有名的台南美食?" zh`<br>
 `python post_imgau.py`<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
+
+**whisper_llava_server.py**<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
 ---
