@@ -11,6 +11,19 @@
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
 
 ---
+## Image-to-Text (VLM)
+
+### post image+text to llava_server
+`python llava_server.py`<br>
+`python post_imgtxt.py`<br>
+
+### post image+audio to whisper_llava_server
+`python whisper_llava_server.py`<br>
+`python ../gTTS.py "這是什麼有名的台南美食?" zh`<br>
+`python post_imgau.py`<br>
+
+
+---
 ## Text-to-Text (LLMs)
 
 ### ollama
