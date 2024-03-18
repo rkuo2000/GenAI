@@ -3,22 +3,22 @@
 ## VLM using LLaVA 1.5
 
 ### post image+text to llava_server
-`python llava_server.py`<br>
-`python post_imgtxt.py`<br>
+* `python llava_server.py`<br>
+* `python post_imgtxt.py`<br>
 
 ### post image+audio to whisper_llava_server
 
-* To run Whisper+LLaVA Server
+* To run Whisper+LLaVA Server<br>
 `python whisper_llava_server.py`<br>
 
-* To generate gTTS.mp3 for speech input
+* To generate gTTS.mp3 for speech input<br>
 `python ../gTTS.py "這是什麼有名的台南美食?" zh`<br>
 
-* To post image+audio to Whisper+LLaVA Server
+* To post image+audio to Whisper+LLaVA Server<br>
 `python post_imgau.py`<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
 
-### Whisper+LLaVA Server running
+* Whisper+LLaVA Server running<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
 ---
