@@ -14,28 +14,23 @@
 ## Image-to-Text (VLM)
 
 ### post image+text to llava_server
-`python llava_server.py`<br>
-`python post_imgtxt.py`<br>
+`python llava_server.py` (server)<br>
+`python post_imgtxt.py`  (client)<br>
 
 ### post image+audio to whisper_llava_server
 
-* To run Whisper+LLaVA Server
-`python whisper_llava_server.py`<br>
-
-* To generate gTTS.mp3 for speech input
-`python ../gTTS.py "這是什麼有名的台南美食?" zh`<br>
-
-* To post image+audio to Whisper+LLaVA Server
-`python post_imgau.py`<br>
+* `python whisper_llava_server.py` (server)<br>
+* `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
+* `python post_imgau.py` (client)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
 
-**Whisper+LLaVA Server running**<br>
+* Whisper+LLaVA Server (SR + VLM)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
 ---
 ## Text-to-Text (LLMs)
 
-### ollama
+### ollama (LLM service tool)
 git clone [https://github.com/ollama/ollama](https://github.com/ollama/ollama)<br>
 `cd ollama`
 
@@ -65,10 +60,11 @@ python breeze-7b-instruct.py<br>
 
 ---
 ### pyngrok-LLM server & client
-#### post_text from PC to a LLM_Server
-![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
-#### pyngrok_LLM_Server (on Colab T4)
+
+* pyngrok-LLM Server (on Colab T4)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server.png?raw=true)
+* post_text (client on PC)<br>
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 
 ---
 ## Text-to-Speech
@@ -78,13 +74,6 @@ python breeze-7b-instruct.py<br>
 * **text-to-speech**: `python text_to_speech.py`
 * **gTTS**: `python gTTS.py "你好?" zh`
 * **gTranslate**: `python gTranslate.py`
-* 
----
-## Image-to-Text
-* **LLaVA**
-* `llava-1.5-7b.py` - test LLaVA model
-* `post_imgtxt.py`  - http post the image + text to LLaVA server
-
 
 ---
 ## Text-to-Image 
