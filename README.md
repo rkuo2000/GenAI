@@ -46,7 +46,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 python breeze-7b-instruct.py<br>
 * `bloom-zh.py`
 * `breeze-7b-instruct.py`
-* `faraday-7b.py`
+* `llama2.py`
 * `mamba-130m.py` # also for -370M, -790M, -1B, -3B, -3B-slimpj
 * `mistral-7b-instruct.py`
 * `phi-2.py`
