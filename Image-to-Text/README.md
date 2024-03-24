@@ -8,13 +8,21 @@
 
 ### post image+audio to whisper_llava_server
 
-* `python whisper_llava_server.py` (server)<br> 
-* `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
-* `python post_imgau.py` (client)<br>
+#### Running VLM server
+* `python whisper_llava_server.py` (server)<br>
+
+#### Image & Audio
+**Download a picture:** Tainan_BeefSoup.jpg<br>
 <p><img width="50%" height="50%" src="https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/images/Tainan_BeefSoup.jpg?raw=true"></p>
 
+**Generate Audio file:** gTTS.mp3<br>
+* `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
+
+#### Send Image & Audio to VLM server
+* `python post_imgau.py` (client)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
 
+#### VLM server's response
 * Whisper+LLaVA Server (SR + VLM)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
