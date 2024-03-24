@@ -12,6 +12,7 @@
 * `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
 * `python post_imgau.py` (client)<br>
 <p><img width="50%" height="50%" src="https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/images/Tainan_BeefSoup.jpg?raw=true"></p>
+
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
 
 * Whisper+LLaVA Server (SR + VLM)<br>
