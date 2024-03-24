@@ -1,5 +1,5 @@
 # Audio-To-Text sample codes
-
+* `python ../gTTS.py "how are you today" en` : to generate gTTS.mp3
 * `post_audio.py` : HTTP Post audio file to a http-server
 * `whisper_server.py` : HTTP server to receive audio file and transcribe to text
 * `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
@@ -10,13 +10,17 @@
 `pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git` (whisper large v2)
 
 ---
-## ASR
+## ASR (Automatic Speech Recognition)
 
-* Speech Recognition with **OpenAI/Whisper** :<br>
+### OpenAI/Whisper
 `python asr.py`<br>
 
-* Speech Recognition with **Faster-Whisper** :<br>
+### Faster-Whisper
 `python faster_asr.py`<br>
+
+### Nvidia Canary
+`python ../gTTS.py "comment allez-vous aujourd'hui" fr`<br>
+`pyton canary-1b.py`<br>
 
 ---
 ### HTTP Servers
