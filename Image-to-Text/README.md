@@ -11,6 +11,7 @@
 * `python whisper_llava_server.py` (server)<br> 
 * `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
 * `python post_imgau.py` (client)<br>
+![](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/images/Tainan_BeefSoup.jpg?raw=true)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
 
 * Whisper+LLaVA Server (SR + VLM)<br>
