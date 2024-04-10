@@ -4,7 +4,7 @@
 
 from flask import Flask, request, jsonify
 import whisper
-model = whisper.load_model("base")
+ASR = whisper.load_model("base")
 
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ def audio():
         #audiofile.save(audiofile.filename)
 
         # transcribe
-        result = model.transcribe(audiofile.filename) 
+        result = ASR.transcribe(audiofile.filename) 
         print(result["text"])
         return jsonify(result["text"])
 
