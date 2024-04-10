@@ -1,7 +1,7 @@
 # pip install git+https://github.com/openai/whisper.git
 
 import whisper
-model = whisper.load_model("base")
+ASR = whisper.load_model("base")
 
 #inputfile = "audio0.aac"
 #inputfile = "audio1.flac"
@@ -9,6 +9,6 @@ model = whisper.load_model("base")
 #inputfile = "audio3.mp4"
 inputfile = "gTTS.mp3"
 
-result = model.transcribe(inputfile)
+result = ASR.transcribe(inputfile)
 
 print(result["text"])
