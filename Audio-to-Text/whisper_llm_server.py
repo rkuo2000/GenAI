@@ -13,7 +13,7 @@ import uvicorn
 import json
 
 import whisper
-WhisperModel = whisper.load_model("base")
+ASR = whisper.load_model("base")
 
 import torch
 import transformers
@@ -59,8 +59,8 @@ def post_audio(audio: UploadFile = File(...)):
         f.write(content)
       
     # Whisper transcribe
-    result = WhisperModel.transcribe(fname)
-    print("Whisper: "+result["text"])
+    result = ASR.transcribe(fname)
+    print("ASR: "+result["text"])
 
     # LLM generate
     prompt = result["text"]
