@@ -1,4 +1,4 @@
-## To run server: python llava_server.py
+## To run server: python whisper_llava_server.py
 ## To run client: python post_imagetxt.py
 
 # pip install fastapi uvicorn
