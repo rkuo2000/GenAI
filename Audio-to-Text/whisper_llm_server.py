@@ -27,15 +27,25 @@ from transformers import AutoModelForCausalLM , AutoTokenizer
 #model_name = "Q-bert/Mamba-3B"
 #model_name = "Q-bert/Mamba-3B-slimpj"
 #model_name = "ckip-joint/bloom-3b-zh" # zh
-#model_name = "google/gemma-2b-it"
+#model_name = "google/gemma-1.1-7b-it"
 #model_name = "microsoft/phi-2"
-#model_name = "Qwen/Qwen1.5-7B-Chat" # cn
-#model_name = "lmsys/vicuna-7b-v1.5-16k" # zh/cn
-#model_name = "yentinglin/Taiwan-LLM-7B-v2.0.1-chat" # zh
+#model_name = "microsoft/Orca-2-7b"
 #model_name = "mistralai/Mistral-7B-Instruct-v0.2"
-#model_name = "MediaTek-Research/Breeze-7B-v0.1" # zh/cn
-#model_name = "MediaTek-Research/Breeze-7B-Instruct-v0.1" # zh/cn
-model_name = "meta-llama/Llama-2-7b-chat-hf"
+#model_name = "openlm-research/open_llama_3b_v2"
+#model_name = "openlm-research/open_llama_7b_v2"
+#model_name = "meta-llama/Llama-2-7b-hf"
+#model_name = "meta-llama/Llama-2-7b-chat-hf"
+#model_name = "lmsys/vicuna-7b-v1.5"
+#model_name = "lmsys/vicuna-7b-v1.5-16k"
+#model_name = "Nexusflow/Starling-LM-7B-beta"
+
+#model_name = "Qwen/Qwen1.5-7B-Chat" # 通义千问
+#model_name = "01-ai/Yi-6B-Chat" # 零一万物
+#model_name = "yentinglin/Taiwan-LLM-7B-v2.0.1-chat" # 台大
+#model_name = "MediaTek-Research/Breeze-7B-Instruct-v0.1" # 達哥
+model_name = "INX-TEXT/Bailong-instruct-7B" # zh 白龍
+
+print(model_name)
 
 #LLM = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True, torch_dtype="auto", device_map="cuda")
 LLM = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True, torch_dtype=torch.bfloat16, device_map="cuda")
