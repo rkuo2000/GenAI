@@ -25,7 +25,7 @@
 
 ---
 ### Colab Whisper+LLM Server (on Colab T4)
-1. **run [pyngrok_Whisper_LLM_Server.ipynb]() on Colab T4
+1. **Open [colab](https://colab.research.google.com) to run [pyngrok_Whisper_LLM_Server.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/pyngrok_Whisper_LLM_Server.ipynb)** on Colab T4
 2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
 3. **Post Audio to Server**: `python post_audio.py`<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
