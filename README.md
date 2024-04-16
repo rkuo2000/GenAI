@@ -19,7 +19,7 @@
 * `breeze-7b-instruct.py`
 * `gemma-1.1.py`
 * `llama2.py`
-* `mamba.py` # also for -370M, -790M, -1B, -3B, -3B-slimpj
+* `mamba.py` # for -130M, -370M, -790M, -1B, -3B, -3B-slimpj
 * `mistral-7b-instruct.py`
 * `phi-2.py`
 * `qwen1.5-7b-chat.py`
