@@ -16,7 +16,7 @@
 * `vicuna-7b-v1.5.py`
 
 ---
-### local-LLM Server & Client
+### local LLM Server & Client
 * `python llm_server.py` (on your PC's GPU)
 * `python post_text.py`  (on your PC's CPU)
 
@@ -24,6 +24,10 @@
 ### Colab's LLM Server & Client
 * [pyngrok-LLM server](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/pyngrok_LLM_Server.ipynb) (on Colab T4)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server.png?raw=true)
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server_access_token.png?raw=true)
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server_ngrok_address.png?raw=true)
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server_fastapi.png?raw=true)
+
 * [post-text client](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/post_text.py) (on your PC)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 
