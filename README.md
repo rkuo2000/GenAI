@@ -1,4 +1,4 @@
-# Generative AI sample codes
+# Generative AI - sample codes
 * `gTTS.py` : to generate gTTS.mp3
 
 ---
