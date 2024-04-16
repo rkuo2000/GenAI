@@ -18,13 +18,13 @@
 ---
 ## Audio-to-Text
 
-### local Whisper+LLM Server (on your PC+GPU)
+### local ASR+LLM Server (on your PC+GPU)
 1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
 2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
 3. **Post Audio to Server**: `python post_audio.py`<br>
 
 ---
-### Colab Whisper+LLM Server (on Colab T4)
+### Colab ASR+LLM Server (on Colab T4)
 1. **Open [colab](https://colab.research.google.com) to run [pyngrok_Whisper_LLM_Server.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/pyngrok_Whisper_LLM_Server.ipynb)** on Colab T4
 2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
 3. **Post Audio to Server**: `python post_audio.py`<br>
@@ -33,13 +33,14 @@
 ---
 ## Image-to-Text (VLM)
 
-### local Whisper+LLaVA server (on GPU RTX4060Ti-OC 16GB)
+### local ASR+VLM server (on GPU RTX4060Ti-OC 16GB)
 1. `python whisper_llava_server.py` (server)<br>
 2. `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
 3. `python post_imgau.py` (client)<br>
+![](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/images/Tainan_BeefSoup.jpg?raw=true)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
 
-* Whisper+LLaVA Server (SR + VLM)<br>
+* Whisper+LLaVA Server (ASR+VLM)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
 ---
