@@ -15,15 +15,19 @@
 * [post-text client](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/post_text.py) (on your PC)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 
-
+---
 ## Audio-to-Text
-`python ../gTTS.py "please make me a coffe" en`<br>
-`python ../gTTS.py "早安你好" zh`<br>
-* `post_audio.py` : HTTP Post audio file to a http-server
-* `whisper_server.py` : HTTP server to receive audio file and transcribe to text
-* `whisper_llm_server.py` : HTTP server to transcribe audio file to text, and text-to-text by calling a LLM model
 
-### post_audio to Whisper_LLM_Server
+### local Whisper+LLM Server (on your PC+GPU)
+1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
+2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
+3. **Post Audio to Server**: `python post_audio.py`<br>
+
+---
+### Colab Whisper+LLM Server (on Colab T4)
+1. **run [pyngrok_Whisper_LLM_Server.ipynb]() on Colab T4
+2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
+3. **Post Audio to Server**: `python post_audio.py`<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
 
 ---
