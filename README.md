@@ -33,15 +33,10 @@
 ---
 ## Image-to-Text (VLM)
 
-### post image+text to LLaVA server
-`python llava_server.py` (server)<br>
-`python post_imgtxt.py`  (client)<br>
-
-### post image+audio to Whisper+LLaVA server
-
-* `python whisper_llava_server.py` (server)<br>
-* `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
-* `python post_imgau.py` (client)<br>
+### local Whisper+LLaVA server (on GPU RTX4060Ti-OC 16GB)
+1. `python whisper_llava_server.py` (server)<br>
+2. `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
+3. `python post_imgau.py` (client)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
 
 * Whisper+LLaVA Server (SR + VLM)<br>
