@@ -63,26 +63,6 @@
 
 ### TripoSR
 ![](https://favtutor.com/articles/wp-content/uploads/2024/03/TripoSR-Image-to-3D-Objects-Examples.gif)
-* Installation :
-```
-git clone https://github.com/VAST-AI-Research/TripoSR`
-cd TripoSR
-pip install -r rewquirements.txt
-pip install -e .
-```
-* To run a test
-`python run.py examples/chair.png`<br>
-(output/0/mesh.obj can be viewed by using F3D viewer, Blender (Game Engine), or Cura(3D-print Slicer)<br>
-
-* To run a Gradio server 
-`python gradio_app.py` : running GUI server<br>
-![](https://github.com/rkuo2000/GenAI/blob/main/assets/TripoSR_gradio_server.png?raw=true)
 
 ### Text-to-3D
 **gTranslate + SDXL-Lightning + TripoSR + AppInventor2**<br>
-
-To modify `gradio_app.py` to add *sdxl-lightning-lora.py* funciton
-
-
-
-
