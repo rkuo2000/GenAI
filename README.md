@@ -62,7 +62,7 @@
 ## Image-to-3D
 
 ### TripoSR
-
+![](https://favtutor.com/articles/wp-content/uploads/2024/03/TripoSR-Image-to-3D-Objects-Examples.gif)
 * Installation :
 ```
 git clone https://github.com/VAST-AI-Research/TripoSR`
