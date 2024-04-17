@@ -5,7 +5,7 @@
 `pip install git+https://github.com/openai/whisper.git`<br>
 `pip install gTTS`<br>
 
-**To generate gTTS.mp3:** `python ../gTTS.py "早安你好"`<br>
+To generate gTTS.mp3: `python ../gTTS.py "早安你好"`<br>
 
 ### OpenAI/Whisper
 `python asr.py`<br>
