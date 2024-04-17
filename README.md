@@ -47,7 +47,7 @@
 ## Text-to-Speech
 * **Parler TTS**: `python parler.py`
 * **Bark TTA**: `python bark_en.py`, `python bark_cn.py`
-* **coqui TTS**: `python coqui_en.py`, `python coqui_zh.py`
+* **Coqui TTS**: `python coqui_en.py`, `python coqui_zh.py`
 * **text-to-speech**: `python text_to_speech.py`
 * **gTTS**: `python gTTS.py "你好?" zh`
 * **gTranslate**: `python gTranslate.py`
