@@ -17,11 +17,10 @@
 `pyton canary-1b.py`<br>
 
 ---
-### HTTP Server
+### Whisper Servers
 
-#### Whisper Server
-* **run Whisper Server on PC:** `python whisper_server.py`<br>
+* run Whisper Server on PC: `python whisper_server.py`<br>
 
-* **run Whisper+LLM Server on PC+GPU:** `python whisper_llm_server.py`<br>
+* run Whisper+LLM Server on PC+GPU: `python whisper_llm_server.py`<br>
 
-* **run Client on PC to test Server:** `python post_audio.py`<br>
+* run Client on PC to test Server: `python post_audio.py`<br>
