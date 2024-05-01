@@ -43,11 +43,11 @@ from transformers import AutoModelForCausalLM , AutoTokenizer
 #model_name = "01-ai/Yi-6B-Chat" # 零一万物
 #model_name = "yentinglin/Taiwan-LLM-7B-v2.0.1-chat" # 台大
 #model_name = "MediaTek-Research/Breeze-7B-Instruct-v1_0" # 達哥
-model_name = "MediaTek-Research/Breeze-7B-32k-Instruct-v1_0" # 達哥
+#model_name = "MediaTek-Research/Breeze-7B-32k-Instruct-v1_0" # 達哥
 #model_name = "INX-TEXT/Bailong-instruct-7B" # 白龍
 #model_name = "taide/TAIDE-LX-7B" # TAIDE
 #model_name = "taide/TAIDE-LX-7B-Chat" # TAIDE
-#model_name = "taide/Llama3-TAIDE-LX-8B-Chat-Alpha1" # TAIDE
+model_name = "taide/Llama3-TAIDE-LX-8B-Chat-Alpha1" # TAIDE
 
 print(model_name)
 
