@@ -23,11 +23,12 @@ from transformers import AutoModelForCausalLM , AutoTokenizer
 #model_name = "Q-bert/Mamba-3B-slimpj"
 #model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 #model_name = "microsoft/phi-2"
+#model_name = "microsoft/Phi-3-mini-4k-instruct"
 #model_name = "microsoft/Orca-2-7b"
 #model_name = "google/gemma-1.1-2b-it"
 #model_name = "google/gemma-1.1-7b-it"
 #model_name = "mistralai/Mistral-7B-Instruct-v0.2"
-model_name = "kaist-ai/mistral-orpo-beta" # fine-tuned mistral-7B-v0.1
+#model_name = "kaist-ai/mistral-orpo-beta" # fine-tuned mistral-7B-v0.1
 #model_name = "openlm-research/open_llama_3b_v2"
 #model_name = "openlm-research/open_llama_7b_v2"
 #model_name = "meta-llama/Llama-2-7b-hf"
@@ -41,11 +42,12 @@ model_name = "kaist-ai/mistral-orpo-beta" # fine-tuned mistral-7B-v0.1
 #model_name = "Qwen/Qwen1.5-7B-Chat" # 通义千问
 #model_name = "01-ai/Yi-6B-Chat" # 零一万物
 #model_name = "yentinglin/Taiwan-LLM-7B-v2.0.1-chat" # 台大
-#model_name = "MediaTek-Research/Breeze-7B-Base-v1_1" # 達哥
-#model_name = "MediaTek-Research/Breeze-7B-Instruct-v0_1" # 達哥
+#model_name = "MediaTek-Research/Breeze-7B-Instruct-v1_0" # 達哥
+model_name = "MediaTek-Research/Breeze-7B-32k-Instruct-v1_0" # 達哥
 #model_name = "INX-TEXT/Bailong-instruct-7B" # 白龍
 #model_name = "taide/TAIDE-LX-7B" # TAIDE
 #model_name = "taide/TAIDE-LX-7B-Chat" # TAIDE
+#model_name = "taide/Llama3-TAIDE-LX-8B-Chat-Alpha1" # TAIDE
 
 print(model_name)
 
