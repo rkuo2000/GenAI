@@ -4,13 +4,17 @@
 ---
 ## Text-to-Text (LLMs)
 
-### local LLM Server & Client
+### LLM prompting
+* `python LLM_prompting.py`
+* [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb) (on Colab T4)
+
+### LLM Server & Client
 * `python llm_server.py` (on your PC's GPU)
 * `python post_text.py`  (on your PC's CPU)
 
 ---
 ### Colab's LLM Server & Client
-* [pyngrok-LLM server](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/pyngrok_LLM_Server.ipynb) (on Colab T4)<br>
+* [colab_pyNgrok_LLM_server](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_pyNgrok_LLM_Server.ipynb) (on Colab T4)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server_fastapi.png?raw=true)
 * [post-text client](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/post_text.py) (on your PC)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
