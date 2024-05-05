@@ -26,13 +26,13 @@
   
 ---
 ### local-LLM Server & Client
-* `python llm_server.py` (running on PC with GPU)
-* `python llm_client.py` (running on PC)
-* `python post_text.py` (running on PC)
+* `python llm_server.py` (on GPU)
+* `python llm_client.py` (on PC)
+* `python post_text.py` (on PC)
 
 ---
 ### Ollama Server & Client
-* `ollama run llama3` (on Colab T4)
+* `ollama run llama3` (on GPU)
 * `python ollama_client.py` (on PC)
   
 ---
