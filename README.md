@@ -4,11 +4,9 @@
 ---
 ## Text-to-Text (LLMs)
 
-### GPT4Free
-`python gpt4free.py` (gpt-3.5-turbo)<br>
-
----
 ### LLM prompting
+* `python gpt4free.py` (gpt-3.5-turbo)<br>
+* `python gpt4all_prompting.py`<br>
 * `python LLM_prompting.py`
 * [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb) (on Colab T4)
 
