@@ -4,6 +4,7 @@
 * `bailong.py`
 * `breeze.py`
 * `gemma-1.1.py`
+* `gpt4free.py` # GPT3.5
 * `llama-2.py`
 * `llama-3.py`
 * `mamba.py` # for -130M, -370M, -790M, -1B, -3B, -3B-slimpj
