@@ -22,6 +22,8 @@
 
 ---
 ### LLM prompting
+* `python gpt4free.py`
+* `python gpt4all_prompting.py`
 * `python llm_prompting.py`
 * [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb)
   
