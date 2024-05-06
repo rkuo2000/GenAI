@@ -4,10 +4,15 @@
 ---
 ## Text-to-Text (LLMs)
 
+### GPT4Free
+`python gpt4free.py` (gpt-3.5-turbo)<br>
+
+---
 ### LLM prompting
 * `python LLM_prompting.py`
 * [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb) (on Colab T4)
 
+---
 ### LLM Server & Client
 * `python llm_server.py` (on GPU)
 * `python post_text.py`  (on PC)
