@@ -13,7 +13,7 @@ import uvicorn
 import json
 
 import whisper
-ASR = whisper.load_model("base")
+ASR = whisper.load_model("base").to("cpu")
 
 import nest_asyncio
 nest_asyncio.apply()
@@ -37,7 +37,7 @@ def post_audio(audio: UploadFile = File(...)):
         f.write(content)
 
     # Whisper transcribe
-    result = ASR.transcribe(fname)
+    result = ASR.transcribe(fname,fp16=False)
     print("ASR: "+result["text"])
     return Response(result["text"])
 
