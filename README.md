@@ -40,8 +40,12 @@
 ---
 ## Image-to-Text (VLM)
 
-### local ASR+VLM server (on GPU RTX4060Ti-OC 16GB)
-1. `python whisper_llava_server.py` (server)<br>
+### VLM server 
+1. `python llava_server.py` or `python phi3-vision_server.py`<br>
+2. `python post_imgtxt.py images/Tainan_BeefSoup.jpg`<br>
+
+### ASR + VLM server
+1. `python whisper_llava_server.py`
 2. `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
 3. `python post_imgau.py` (client)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/images/Tainan_BeefSoup.jpg?raw=true)<br>
