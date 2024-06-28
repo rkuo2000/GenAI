@@ -40,11 +40,16 @@
 ---
 ## Image-to-Text (VLM)
 
-### VLM server 
-1. `python llava_server.py` or `python phi3-vision_server.py`<br>
-2. `python post_imgtxt.py images/Tainan_BeefSoup.jpg`<br>
+### VLM servers
+To run one of the following for server
+1. `python llava_server.py`
+2. `python llava_next_server.py`
+3. `python phi3-vision_server.py`
 
-### ASR + VLM server
+To run client for posting image & text to server:<br>
+`python post_imgtxt.py images/barefeet1.jpg`<br>
+
+### ASR + VLM servers
 1. `python whisper_llava_server.py`
 2. `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
 3. `python post_imgau.py` (client)<br>
