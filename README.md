@@ -41,12 +41,12 @@
 ## Image-to-Text (VLM)
 
 ### VLM servers
-To run one of the following for server
+For running server, (use one of the following)<br>
 1. `python llava_server.py`
 2. `python llava_next_server.py`
 3. `python phi3-vision_server.py`
 
-To run client for posting image & text to server:<br>
+For running client, (post image & text to VLM server)<br>
 `python post_imgtxt.py images/barefeet1.jpg`<br>
 
 ### ASR + VLM servers
