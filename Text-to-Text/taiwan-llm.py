@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 torch.set_default_device("cuda")
 
-model_name = "yentinglin/Taiwan-LLM-7B-v2.0.1-chat"
+model_name = "yentinglin/Taiwan-LLM-7B-v2.1-chat"
 print(model_name)
 
 model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.bfloat16, device_map="cuda")
