@@ -35,7 +35,8 @@ from transformers import AutoModelForCausalLM , AutoTokenizer
 #model_name = "openlm-research/open_llama_7b_v2"
 #model_name = "meta-llama/Llama-2-7b-hf"
 #model_name = "meta-llama/Llama-2-7b-chat-hf"
-#model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
+#model_name = "meta-llama/Meta-Llama-3.1-8B"
+model_name = "meta-llama/Meta-Llama-3.1-8B-Instruct"
 #model_name = "lmsys/vicuna-7b-v1.5"
 #model_name = "lmsys/vicuna-7b-v1.5-16k"
 #model_name = "Nexusflow/Starling-LM-7B-beta"
@@ -51,7 +52,7 @@ from transformers import AutoModelForCausalLM , AutoTokenizer
 #model_name = "yentinglin/Taiwan-LLM-7B-v2.1-chat" # 台大
 #model_name = "taide/TAIDE-LX-7B" # TAIDE
 #model_name = "taide/TAIDE-LX-7B-Chat" # TAIDE
-model_name = "taide/Llama3-TAIDE-LX-8B-Chat-Alpha1" # TAIDE
+#model_name = "taide/Llama3-TAIDE-LX-8B-Chat-Alpha1" # TAIDE
 
 print(model_name)
 
