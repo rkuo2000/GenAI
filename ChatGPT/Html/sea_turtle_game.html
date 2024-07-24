@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>龜龜的奇幻海洋冒險</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #00695c;
+            text-align: center;
+            padding: 20px;
+        }
+        .story {
+            margin-bottom: 20px;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .options button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+<h1>龜龜的奇幻海洋冒險</h1>
+
+<div class="story" id="story-1">
+    <p>一天，小海龜「龜龜」和牠的朋友們在大海裡游泳。突然，牠們發現海水變得混濁，很多塑膠垃圾漂浮在海面上。</p>
+    <p>「這是怎麼回事？」龜龜擔心地問。原來，這是因為人類亂丟垃圾，導致海洋污染。</p>
+</div>
+
+<div class="question" id="question-1">
+    <p><strong>問題 1：請問我們應該怎麼做來幫助龜龜和牠的朋友們？</strong></p>
+    <div class="options">
+        <button onclick="checkAnswer(1, 'B')">A. 繼續亂丟垃圾</button>
+        <button onclick="checkAnswer(1, 'B')">B. 清理海灘，減少使用塑膠製品</button>
+        <button onclick="checkAnswer(1, 'B')">C. 不做任何事情</button>
+    </div>
+</div>
+
+<div class="story" id="story-2" style="display:none;">
+    <p>龜龜和朋友們繼續前進，牠們來到了一片美麗的珊瑚礁區域。突然，龜龜發現有一隻海龜被漁網纏住了。</p>
+    <p>「我們得幫助牠！」龜龜叫道。</p>
+</div>
+
+<div class="question" id="question-2" style="display:none;">
+    <p><strong>問題 2：你知道海龜面臨哪些威脅嗎？</strong></p>
+    <div class="options">
+        <button onclick="checkAnswer(2, 'C')">A. 海洋污染</button>
+        <button onclick="checkAnswer(2, 'C')">B. 捕捉和非法交易</button>
+        <button onclick="checkAnswer(2, 'C')">C. 以上皆是</button>
+    </div>
+</div>
+
+<div class="story" id="story-3" style="display:none;">
+    <p>在幫助同伴後，龜龜決定回到牠出生的沙灘上產卵。途中，牠們遇到了許多障礙。</p>
+</div>
+
+<div class="question" id="question-3" style="display:none;">
+    <p><strong>問題 3：海龜會回到哪裡產卵？</strong></p>
+    <div class="options">
+        <button onclick="checkAnswer(3, 'B')">A. 任意沙灘</button>
+        <button onclick="checkAnswer(3, 'B')">B. 出生的沙灘</button>
+        <button onclick="checkAnswer(3, 'B')">C. 深海</button>
+    </div>
+</div>
+
+<div class="story" id="story-4" style="display:none;">
+    <p>龜龜終於到達了沙灘，並成功產下了很多蛋。龜龜知道，保護海龜的任務還沒有結束，還需要更多小朋友們一起努力。</p>
+</div>
+
+<div class="question" id="question-4" style="display:none;">
+    <p><strong>問題 4：以下哪個方法可以保護海龜？</strong></p>
+    <div class="options">
+        <button onclick="checkAnswer(4, 'C')">A. 清理海灘</button>
+        <button onclick="checkAnswer(4, 'C')">B. 減少使用塑膠製品</button>
+        <button onclick="checkAnswer(4, 'C')">C. 以上皆是</button>
+    </div>
+</div>
+
+<script>
+    function checkAnswer(questionNumber, correctAnswer) {
+        const userAnswer = event.target.textContent.split('. ')[0];
+        if (userAnswer === correctAnswer) {
+            alert('答對了！');
+            document.getElementById(`story-${questionNumber + 1}`).style.display = 'block';
+            document.getElementById(`question-${questionNumber + 1}`).style.display = 'block';
+        } else {
+            alert('答錯了，請再試一次！');
+        }
+    }
+</script>
+
+</body>
+</html>
+

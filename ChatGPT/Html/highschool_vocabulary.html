@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; }
+        .question { font-size: 1.2em; margin-bottom: 20px; }
+	.result { font-size: 1.2em; margin-top: 20px; color: #ed0404 }
+        .options { list-style: none; padding: 0; }
+        .options li { margin: 10px 0; }
+        .options input { margin-right: 10px; }
+        .buttons { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="subject"><h1>高中英文</h1></div>
+    <div class="container">
+        <div class="question"></div>
+        <ul class="options"></ul>
+        <div class="buttons">
+            <button onclick="generateQuestion()">出下一題</button>
+            <button onclick="checkAnswer()">比對答案</button>
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <script>
+        // Vocabulary list (this should be extracted from the PDF)
+        const vocabulary = [
+            { word: "ability", meaning: "能力" },
+            { word: "abroad", meaning: "在國外" },
+            { word: "absence", meaning: "缺席" },
+            { word: "accept", meaning: "接受" },
+            { word: "active", meaning: "活潑的/積極的" },
+            // Add more words as needed...
+        ];
+
+        let currentQuestion;
+        let correctAnswer;
+
+        function generateQuestion() {
+            const randomIndex = Math.floor(Math.random() * vocabulary.length);
+            currentQuestion = vocabulary[randomIndex];
+            correctAnswer = currentQuestion.word;
+
+            document.querySelector('.question').innerText = `單字測驗: ${currentQuestion.meaning}`;
+            
+            const options = generateOptions(correctAnswer);
+            displayOptions(options);
+        }
+
+        function generateOptions(correct) {
+            const options = [correct];
+            while (options.length < 4) {
+                const randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)].word;
+                if (!options.includes(randomWord)) {
+                    options.push(randomWord);
+                }
+            }
+            return options.sort(() => Math.random() - 0.5);
+        }
+
+        function displayOptions(options) {
+            const optionsContainer = document.querySelector('.options');
+            optionsContainer.innerHTML = '';
+            options.forEach(option => {
+                const li = document.createElement('li');
+                li.innerHTML = `<input type="radio" name="option" value="${option}"> ${option}`;
+                optionsContainer.appendChild(li);
+            });
+        }
+
+        function checkAnswer() {
+            const selectedOption = document.querySelector('input[name="option"]:checked');
+            if (selectedOption) {
+                const result = selectedOption.value === correctAnswer ? '答案正確!' : '答案錯誤!';
+                document.querySelector('.result').innerText = result;
+            } else {
+                document.querySelector('.result').innerText = 'Please select an option.';
+            }
+        }
+
+        // Generate the first question on load
+        generateQuestion();
+    </script>
+</body>
+</html>
+
