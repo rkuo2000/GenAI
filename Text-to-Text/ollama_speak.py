@@ -23,5 +23,5 @@ for chunk in stream:
        print(text)
        tts = gTTS(text, lang=sl)
        tts.save("gTTS.mp3")
-       os.system("mpg123 gTTS.mp3")
+       os.system("mpg123 -q gTTS.mp3")
        text = ""
