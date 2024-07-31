@@ -24,7 +24,7 @@
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 
 ---
-### ollama
+### Ollama
 `ollama list`<br>
 `ollama run llama3.1`<br>
 
