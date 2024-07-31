@@ -1,14 +1,15 @@
 # Generative AI - sample codes
 * `gTTS.py` : to generate gTTS.mp3
+* `gT2T.py` : google translate
 
 ---
 ## Text-to-Text (LLMs)
 
 ### LLM prompting
-* `python gpt4free.py` (gpt-3.5-turbo)<br>
-* `python gpt4all_prompting.py`<br>
+* `python gpt4free.py` (gpt-3.5-turbo)
+* `python gpt4all_prompting.py`
 * `python LLM_prompting.py`
-* [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb) (on Colab T4)
+* [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb) (on Colab T4) 
 
 ---
 ### LLM Server & Client
@@ -22,6 +23,20 @@
 * [post-text client](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/post_text.py) (on PC)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 
+---
+### ollama
+`ollama list`<br>
+`ollama run llama3.1`<br>
+
+#### ollama chat/generate
+* `python ollama_chat.py`
+* `python ollama_stream.py` (print text in streaming mode)
+* `python ollama_curl.py`
+
+#### ollama speak
+* `python ollama_speak.py` (ollama generated text, gTTS to speech, then mpg123 to speak)
+* `python ollama_speak_t2t.py` (ollama generated text, gTTS to speech, deep-translator to zh-TW, mpg123 to speak)
+  
 ---
 ## Audio-to-Text
 
