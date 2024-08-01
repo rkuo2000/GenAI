@@ -1,7 +1,8 @@
 # Generative AI - sample codes
-* `gTTS.py` : to generate gTTS.mp3
-* `gT2T.py` : google translate
-
+* `python gTTS.py "How are you" en` : generate gTTS.mp3
+* `python gT2T.py "How are you" fr` : deep-translator 
+* `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123 
+  
 ---
 ## Text-to-Text (LLMs)
 
