@@ -4,7 +4,7 @@ import google.generativeai as genai
 import pathlib
 import os
 
-GOOGLE_API_KEY="AIzaSyCnRzbxgrMX1GjIHnN7U6EQVM8YKy9Ikw4"
+GOOGLE_API_KEY="get_it_from" ## https://aistudio.google.com/app/apikey
 genai.configure(api_key=GOOGLE_API_KEY)
 
 audio = {"mime_type": "audio/mp3", "data":pathlib.Path("test.mp3").read_bytes()}
