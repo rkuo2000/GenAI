@@ -1,8 +1,7 @@
 import os
 from mistralai import Mistral
 
-#api_key = os.environ["MISTRAL_API_KEY"] # https://console.mistral.ai/api-keys
-api_key = os.environ["JXUhRvC7bgBa5GOEQ9x8QSks2vB4a0li"]
+api_key = os.environ["MISTRAL_API_KEY"] # https://console.mistral.ai/api-keys
 
 model = "mistral-large-latest"
 
