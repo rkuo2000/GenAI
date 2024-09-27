@@ -27,7 +27,7 @@
 ---
 ### Ollama
 `ollama list`<br>
-`ollama run llama3.1`<br>
+`ollama run llama3.2`<br>
 
 #### ollama chat/generate
 * `python ollama_chat.py`
