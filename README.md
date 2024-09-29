@@ -1,8 +1,9 @@
 # Generative AI - sample codes
+* `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
+  
 * `python gTTS.py "How are you" en` : generate gTTS.mp3
 * `python gT2T.py "How are you" fr` : deep-translator 
 * `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123 
-* `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
   
 ---
 ## Text-to-Text (LLMs)
