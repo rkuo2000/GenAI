@@ -181,10 +181,12 @@
 ## 9. LLM Fine-Tuning
 **[LLM Fine-Tuning 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/17/LLM-FineTuning.html)** <br>
 
+### PEFT
+[fine-tune-gemma-7b-it-for-sentiment-analysis](https://www.kaggle.com/code/rkuo2000/fine-tune-gemma-7b-it-for-sentiment-analysis)<br>
+[fine-tune-llama-3-for-sentiment-analysis](https://www.kaggle.com/code/rkuo2000/fine-tune-llama-3-for-sentiment-analysis)<br>
+
 ### LoRA
 [fine-tune-gemma-models-in-keras-using-lora](https://www.kaggle.com/code/rkuo2000/fine-tune-gemma-models-in-keras-using-lora)<br>
-
-[fine-tune-gemma-7b-it-for-sentiment-analysis](https://www.kaggle.com/code/rkuo2000/fine-tune-gemma-7b-it-for-sentiment-analysis)<br>
 
 ---
 ## 10. Image-to-Text (VLM)
