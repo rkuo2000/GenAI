@@ -251,7 +251,6 @@ For running client, (post image & text to VLM server)<br>
 
 ---
 ### [RAG Builder](https://github.com/KruxAI/ragbuilder)
-<video src="https://github.com/KruxAI/ragbuilder/raw/main/assets/Ragbuilder_demo.mp4"></video>
 
 ---
 ## 12. Agent
