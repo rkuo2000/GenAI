@@ -132,7 +132,7 @@ For running client, (post image & text to VLM server)<br>
 
 ---
 ## RAG 
-**[RAG 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)<br>
+**[RAG 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)** <br>
 ![](https://blogs.mathworks.com/deep-learning/files/2024/01/rag.png)
 
 ### Sampe Codes
@@ -143,3 +143,16 @@ For running client, (post image & text to VLM server)<br>
 * LlamaIndex-RAG-pdf.ipynb
 * LlamaIndex-RAG-pdf-community.ipynb
 * LlamaIndex-RAG-pdf-community.py
+
+---
+## Agent
+**[Agent 教材](https://rkuo2000.github.io/AI-course/lecture/2024/09/28/AI-Agents.html)** <br>
+
+### [openai/swarm](https://github.com/openai/swarm)
+`cd ~/GenAI`<br>
+`git clone https://github.com/openai/swarm`<br>
+`pip install git+https://github.com/openai/swarm.git`<br>
+
+![](https://github.com/openai/swarm/raw/main/assets/swarm_diagram.png)
+
+
