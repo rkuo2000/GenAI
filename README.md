@@ -184,6 +184,8 @@
 ### LoRA
 [fine-tune-gemma-models-in-keras-using-lora](https://www.kaggle.com/code/rkuo2000/fine-tune-gemma-models-in-keras-using-lora)<br>
 
+[fine-tune-gemma-7b-it-for-sentiment-analysis](https://www.kaggle.com/code/rkuo2000/fine-tune-gemma-7b-it-for-sentiment-analysis)<br>
+
 ---
 ## 10. Image-to-Text (VLM)
 
