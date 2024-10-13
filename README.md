@@ -168,7 +168,7 @@
 
 ---
 ### [LM Studio](https://lmstudio.ai/)
-![]()
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_Studio_0.3.3.png?raw=true)
 
 ---
 ### Colab ASR+LLM Server (on Colab T4)
@@ -180,6 +180,9 @@
 ---
 ## 9. LLM Fine-Tuning
 **[LLM Fine-Tuning 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/17/LLM-FineTuning.html)** <br>
+
+### LoRA
+[fine-tune-gemma-models-in-keras-using-lora](https://www.kaggle.com/code/rkuo2000/fine-tune-gemma-models-in-keras-using-lora)<br>
 
 ---
 ## 10. Image-to-Text (VLM)
@@ -227,5 +230,3 @@ For running client, (post image & text to VLM server)<br>
 `pip install git+https://github.com/openai/swarm.git`<br>
 
 ![](https://github.com/openai/swarm/raw/main/assets/swarm_diagram.png)
-
-
