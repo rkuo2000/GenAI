@@ -1,15 +1,25 @@
 # Generative AI
 
 **[AIGC 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/12/AIGC.html)** <br>
+**[GenAI-projects 教材](https://rkuo2000.github.io/GenAI-projects/)** <br>
+**範例程式：** `git clone https://github.com/rkuo2000/GenAI`<br>
 
 ---
-## Text-to-Image 
+## 1. Text-to-Image 
 * `sdxl-base.py` - run SDXL-base model to input text and generate an image
 * `sdxl-lightning-lora.py` - run SDXL-Lightning with LoRA model to use text to generate an image
 * `sdxl-lightning-unet.py` - run SDXL-Lightning with UNet model to use text to generate an image
+ 
+### [Bing-Create tutorial](https://rkuo2000.github.io/GenAI-projects/Bing-Create/)
+
+### [Midjourney](https://www.midjourney.com/home)
+
+### [Leonardo.ai](https://app.leonardo.ai/)
+
+### [SeaArt.ai](https://www.seaart.ai/)
 
 ---
-## Text-to-3D
+## 2. Text-to-3D
 **gTranslate + SDXL-Lightning + TripoSR + Blender**<br>
 
 ---
@@ -31,13 +41,48 @@
 **Kaggle:** [https://www.kaggle.com/code/rkuo2000/depth-pro](https://www.kaggle.com/code/rkuo2000/depth-pro)<br>
 
 ---
+## 3. Text-to-Video/Motion
+
+### [Tune-A-Video](https://github.com/showlab/Tune-A-Video)
+![](https://camo.githubusercontent.com/3a1fe691700facadce50b7dd66641abdc40ce5a97b53e85091d5af0f273481a1/68747470733a2f2f74756e6561766964656f2e6769746875622e696f2f6173736574732f7465617365722e676966)
+
+---
+### [Open-VCLIP](https://github.com/wengzejia1/Open-VCLIP/)
+![](https://github.com/wengzejia1/Open-VCLIP/raw/main/figures/firstpage.png)
+
+---
+### [Dynamic Scene Transformer (DyST)](https://dyst-paper.github.io/)
+![](https://dyst-paper.github.io/data/model_fig.png)
+
+---
+### [Text-to-Motion-Retrieval](https://github.com/mesnico/text-to-motion-retrieval)
+<p><img src="https://github.com/mesnico/text-to-motion-retrieval/raw/main/teaser/example_74.gif"></p>
+<p><img src="https://github.com/mesnico/text-to-motion-retrieval/raw/main/teaser/example_243.gif"></p>
+
+---
+## 4. Text-to-Avatar
+
+### [HeyGen](https://www.heygen.com/)
+
+### [Hedra](https://www.hedra.com/)
+**[Tutorial](https://rkuo2000.github.io/GenAI-projects/Hedra/)** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/wBO0VsiWC2s)](https://youtu.be/wBO0VsiWC2s)
+
+### [LivePortrait](https://github.com/KwaiVGI/LivePortrait)
+**[Tutorial](https://rkuo2000.github.io/GenAI-projects/LivePortrait/)** <br>
+![](https://github.com/KwaiVGI/LivePortrait/raw/main/assets/docs/showcase2.gif)
+
+### [MuskTalk](https://github.com/TMElyralab/MuseTalk)
+ <video src=https://github.com/TMElyralab/MuseTalk/assets/163980830/b2a879c2-e23a-4d39-911d-51f0343218e4 controls preload></video>
+
+---
 ## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
 * `python gTTS.py "How are you" en` : generate gTTS.mp3
 * `python gT2T.py "How are you" fr` : deep-translator 
 * `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
 
 ---
-### Text-to-Speech
+## 5. Text-to-Speech
 
 * **Parler TTS**: `python parler.py`
 * **Bark TTA**: `python bark_en.py`, `python bark_cn.py`
@@ -47,7 +92,7 @@
 * **gTranslate**: `python gTranslate.py`
   
 ---
-### Audio-to-Text (ASR)
+## 6. Audio-to-Text (ASR)
 
 * whisper.py
 * whisper-large-v3.py
@@ -62,15 +107,19 @@
 3. **Post Audio to Server**: `python post_audio.py`<br>
 
 ---
-## Text-to-Text (LLMs)
+## 7. Text-to-Text (LLMs)
 
-[Large Language Models 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/LLM.html)<br>
-[Prompt Engineering 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)<br>
+**[Large Language Models 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/LLM.html)** <br>
 
 * `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
 
+`git clone https://github.com/rkuo2000/GenAI`<br>
+`cd GenAI/Text-to-Text`<br>
+
 ---
-### LLM prompting
+## 8. LLM prompting
+**[Prompt Engineering 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)** <br>
+
 * `python gpt4free.py` (gpt-3.5-turbo)
 * `python gpt4all_prompting.py`
 * `python LLM_prompting.py`
@@ -109,7 +158,11 @@
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
 
 ---
-## Image-to-Text (VLM)
+## 9. LLM Fine-Tuning
+**[LLM Fine-Tuning 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/17/LLM-FineTuning.html)** <br>
+
+---
+## 10. Image-to-Text (VLM)
 
 ### VLM servers
 For running server, (use one of the following)<br>
@@ -131,7 +184,7 @@ For running client, (post image & text to VLM server)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
 ---
-## RAG 
+## 11. RAG 
 **[RAG 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)** <br>
 ![](https://blogs.mathworks.com/deep-learning/files/2024/01/rag.png)
 
@@ -145,7 +198,7 @@ For running client, (post image & text to VLM server)<br>
 * LlamaIndex-RAG-pdf-community.py
 
 ---
-## Agent
+## 12. Agent
 **[Agent 教材](https://rkuo2000.github.io/AI-course/lecture/2024/09/28/AI-Agents.html)** <br>
 
 ### [openai/swarm](https://github.com/openai/swarm)
