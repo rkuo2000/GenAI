@@ -1,9 +1,43 @@
-# Generative AI - sample codes
+# Generative AI
+
+**[AIGC](https://rkuo2000.github.io/AI-course/lecture/2024/08/12/AIGC.html)** <br>
+
+## sample codes
 * `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
   
 * `python gTTS.py "How are you" en` : generate gTTS.mp3
 * `python gT2T.py "How are you" fr` : deep-translator 
-* `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123 
+* `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
+
+---
+## Audio-to-Text
+
+### local ASR+LLM Server (on your PC+GPU)
+1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
+2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
+3. **Post Audio to Server**: `python post_audio.py`<br>
+
+---
+## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
+
+### Text-to-Speech
+
+* **Parler TTS**: `python parler.py`
+* **Bark TTA**: `python bark_en.py`, `python bark_cn.py`
+* **Coqui TTS**: `python coqui_en.py`, `python coqui_zh.py`
+* **text-to-speech**: `python text_to_speech.py`
+* **gTTS**: `python gTTS.py "你好?" zh`
+* **gTranslate**: `python gTranslate.py`
+  
+---
+### Audio-to-Text
+
+* whisper.py
+* whisper-large-v3.py
+* faster-whisper.py
+* canary-1b.py
+* qwen_audio.py
+* gemini_audio.py
   
 ---
 ## Text-to-Text (LLMs)
@@ -41,12 +75,7 @@
 * `python ollama_speak_t2t.py` (ollama generated text, gTTS to speech, deep-translator to zh-TW, mpg123 to speak)
   
 ---
-## Audio-to-Text
 
-### local ASR+LLM Server (on your PC+GPU)
-1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
-2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
-3. **Post Audio to Server**: `python post_audio.py`<br>
 
 ---
 ### Colab ASR+LLM Server (on Colab T4)
@@ -77,14 +106,7 @@ For running client, (post image & text to VLM server)<br>
 * Whisper+LLaVA Server (ASR+VLM)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
----
-## Text-to-Speech
-* **Parler TTS**: `python parler.py`
-* **Bark TTA**: `python bark_en.py`, `python bark_cn.py`
-* **Coqui TTS**: `python coqui_en.py`, `python coqui_zh.py`
-* **text-to-speech**: `python text_to_speech.py`
-* **gTTS**: `python gTTS.py "你好?" zh`
-* **gTranslate**: `python gTranslate.py`
+
 
 ---
 ## Text-to-Image 
