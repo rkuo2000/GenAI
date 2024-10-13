@@ -10,7 +10,7 @@
 
 ---
 ## Text-to-3D
-**gTranslate + SDXL-Lightning + TripoSR + AppInventor2**<br>
+**gTranslate + SDXL-Lightning + TripoSR + Blender**<br>
 
 ---
 ## Image-to-3D
