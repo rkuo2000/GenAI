@@ -1,22 +1,42 @@
 # Generative AI
 
-**[AIGC](https://rkuo2000.github.io/AI-course/lecture/2024/08/12/AIGC.html)** <br>
+**[AIGC 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/12/AIGC.html)** <br>
 
-## sample codes
-* `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
-  
+---
+## Text-to-Image 
+* `sdxl-base.py` - run SDXL-base model to input text and generate an image
+* `sdxl-lightning-lora.py` - run SDXL-Lightning with LoRA model to use text to generate an image
+* `sdxl-lightning-unet.py` - run SDXL-Lightning with UNet model to use text to generate an image
+
+---
+## Text-to-3D
+**gTranslate + SDXL-Lightning + TripoSR + AppInventor2**<br>
+
+---
+## Image-to-3D
+
+### [Zero123+++](https://github.com/SUDO-AI-3D/zero123plus)
+* [https://www.kaggle.com/code/rkuo2000/zero123plus](https://www.kaggle.com/code/rkuo2000/zero123plus)<br>
+* [https://www.kaggle.com/code/rkuo2000/zero123-controlnet](https://www.kaggle.com/code/rkuo2000/zero123-controlnet)<br>
+
+---
+### [TripoSR](https://github.com/VAST-AI-Research/TripoSR)
+![](https://favtutor.com/articles/wp-content/uploads/2024/03/TripoSR-Image-to-3D-Objects-Examples.gif)
+**Kaggle:** [https://www.kaggle.com/code/rkuo2000/triposr](https://www.kaggle.com/code/rkuo2000/triposr)<br>
+
+---
+### Depth Pro
+**Code:** [https://github.com/apple/ml-depth-pro](https://github.com/apple/ml-depth-pro)
+![](https://github.com/apple/ml-depth-pro/raw/main/data/depth-pro-teaser.jpg)
+**Kaggle:** [https://www.kaggle.com/code/rkuo2000/depth-pro](https://www.kaggle.com/code/rkuo2000/depth-pro)<br>
+
+---
+## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
 * `python gTTS.py "How are you" en` : generate gTTS.mp3
 * `python gT2T.py "How are you" fr` : deep-translator 
 * `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
 
 ---
-## Audio-to-Text
-
-
-
----
-## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
-
 ### Text-to-Speech
 
 * **Parler TTS**: `python parler.py`
@@ -43,7 +63,8 @@
 
 ---
 ## Text-to-Text (LLMs)
-
+* `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
+  
 ### LLM prompting
 * `python gpt4free.py` (gpt-3.5-turbo)
 * `python gpt4all_prompting.py`
@@ -110,17 +131,6 @@ For running client, (post image & text to VLM server)<br>
 
 
 
----
-## Text-to-Image 
-* `sdxl-base.py` - run SDXL-base model to input text and generate an image
-* `sdxl-lightning-lora.py` - run SDXL-Lightning with LoRA model to use text to generate an image
-* `sdxl-lightning-unet.py` - run SDXL-Lightning with UNet model to use text to generate an image
 
----
-## Image-to-3D
 
-### TripoSR
-![](https://favtutor.com/articles/wp-content/uploads/2024/03/TripoSR-Image-to-3D-Objects-Examples.gif)
 
-### Text-to-3D
-**gTranslate + SDXL-Lightning + TripoSR + AppInventor2**<br>
