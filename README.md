@@ -63,16 +63,20 @@
 
 ---
 ## Text-to-Text (LLMs)
+
+[Large Language Models 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/LLM.html)<br>
+[Prompt Engineering 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)<br>
+
 * `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
-  
+
+---
 ### LLM prompting
 * `python gpt4free.py` (gpt-3.5-turbo)
 * `python gpt4all_prompting.py`
 * `python LLM_prompting.py`
 * [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb) (on Colab T4) 
 
----
-### LLM Server & Client
+#### LLM Server & Client
 * `python llm_server.py` (on GPU)
 * `python post_text.py`  (on PC)
 
@@ -84,7 +88,7 @@
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 
 ---
-### Ollama
+#### Ollama
 `ollama list`<br>
 `ollama run llama3.2`<br>
 
@@ -96,9 +100,6 @@
 #### ollama speak
 * `python ollama_speak.py` (ollama generated text, gTTS to speech, then mpg123 to speak)
 * `python ollama_speak_t2t.py` (ollama generated text, gTTS to speech, deep-translator to zh-TW, mpg123 to speak)
-  
----
-
 
 ---
 ### Colab ASR+LLM Server (on Colab T4)
@@ -129,8 +130,16 @@ For running client, (post image & text to VLM server)<br>
 * Whisper+LLaVA Server (ASR+VLM)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
+---
+## RAG 
+**[RAG 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)<br>
+![](https://blogs.mathworks.com/deep-learning/files/2024/01/rag.png)
 
-
-
-
-
+### Sampe Codes
+* [https://www.kaggle.com/code/rkuo2000/langchain-rag-chromadb](https://www.kaggle.com/code/rkuo2000/langchain-rag-chromadb)
+* [https://www.kaggle.com/code/rkuo2000/llm-llamaindex](https://www.kaggle.com/code/rkuo2000/llm-llamaindex) = LlamaIndex-RAG-pdf
+* Langchain-RAG-text.ipynb
+* Langchain-ReAct.ipynb
+* LlamaIndex-RAG-pdf.ipynb
+* LlamaIndex-RAG-pdf-community.ipynb
+* LlamaIndex-RAG-pdf-community.py
