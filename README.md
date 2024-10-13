@@ -12,10 +12,7 @@
 ---
 ## Audio-to-Text
 
-### local ASR+LLM Server (on your PC+GPU)
-1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
-2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
-3. **Post Audio to Server**: `python post_audio.py`<br>
+
 
 ---
 ## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
@@ -30,7 +27,7 @@
 * **gTranslate**: `python gTranslate.py`
   
 ---
-### Audio-to-Text
+### Audio-to-Text (ASR)
 
 * whisper.py
 * whisper-large-v3.py
@@ -39,6 +36,11 @@
 * qwen_audio.py
 * gemini_audio.py
   
+### local ASR+LLM Server (on your PC+GPU)
+1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
+2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
+3. **Post Audio to Server**: `python post_audio.py`<br>
+
 ---
 ## Text-to-Text (LLMs)
 
