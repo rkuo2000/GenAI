@@ -77,13 +77,31 @@
  <video src=https://github.com/TMElyralab/MuseTalk/assets/163980830/b2a879c2-e23a-4d39-911d-51f0343218e4 controls preload></video>
 
 ---
+## 5. Text-to-Song 
+
+### Suno
+
+### [Tuneform](https://tuneform.com/)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/_VTfbR5VT4s)](https://youtu.be/_VTfbR5VT4s)
+
+### [Specterr](https://specterr.com/)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/MJPuGL-aGzA)](https://youtu.be/MJPuGL-aGzA)
+
+### [Vizzy](https://vizzy.io)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/gUko_GnT40g)](https://youtu.be/gUko_GnT40g)
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/sFaMRk7TGpk)](https://youtu.be/sFaMRk7TGpk)
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/BvsP4ivkVyM)](https://youtu.be/BvsP4ivkVyM)
+
+---
 ## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
 * `python gTTS.py "How are you" en` : generate gTTS.mp3
 * `python gT2T.py "How are you" fr` : deep-translator 
 * `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
 
 ---
-## 5. Text-to-Speech
+## 6. Text-to-Speech
 
 * **Parler TTS**: `python parler.py`
 * **Bark TTA**: `python bark_en.py`, `python bark_cn.py`
@@ -93,7 +111,7 @@
 * **gTranslate**: `python gTranslate.py`
   
 ---
-## 6. Audio-to-Text (ASR)
+## 7. Audio-to-Text (ASR)
 
 * whisper.py
 * whisper-large-v3.py
@@ -108,18 +126,15 @@
 3. **Post Audio to Server**: `python post_audio.py`<br>
 
 ---
-## 7. Text-to-Text (LLMs)
+## 8. Text-to-Text (LLMs)
 
 **[Large Language Models 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/LLM.html)** <br>
+**[Prompt Engineering 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)** <br>
 
 * `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
 
 `git clone https://github.com/rkuo2000/GenAI`<br>
 `cd GenAI/Text-to-Text`<br>
-
----
-## 8. LLM prompting
-**[Prompt Engineering 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)** <br>
 
 * `python gpt4free.py` (gpt-3.5-turbo)
 * `python gpt4all_prompting.py`
@@ -150,6 +165,10 @@
 #### ollama speak
 * `python ollama_speak.py` (ollama generated text, gTTS to speech, then mpg123 to speak)
 * `python ollama_speak_t2t.py` (ollama generated text, gTTS to speech, deep-translator to zh-TW, mpg123 to speak)
+
+---
+### [LM Studio](https://lmstudio.ai/)
+![]()
 
 ---
 ### Colab ASR+LLM Server (on Colab T4)
