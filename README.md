@@ -10,14 +10,39 @@
 * `sdxl-base.py` - run SDXL-base model to input text and generate an image
 * `sdxl-lightning-lora.py` - run SDXL-Lightning with LoRA model to use text to generate an image
 * `sdxl-lightning-unet.py` - run SDXL-Lightning with UNet model to use text to generate an image
- 
-### [Bing-Create tutorial](https://rkuo2000.github.io/GenAI-projects/Bing-Create/)
 
-### [Midjourney](https://www.midjourney.com/home)
+### Image Creators
 
-### [Leonardo.ai](https://app.leonardo.ai/)
+#### [Bing-Create tutorial](https://rkuo2000.github.io/GenAI-projects/Bing-Create/)
 
-### [SeaArt.ai](https://www.seaart.ai/)
+#### [Midjourney](https://www.midjourney.com/home)
+
+#### [Leonardo.ai](https://app.leonardo.ai/)
+
+#### [civitai](https://civitai.com/)
+
+#### [SeaArt.ai](https://www.seaart.ai/)
+
+#### [TensorArt](https://tensor.art/)
+
+#### [OpenArt.ai](https://openart.ai/)
+
+#### [fluxpro.ai](https://www.fluxpro.ai/)
+
+---
+### Flux1.1
+<iframe width="733" height="412" src="https://www.youtube.com/embed/G_qzEKGI4cg" title="flux系列教程：最新4种flux模型安装" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+### WebUI 
+
+
+
+---
+### Krita
+
+#### FLUX.1[dev]模型在Krita完美整合
+<iframe width="733" height="389" src="https://www.youtube.com/embed/Y99_C0C28UE" title="FLUX.1[dev]模型在Krita完美整合:安裝和使用教學&quot;FLUX.1[dev] in Krita: Step-by-Step Installation and Usage Tutorial&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 ## 2. Text-to-3D
@@ -79,7 +104,7 @@
 ---
 ## 5. Text-to-Song 
 
-### Suno
+### [Suno 教學](https://rkuo2000.github.io/GenAI-projects/Suno/)
 
 ### [Tuneform](https://tuneform.com/)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/_VTfbR5VT4s)](https://youtu.be/_VTfbR5VT4s)
@@ -223,6 +248,10 @@ For running client, (post image & text to VLM server)<br>
 * LlamaIndex-RAG-pdf.ipynb
 * LlamaIndex-RAG-pdf-community.ipynb
 * LlamaIndex-RAG-pdf-community.py
+
+---
+### [RAG Builder](https://github.com/KruxAI/ragbuilder)
+<video src="https://github.com/KruxAI/ragbuilder/raw/main/assets/Ragbuilder_demo.mp4"></video>
 
 ---
 ## 12. Agent
