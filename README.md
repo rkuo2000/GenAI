@@ -86,6 +86,26 @@
 <p><img src="https://github.com/mesnico/text-to-motion-retrieval/raw/main/teaser/example_243.gif"></p>
 
 ---
+### [Stable Video Diffusion](https://stability.ai/news/stable-video-diffusion-open-ai-video-model)
+![](https://github.com/Stability-AI/generative-models/raw/main/assets/sv4d.gif)
+
+---
+### Runway Gen3
+<iframe width="733" height="440" src="https://www.youtube.com/embed/SAxZB7wUWYo" title="突破AI影片極限！Runway Gen-3 Alpha 與 SORA 一較高下，帶來超真實感，Sora等不到，Gen3 Alpha 率先使用" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+### SORA
+<iframe width="733" height="412" src="https://www.youtube.com/embed/IBVAf7XJCFg" title="OpenAI最新模型Sora 文字生成AI影片｜中央社影音新聞" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+### [SV4D](https://github.com/Stability-AI/generative-models)
+SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x576 resolution
+
+---
+### [Meta MovieGen](https://ai.meta.com/research/movie-gen/)
+<iframe width="733" height="412" src="https://www.youtube.com/embed/FHSSx4dUs7E" title="Meet Meta Movie Gen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 ## 4. Text-to-Avatar
 
 ### [HeyGen](https://www.heygen.com/)
