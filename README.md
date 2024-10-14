@@ -28,19 +28,22 @@
 #### [OpenArt.ai](https://openart.ai/)
 
 #### [fluxpro.ai](https://www.fluxpro.ai/)
-<iframe width="733" height="412" src="https://www.youtube.com/embed/gZTQiyQCgUw" title="Flux 1.1 Deep Dive! The Best Gets Better!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/gZTQiyQCgUw](https://youtu.be/gZTQiyQCgUw)
 
 ---
 ### ComfyUI / WebUI
-<iframe width="733" height="412" src="https://www.youtube.com/embed/87TwZ05SSGc" title="Flux.1 本地部署！媲美Midjourney的頂級AI繪圖模型 ，免費開源，ComfyUI 一鍵安裝，效果驚人！ | 零度解說" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="733" height="412" src="https://www.youtube.com/embed/uTqLiNo2GzI" title="AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用Flux模型_簡單能用的分享(整合包鏈接分享)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+#### Flux.1 本地部署！媲美Midjourney的頂級AI繪圖模型
+[![](https://markdown-videos-api.jorgenkh.no/youtube/87TwZ05SSGc](https://youtu.be/87TwZ05SSGc)
+
+#### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
+[![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI](https://youtu.be/uTqLiNo2GzI)
 
 ---
 ### Krita
 
 #### FLUX.1[dev]模型在Krita完美整合
-<iframe width="733" height="389" src="https://www.youtube.com/embed/Y99_C0C28UE" title="FLUX.1[dev]模型在Krita完美整合:安裝和使用教學&quot;FLUX.1[dev] in Krita: Step-by-Step Installation and Usage Tutorial&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/Y99_C0C28UE)](https://youtu.be/Y99_C0C28UE)
 
 ---
 ## 2. Text-to-3D
@@ -89,11 +92,11 @@
 
 ---
 ### Runway Gen3
-<iframe width="733" height="440" src="https://www.youtube.com/embed/SAxZB7wUWYo" title="突破AI影片極限！Runway Gen-3 Alpha 與 SORA 一較高下，帶來超真實感，Sora等不到，Gen3 Alpha 率先使用" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/SAxZB7wUWYo)](https://youtu.be/SAxZB7wUWYo)
 
 ---
 ### SORA
-<iframe width="733" height="412" src="https://www.youtube.com/embed/IBVAf7XJCFg" title="OpenAI最新模型Sora 文字生成AI影片｜中央社影音新聞" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/IBVAf7XJCFg)](https://youtu.be/IBVAf7XJCFg)
 
 ---
 ### [SV4D](https://github.com/Stability-AI/generative-models)
@@ -101,7 +104,7 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 
 ---
 ### [Meta MovieGen](https://ai.meta.com/research/movie-gen/)
-<iframe width="733" height="412" src="https://www.youtube.com/embed/FHSSx4dUs7E" title="Meet Meta Movie Gen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/FHSSx4dUs7E)](https://youtu.be/FHSSx4dUs7E)
 
 ---
 ## 4. Text-to-Avatar
