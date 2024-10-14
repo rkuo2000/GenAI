@@ -28,15 +28,13 @@
 #### [OpenArt.ai](https://openart.ai/)
 
 #### [fluxpro.ai](https://www.fluxpro.ai/)
+<iframe width="733" height="412" src="https://www.youtube.com/embed/gZTQiyQCgUw" title="Flux 1.1 Deep Dive! The Best Gets Better!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
-### Flux1.1
-<iframe width="733" height="412" src="https://www.youtube.com/embed/G_qzEKGI4cg" title="flux系列教程：最新4种flux模型安装" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+### ComfyUI / WebUI
+<iframe width="733" height="412" src="https://www.youtube.com/embed/87TwZ05SSGc" title="Flux.1 本地部署！媲美Midjourney的頂級AI繪圖模型 ，免費開源，ComfyUI 一鍵安裝，效果驚人！ | 零度解說" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
----
-### WebUI 
-
-
+<iframe width="733" height="412" src="https://www.youtube.com/embed/uTqLiNo2GzI" title="AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用Flux模型_簡單能用的分享(整合包鏈接分享)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 ### Krita
