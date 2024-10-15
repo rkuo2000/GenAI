@@ -118,7 +118,6 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ### [HeyGen](https://www.heygen.com/)
 [sample](https://app.heygen.com/share/576aab0e56ee484c91f7eb75ac2338be)<br>
 
-
 ### [Hedra](https://www.hedra.com/)
 **[Tutorial](https://rkuo2000.github.io/GenAI-projects/Hedra/)** <br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/wBO0VsiWC2s)](https://youtu.be/wBO0VsiWC2s)
