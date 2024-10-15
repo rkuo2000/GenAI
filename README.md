@@ -114,6 +114,7 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 
 ---
 ## 4. Text-to-Avatar
+**[GAN 教材](https://github.com/rkuo2000/AI-course/blob/main/_posts/2024-08-09-GAN.md)** <br>
 
 ### [HeyGen](https://www.heygen.com/)
 [sample](https://app.heygen.com/share/576aab0e56ee484c91f7eb75ac2338be)<br>
@@ -129,6 +130,7 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ### [MuskTalk](https://github.com/TMElyralab/MuseTalk)
 <video src=https://github.com/TMElyralab/MuseTalk/assets/163980830/b2a879c2-e23a-4d39-911d-51f0343218e4 controls preload></video>
 
+---
 ### [artflow.ai](https://app.artflow.ai/)
 Charactor Builder<br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/EC9CqEYDS0k)](https://youtu.be/EC9CqEYDS0k)
