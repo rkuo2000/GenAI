@@ -90,6 +90,9 @@
 ### [Stable Video Diffusion](https://stability.ai/news/stable-video-diffusion-open-ai-video-model)
 ![](https://github.com/Stability-AI/generative-models/raw/main/assets/sv4d.gif)
 
+**[SV4D](https://github.com/Stability-AI/generative-models)** <br>
+SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x576 resolution
+
 ---
 ### Runway Gen3
 [![](https://markdown-videos-api.jorgenkh.no/youtube/SAxZB7wUWYo)](https://youtu.be/SAxZB7wUWYo)
@@ -97,10 +100,6 @@
 ---
 ### SORA
 [![](https://markdown-videos-api.jorgenkh.no/youtube/IBVAf7XJCFg)](https://youtu.be/IBVAf7XJCFg)
-
----
-### [SV4D](https://github.com/Stability-AI/generative-models)
-SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x576 resolution
 
 ---
 ### [Meta MovieGen](https://ai.meta.com/research/movie-gen/)
