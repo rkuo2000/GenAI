@@ -7,9 +7,11 @@
 
 ---
 ## 1. Text-to-Image 
-* `sdxl-base.py` - run SDXL-base model to input text and generate an image
-* `sdxl-lightning-lora.py` - run SDXL-Lightning with LoRA model to use text to generate an image
-* `sdxl-lightning-unet.py` - run SDXL-Lightning with UNet model to use text to generate an image
+* [LCM-LoRA.py](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Image/lcm-lora.py)
+* [sdxl-base.py](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Image/sdxl-base.py)
+* [sdxl-lightning-lora.py](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Image/sdxl-lightning-lora.py)
+* [sdxl-lightning-unet.py](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Image/sdxl-lightning-unet.py) 
+* [flux.1-dev.py](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Image/flux.1-dev.py)
 
 ### Image Creators
 
