@@ -28,16 +28,16 @@
 #### [OpenArt.ai](https://openart.ai/)
 
 #### [fluxpro.ai](https://www.fluxpro.ai/)
-[![](https://markdown-videos-api.jorgenkh.no/youtube/gZTQiyQCgUw](https://youtu.be/gZTQiyQCgUw)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/gZTQiyQCgUw)](https://youtu.be/gZTQiyQCgUw)
 
 ---
 ### ComfyUI / WebUI
 
 #### Flux.1 本地部署！媲美Midjourney的頂級AI繪圖模型
-[![](https://markdown-videos-api.jorgenkh.no/youtube/87TwZ05SSGc](https://youtu.be/87TwZ05SSGc)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/87TwZ05SSGc)](https://youtu.be/87TwZ05SSGc)
 
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
-[![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI](https://youtu.be/uTqLiNo2GzI)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI)](https://youtu.be/uTqLiNo2GzI)
 
 ---
 ### Krita
