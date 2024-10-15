@@ -50,6 +50,24 @@
 #### [本地部署Flux.1 最強文生圖大模型！ Comfyui 一鍵安裝，簡單又方便](https://www.freedidi.com/13266.html)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/87TwZ05SSGc)](https://youtu.be/87TwZ05SSGc)
 
+```
+git clone https://github.com/comfyanonymous/ComfyUI
+cd ComfyUI
+mv ~/Downloads/
+mv ~/Downloads/
+mv ~/Downloads/
+python main.py
+```
+
+1. open Browser at `http:127.0.0.1:8188`<br>
+
+2. drag flux_dev_fp8_example.png to browser window to generate the work-flow chart<br>
+![](https://github.com/rkuo2000/GenAI/raw/main/assets/flux_dev_fp8_example.png)
+
+3. edit text in `CLIP Text Encode (Positive Prompt)`<br>
+   
+4. click `Queue Prompt` to generate image<br>
+
 ---
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
 [![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI)](https://youtu.be/uTqLiNo2GzI)
