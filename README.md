@@ -33,7 +33,7 @@
 ---
 ### ComfyUI / WebUI
 
-#### Flux.1 本地部署！媲美Midjourney的頂級AI繪圖模型
+#### [本地部署Flux.1 最強文生圖大模型！ Comfyui 一鍵安裝，簡單又方便](https://www.freedidi.com/13266.html)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/87TwZ05SSGc)](https://youtu.be/87TwZ05SSGc)
 
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
