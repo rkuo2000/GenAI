@@ -116,7 +116,8 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ## 4. Text-to-Avatar
 
 ### [HeyGen](https://www.heygen.com/)
-[sample](https://app.heygen.com/share/576aab0e56ee484c91f7eb75ac2338be)<br>
+<video src=https://app.heygen.com/share/576aab0e56ee484c91f7eb75ac2338be controls preload></video>
+
 
 ### [Hedra](https://www.hedra.com/)
 **[Tutorial](https://rkuo2000.github.io/GenAI-projects/Hedra/)** <br>
@@ -127,10 +128,11 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ![](https://github.com/KwaiVGI/LivePortrait/raw/main/assets/docs/showcase2.gif)
 
 ### [MuskTalk](https://github.com/TMElyralab/MuseTalk)
- <video src=https://github.com/TMElyralab/MuseTalk/assets/163980830/b2a879c2-e23a-4d39-911d-51f0343218e4 controls preload></video>
+<video src=https://github.com/TMElyralab/MuseTalk/assets/163980830/b2a879c2-e23a-4d39-911d-51f0343218e4 controls preload></video>
 
 ### [artflow.ai](https://app.artflow.ai/)
 Charactor Builder<br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/EC9CqEYDS0k)](https://youtu.be/EC9CqEYDS0k)
 
 ---
 ## 5. Text-to-Song 
