@@ -96,7 +96,9 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ---
 ### [Runway Gen3](https://runwayml.com/)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/SAxZB7wUWYo)](https://youtu.be/SAxZB7wUWYo)
+
 [![](https://markdown-videos-api.jorgenkh.no/youtube/nByslCkykj8)](https://youtu.be/nByslCkykj8)
+
 [Gen-3 Alpha Prompting Guide](https://help.runwayml.com/hc/en-us/articles/30586818553107-Gen-3-Alpha-Prompting-Guide)<br>
 
 ---
