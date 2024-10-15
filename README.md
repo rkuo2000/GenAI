@@ -147,12 +147,6 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 [![](https://markdown-videos-api.jorgenkh.no/youtube/BvsP4ivkVyM)](https://youtu.be/BvsP4ivkVyM)
 
 ---
-## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
-* `python gTTS.py "How are you" en` : generate gTTS.mp3
-* `python gT2T.py "How are you" fr` : deep-translator 
-* `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
-
----
 ### SunoAI + RVC WebUI + ChatGPT
 [![](https://markdown-videos-api.jorgenkh.no/youtube/9nHbw0eUJeE)](https://youtu.be/9nHbw0eUJeE)
 
@@ -160,6 +154,12 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 
 **[RVC WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)** <br>
 
+---
+## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
+* `python gTTS.py "How are you" en` : generate gTTS.mp3
+* `python gT2T.py "How are you" fr` : deep-translator 
+* `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
+  
 ---
 ## 6. Text-to-Speech
 
