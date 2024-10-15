@@ -116,7 +116,7 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ## 4. Text-to-Avatar
 
 ### [HeyGen](https://www.heygen.com/)
-<video src=https://app.heygen.com/share/576aab0e56ee484c91f7eb75ac2338be controls preload></video>
+<video src=https://resource2.heygen.ai/video/576aab0e56ee484c91f7eb75ac2338be/1280x720.mp4 controls preload></video>
 
 
 ### [Hedra](https://www.hedra.com/)
