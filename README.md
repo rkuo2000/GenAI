@@ -62,7 +62,7 @@ python main.py
 1. open Browser at `http:127.0.0.1:8188`<br>
 
 2. drag flux_dev_fp8_example.png to browser window to generate the work-flow chart<br>
-<p><img widith="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/flux_dev_fp8_example.png"></p>
+<p><img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/flux_dev_fp8_example.png"></p>
 
 3. edit text in `CLIP Text Encode (Positive Prompt)`<br>
    
