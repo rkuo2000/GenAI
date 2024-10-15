@@ -272,10 +272,11 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 
 ---
 ### examples
-* `python llava-1.5-7b-hf.py`<br>
-* `python llava-1.6-7b-hf.py`<br>
-* `python phi-3.5-vision.py`<br>
-* `python llama-3.2-vision.py`<br>
+* [python llava-1.5-7b-hf.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/llava-1.5-7b-hf.py)
+* [python llava-1.6-7b-hf.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/llava-1.6-7b-hf.py)
+* [phi-3.5-vision.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/pixtral.py)
+* [pixtral.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/pixtral.py)
+* [llama-3.2-vision.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/llama-3.2-vision.py)
 
 ---
 ### VLM servers
