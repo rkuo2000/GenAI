@@ -173,13 +173,24 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ---
 ## 7. Audio-to-Text (ASR)
 
+### webkitSpeechRecognition
+**Blog:** [語音辨識API](https://programmermagazine.github.io/201310/htm/article2.html)<br>
+
+[asr.html](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/asr.html)<br>
+
+[Google Speech Demo](https://www.google.com/intl/en/chrome/demos/speech.html)<br>
+
+---
+### Whisper
 * whisper.py
 * whisper-large-v3.py
 * faster-whisper.py
 * canary-1b.py
+  
 * qwen_audio.py
 * gemini_audio.py
-  
+
+---
 ### local ASR+LLM Server (on your PC+GPU)
 1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
 2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
