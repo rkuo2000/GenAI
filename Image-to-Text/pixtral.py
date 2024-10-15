@@ -2,7 +2,7 @@ import os
 from mistralai import Mistral
 
 # Retrieve the API key from environment variables
-api_key = os.environ["MISTRAL_API_KEY"]
+api_key = os.environ["MISTRAL_API_KEY"]  # https://console.mistral.ai/api-keys
 
 # Specify model
 model = "pixtral-12b-2409"
