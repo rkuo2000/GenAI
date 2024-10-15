@@ -274,6 +274,7 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ### examples
 * `python llava-1.5-7b-hf.py`<br>
 * `python llava-1.6-7b-hf.py`<br>
+* `python phi-3.5-vision.py`<br>
 * `python llama-3.2-vision.py`<br>
 
 ---
