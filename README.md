@@ -33,14 +33,20 @@
 ---
 ### ComfyUI / WebUI
 
+#### [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+![](https://github.com/comfyanonymous/ComfyUI/raw/master/comfyui_screenshot.png)
+
+---
+#### [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+![](https://github.com/AUTOMATIC1111/stable-diffusion-webui/raw/master/screenshot.png)
+
+---
 #### [本地部署Flux.1 最強文生圖大模型！ Comfyui 一鍵安裝，簡單又方便](https://www.freedidi.com/13266.html)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/87TwZ05SSGc)](https://youtu.be/87TwZ05SSGc)
 
+---
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
 [![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI)](https://youtu.be/uTqLiNo2GzI)
-
-#### [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-![](https://github.com/AUTOMATIC1111/stable-diffusion-webui/raw/master/screenshot.png)
 
 ---
 ### Krita
