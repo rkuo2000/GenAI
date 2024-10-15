@@ -224,7 +224,9 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
 
 ---
-#### Ollama
+### [Ollama](https://ollama.com/)
+
+#### [ollama library](https://ollama.com/library)
 `ollama list`<br>
 `ollama run llama3.2`<br>
 
@@ -267,8 +269,6 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 * `python llava-1.5-7b-hf.py`<br>
 * `python llava-1.6-7b-hf.py`<br>
 * `python llama-3.2-vision.py`<br>
-* `python gemini_image.py`<br>
-* `python gemini_jpg2csv.py`<br>
 
 ---
 ### VLM servers
@@ -285,6 +285,11 @@ For running client, (post image & text to VLM server)<br>
 1. `python whisper_llava_server.py`
 2. `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
 3. `python post_imgau.py` (client)<br>
+
+---
+### [Gemini API](https://ai.google.dev/api/generate-content?hl=zh-tw)
+* `python gemini_image.py`<br>
+* `python gemini_jpg2csv.py`<br>
 
 ---
 ## 11. RAG 
