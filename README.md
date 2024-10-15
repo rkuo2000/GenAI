@@ -262,6 +262,15 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ---
 ## 10. Image-to-Text (VLM)
 
+---
+### examples
+* `python llava-1.5-7b-hf.py`<br>
+* `python llava-1.6-7b-hf.py`<br>
+* `python llama-3.2-vision.py`<br>
+* `python gemini_image.py`<br>
+* `python gemini_jpg2csv.py`<br>
+
+---
 ### VLM servers
 For running server, (use one of the following)<br>
 1. `python llava_server.py`
@@ -271,15 +280,11 @@ For running server, (use one of the following)<br>
 For running client, (post image & text to VLM server)<br>
 `python post_imgtxt.py images/barefeet1.jpg`<br>
 
+---
 ### ASR + VLM servers
 1. `python whisper_llava_server.py`
 2. `python ../gTTS.py "這是什麼有名的台南美食?" zh` (TTS)<br>
 3. `python post_imgau.py` (client)<br>
-![](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/images/Tainan_BeefSoup.jpg?raw=true)<br>
-![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_imgau.png?raw=true)
-
-* Whisper+LLaVA Server (ASR+VLM)<br>
-![](https://github.com/rkuo2000/GenAI/blob/main/assets/whisper_llava_server.png?raw=true)
 
 ---
 ## 11. RAG 
