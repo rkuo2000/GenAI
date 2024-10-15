@@ -202,8 +202,6 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 **[Large Language Models 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/LLM.html)** <br>
 **[Prompt Engineering 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)** <br>
 
-* `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
-
 `git clone https://github.com/rkuo2000/GenAI`<br>
 `cd GenAI/Text-to-Text`<br>
 
@@ -212,16 +210,23 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 * `python LLM_prompting.py`
 * [colab_LLM_prompting.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_LLM_prompting.ipynb) (on Colab T4) 
 
-#### LLM Server & Client
+#### local LLM Server & Client
 * `python llm_server.py` (on GPU)
 * `python post_text.py`  (on PC)
 
 ---
-### Colab's LLM Server & Client
+### Colab running LLM Server
 * [colab_pyNgrok_LLM_server](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/colab_pyNgrok_LLM_Server.ipynb) (on Colab T4)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_LLM_Server_fastapi.png?raw=true)
 * [post-text client](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/post_text.py) (on PC)<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/pyngrok_post_text.png?raw=true)
+
+---
+### Colab running ASR+LLM Server
+1. **Open [colab](https://colab.research.google.com) to run [pyngrok_Whisper_LLM_Server.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/pyngrok_Whisper_LLM_Server.ipynb)** on Colab T4
+2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
+3. **Post Audio to Server**: `python post_audio.py`<br>
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
 
 ---
 ### [Ollama](https://ollama.com/)
@@ -244,11 +249,11 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_Studio_0.3.3.png?raw=true)
 
 ---
-### Colab ASR+LLM Server (on Colab T4)
-1. **Open [colab](https://colab.research.google.com) to run [pyngrok_Whisper_LLM_Server.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/pyngrok_Whisper_LLM_Server.ipynb)** on Colab T4
-2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
-3. **Post Audio to Server**: `python post_audio.py`<br>
-![](https://github.com/rkuo2000/GenAI/blob/main/assets/post_audio.png?raw=true)
+### [Gemini API](https://ai.google.dev/api/generate-content?hl=zh-tw)
+
+* [gemini.html](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/gemini.html)
+  
+* `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
 
 ---
 ## 9. LLM Fine-Tuning
