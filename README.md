@@ -153,6 +153,14 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 * `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
 
 ---
+### SunoAI + RVC WebUI + ChatGPT
+[![](https://markdown-videos-api.jorgenkh.no/youtube/9nHbw0eUJeE)](https://youtu.be/9nHbw0eUJeE)
+
+#### [RVC-WebUI開源專案教學](https://gogoplus.net/%E7%BF%BB%E5%94%B1%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E9%96%8B%E6%BA%90%E7%A8%8B%E5%BC%8F-rvc-webui-%E5%85%8B%E9%9A%86%E4%BD%A0%E7%9A%84%E8%81%B2%E9%9F%B3/)
+
+**[RVC WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)** <br>
+
+---
 ## 6. Text-to-Speech
 
 * **Parler TTS**: `python parler.py`
