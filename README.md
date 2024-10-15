@@ -39,6 +39,9 @@
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
 [![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI)](https://youtu.be/uTqLiNo2GzI)
 
+#### [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+![](https://github.com/AUTOMATIC1111/stable-diffusion-webui/raw/master/screenshot.png)
+
 ---
 ### Krita
 
