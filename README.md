@@ -192,8 +192,8 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 * [gemini_audio.py](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/gemini_audio.py)
 
 ---
-### local ASR+LLM Server (on your PC+GPU)
-1. **run server on local PC (on your PC+GPU):** `python whisper_llm_server.py`<br>
+### local ASR+LLM Server running on GPU
+1. **run server on local PC (with GPU):** `python whisper_llm_server.py`<br>
 2. **Generate audio file**: `python ../gTTS.py "Hello, how are you?" en`<br>
 3. **Post Audio to Server**: `python post_audio.py`<br>
 
