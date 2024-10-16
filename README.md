@@ -28,6 +28,7 @@
 <p><img width="50%" height="50%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/SeaArt.ai_ShamppoMix_lingerie_girl.png"></p>
 
 #### [TensorArt](https://tensor.art/)
+<p><img width="50%" height="50%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/Tensor.Art_Flux_girl.png"</p>
 
 #### [OpenArt.ai](https://openart.ai/)
 
