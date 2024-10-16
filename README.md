@@ -70,16 +70,25 @@ python main.py
 
 3. edit text in `CLIP Text Encode (Positive Prompt)`<br>
 * [美圖產生提示詞](https://www.freedidi.com/13328.html)<br>
+
+4. click `Queue Prompt` to generate image<br>
+
+#### examples:
 ```
 pretty Asian woman was holding the flowers in her hands, Korean Model, real photo style, full body shot.
 ```
+![](https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_girl_holding_flower.png)
 
 * 建築設計提示詞<br>
 ```
 A modern office building design with 6 floors. The design language of the building is organic volume, curve design elements, natural leave or flower symbols.
 ```
-
-5. click `Queue Prompt` to generate image<br>
+<p>
+<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_01.png">
+<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_02.png">
+<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_03.png">
+<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_04.png">
+</p>
 
 ---
 ### WebUI
