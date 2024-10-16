@@ -83,7 +83,7 @@ pretty Asian woman was holding the flowers in her hands, Korean Model, real phot
 <p><img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_girl_holding_flower.png"></p>
 
 ```
-One girl, long hair, model, white background, white shirt, khaki Capri pants, khaki loafers, sitting on a stool, lazy pose, slightly tilting head, smiling, Asian beauty, loose-ting clothes, inting clothes , s ​​i早上slightly raised foot, half-body shot, Canon R5 camera style, blurred background, indoor, natural light, some sunlight shining on the face，9 : 16.
+One girl, long hair, model, white background, white shirt, khaki Capri pants, khaki loafers, sitting on a stool, lazy pose, slightly tilting head, smiling, Asian beauty, loose-ting clothes, inting clothes , slightly raised foot, half-body shot, Canon R5 camera style, blurred background, indoor, natural light, some sunlight shining on the face，9 : 16.
 ```
 <p><img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_longhair_girl_sitting.png"></p>
 
