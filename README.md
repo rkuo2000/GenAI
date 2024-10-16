@@ -50,12 +50,19 @@
 #### [本地部署Flux.1 最強文生圖大模型！ Comfyui 一鍵安裝，簡單又方便](https://www.freedidi.com/13266.html)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/87TwZ05SSGc)](https://youtu.be/87TwZ05SSGc)
 
+#### Flux1-dev-fp8 model files
+* download [flux1-dev-fp8.safetensors](https://huggingface.co/Kijai/flux-fp8/blob/main/flux1-dev-fp8.safetensors)<br>
+* download [t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/t5xxl_fp8_e4m3fn.safetensors)
+* download [clip_l.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/clip_l.safetensors)
+* download [ae.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors)
+  
 ```
 git clone https://github.com/comfyanonymous/ComfyUI
 cd ComfyUI
-mv ~/Downloads/
-mv ~/Downloads/
-mv ~/Downloads/
+mv ~/Downloads/flux1-dev-fp8.safetensors ~/ComfyUI/models/unet/
+mv ~/Downloads/t5xxl_fp8_e4m3fn.safetensors ~/ComfyUI/models/clip/
+mv ~/Downloads/clip_l.safetensors ~/ComfyUI/models/clip/
+mv ~/Downloads/ae.safetensors ~/ComfyUI/models/vae/
 python main.py
 ```
 
@@ -65,8 +72,12 @@ python main.py
 <p><img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/flux_dev_fp8_example.png"></p>
 
 3. edit text in `CLIP Text Encode (Positive Prompt)`<br>
-   
-4. click `Queue Prompt` to generate image<br>
+[美圖產生提示詞](https://www.freedidi.com/13328.html)<br>
+```
+pretty Asian woman was holding the flowers in her hands, Korean Model, real photo style, full body shot.
+```
+
+5. click `Queue Prompt` to generate image<br>
 
 ---
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
