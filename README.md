@@ -20,6 +20,7 @@
 #### [Midjourney](https://www.midjourney.com/home)
 
 #### [Leonardo.ai](https://app.leonardo.ai/)
+![](https://github.com/rkuo2000/GenAI/raw/main/assets/leonardo_abstract_painting_2dogs.png)
 
 #### [civitai](https://civitai.com/)
 
