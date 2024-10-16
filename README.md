@@ -98,7 +98,11 @@ pretty Asian woman was holding the flowers in her hands, Korean Model, real phot
 2. Download [krita_ai_diffusion-1.25.0.zip](https://github.com/Acly/krita-ai-diffusion/releases/download/v1.25.0/krita_ai_diffusion-1.25.0.zip)
 3. Go to Tools ‣ Scripts ‣ Import Python Plugin…, find the *.zip file and press OK. Restart Krita.
 4. Go to Settings ‣ Configure Krita ‣ Python Plugins Manager, find the plugin and enable it. Restart Krita.
-   
+
+---
+### Flux1. ComfyUI 建築設計
+[![](https://markdown-videos-api.jorgenkh.no/youtube/ml2HEg1xEcU)](https://youtu.be/ml2HEg1xEcU)
+
 ---
 ## 2. Text-to-3D
 **gTranslate + SDXL-Lightning + TripoSR + Blender**<br>
