@@ -37,14 +37,10 @@
 
 
 ---
-### ComfyUI / WebUI
+### ComfyUI
 
 #### [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 ![](https://github.com/comfyanonymous/ComfyUI/raw/master/comfyui_screenshot.png)
-
----
-#### [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-![](https://github.com/AUTOMATIC1111/stable-diffusion-webui/raw/master/screenshot.png)
 
 ---
 #### [本地部署Flux.1 最強文生圖大模型！ Comfyui 一鍵安裝，簡單又方便](https://www.freedidi.com/13266.html)
@@ -80,6 +76,12 @@ pretty Asian woman was holding the flowers in her hands, Korean Model, real phot
 5. click `Queue Prompt` to generate image<br>
 
 ---
+### WebUI
+
+#### [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+![](https://github.com/AUTOMATIC1111/stable-diffusion-webui/raw/master/screenshot.png)
+
+---
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
 [![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI)](https://youtu.be/uTqLiNo2GzI)
 1. Download [WebUI-Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge/releases/tag/latest)<br>
@@ -92,7 +94,11 @@ pretty Asian woman was holding the flowers in her hands, Korean Model, real phot
 
 #### FLUX.1[dev]模型在Krita完美整合
 [![](https://markdown-videos-api.jorgenkh.no/youtube/Y99_C0C28UE)](https://youtu.be/Y99_C0C28UE)
-
+1. Download [krita](https://krita.org/zh-tw/download/)
+2. Download [krita_ai_diffusion-1.25.0.zip](https://github.com/Acly/krita-ai-diffusion/releases/download/v1.25.0/krita_ai_diffusion-1.25.0.zip)
+3. Go to Tools ‣ Scripts ‣ Import Python Plugin…, find the *.zip file and press OK. Restart Krita.
+4. Go to Settings ‣ Configure Krita ‣ Python Plugins Manager, find the plugin and enable it. Restart Krita.
+   
 ---
 ## 2. Text-to-3D
 **gTranslate + SDXL-Lightning + TripoSR + Blender**<br>
