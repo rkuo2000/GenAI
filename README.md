@@ -26,6 +26,7 @@
 
 #### [SeaArt.ai](https://www.seaart.ai/)
 <p><img width="50%" height="50%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/SeaArt.ai_ShamppoMix_lingerie_girl.png"></p>
+
 #### [TensorArt](https://tensor.art/)
 
 #### [OpenArt.ai](https://openart.ai/)
