@@ -82,6 +82,10 @@ pretty Asian woman was holding the flowers in her hands, Korean Model, real phot
 ---
 #### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
 [![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI)](https://youtu.be/uTqLiNo2GzI)
+1. Download [WebUI-Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge/releases/tag/latest)<br>
+2. Decompress `7z x webui_forge_cu124_torch24.7z`<br>
+3. Rename `mv webui_forge_cu124_torch24 WebUI-Forge`<br>
+4. Run `./webui.sh`
 
 ---
 ### Krita
