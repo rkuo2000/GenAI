@@ -102,6 +102,7 @@ pretty Asian woman was holding the flowers in her hands, Korean Model, real phot
 ---
 ### Flux1. ComfyUI 建築設計
 [![](https://markdown-videos-api.jorgenkh.no/youtube/ml2HEg1xEcU)](https://youtu.be/ml2HEg1xEcU)
+**[cephalon.cloud](https://cephalon.cloud/#/aigc)** <br>
 
 ---
 ## 2. Text-to-3D
