@@ -32,6 +32,7 @@
 
 #### [goenhance.ai](https://www.goenhance.ai/tutorials)
 ![](https://github.com/rkuo2000/GenAI/raw/main/assets/GoEnhance.ai.png)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/xgU0Xe8HxSE)](https://youtu.be/xgU0Xe8HxSE)
 
 #### [fluxpro.ai](https://www.fluxpro.ai/)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/gZTQiyQCgUw)](https://youtu.be/gZTQiyQCgUw)
