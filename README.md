@@ -183,9 +183,6 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ---
 ### [Imagine.Art](https://www.imagine.art/dashboard)<br>
 <p><img width="50%" height="50%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ImagineArt_flying_cat_wearing_superman_suit.png"</p>
-<video width="320" height="240" controls>
-  <source src="https://github.com/rkuo2000/GenAI/raw/main/assets/ImagineArt_flying_cat_wearing_superman_suit.mp4" type="video/mp4">
-</video>
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/ISufT7gYL1o)](https://youtu.be/ISufT7gYL1o)
 
