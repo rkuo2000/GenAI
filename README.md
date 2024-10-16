@@ -207,8 +207,10 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 ### [LivePortrait](https://github.com/KwaiVGI/LivePortrait)
 **[Tutorial](https://rkuo2000.github.io/GenAI-projects/LivePortrait/)** <br>
 ![](https://github.com/KwaiVGI/LivePortrait/raw/main/assets/docs/showcase2.gif)
+
 **[Demo](https://huggingface.co/spaces/KwaiVGI/LivePortrait)** <br>
 
+---
 ### [MuskTalk](https://github.com/TMElyralab/MuseTalk)
 **[ComfyUI-MuseTalk](https://github.com/chaojie/ComfyUI-MuseTalk)** <br>
 <video src=https://github.com/TMElyralab/MuseTalk/assets/163980830/b2a879c2-e23a-4d39-911d-51f0343218e4 controls preload></video>
