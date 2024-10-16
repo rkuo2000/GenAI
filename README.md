@@ -68,9 +68,14 @@ python main.py
 <p><img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/flux_dev_fp8_example.png"></p>
 
 3. edit text in `CLIP Text Encode (Positive Prompt)`<br>
-[美圖產生提示詞](https://www.freedidi.com/13328.html)<br>
+* [美圖產生提示詞](https://www.freedidi.com/13328.html)<br>
 ```
 pretty Asian woman was holding the flowers in her hands, Korean Model, real photo style, full body shot.
+```
+
+* 建築設計提示詞<br>
+```
+A modern office building design with 6 floors. The design language of the building is organic volume, curve design elements, natural leave or flower symbols.
 ```
 
 5. click `Queue Prompt` to generate image<br>
@@ -98,11 +103,6 @@ pretty Asian woman was holding the flowers in her hands, Korean Model, real phot
 2. Download [krita_ai_diffusion-1.25.0.zip](https://github.com/Acly/krita-ai-diffusion/releases/download/v1.25.0/krita_ai_diffusion-1.25.0.zip)
 3. Go to Tools ‣ Scripts ‣ Import Python Plugin…, find the *.zip file and press OK. Restart Krita.
 4. Go to Settings ‣ Configure Krita ‣ Python Plugins Manager, find the plugin and enable it. Restart Krita.
-
----
-### Flux1. ComfyUI 建築設計
-[![](https://markdown-videos-api.jorgenkh.no/youtube/ml2HEg1xEcU)](https://youtu.be/ml2HEg1xEcU)
-**[cephalon.cloud](https://cephalon.cloud/#/aigc)** <br>
 
 ---
 ## 2. Text-to-3D
