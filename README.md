@@ -86,6 +86,8 @@ A modern office building design with 6 floors. The design language of the buildi
 <p>
 <img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_01.png">
 <img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_02.png">
+</p>
+<p>
 <img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_03.png">
 <img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_04.png">
 </p>
