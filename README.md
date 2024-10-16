@@ -77,17 +77,17 @@ python main.py
 ```
 pretty Asian woman was holding the flowers in her hands, Korean Model, real photo style, full body shot.
 ```
-![](https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_girl_holding_flower.png)
+<p><img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_girl_holding_flower.png"></p>
 
 * 建築設計提示詞<br>
 ```
 A modern office building design with 6 floors. The design language of the building is organic volume, curve design elements, natural leave or flower symbols.
 ```
 <p>
-<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_01.png">
-<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_02.png">
-<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_03.png">
-<img src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_04.png">
+<img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_01.png">
+<img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_02.png">
+<img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_03.png">
+<img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/raw/main/assets/ComfyUI_Flux1_building_04.png">
 </p>
 
 ---
