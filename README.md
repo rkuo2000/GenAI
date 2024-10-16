@@ -411,11 +411,10 @@ For running client, (post image & text to VLM server)<br>
 
 ---
 ## 12. Agent
-**[Agent 教材](https://rkuo2000.github.io/AI-course/lecture/2024/09/28/AI-Agents.html)** <br>
+**[Agent 教材](https://rkuo2000.github.io/AI-course/lecture/2024/10/16/Agents.html)** <br>
 
 ### [openai/swarm](https://github.com/openai/swarm)
-`cd ~/GenAI`<br>
-`git clone https://github.com/openai/swarm`<br>
-`pip install git+https://github.com/openai/swarm.git`<br>
-
 ![](https://github.com/openai/swarm/raw/main/assets/swarm_diagram.png)
+
+**Kaggle:** [rkuo2000/swarm-llama3-groq](https://www.kaggle.com/code/rkuo2000/swarm-llama3-groq)<br>
+**Colab:** [colab_Swarm_Llama3_Groq.ipynb](https://github.com/rkuo2000/GenAI/blob/main/Agent/colab_Swarm_Llama3_Groq.ipynb)<br>
