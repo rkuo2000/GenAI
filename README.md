@@ -195,7 +195,7 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 
 ---
 ## 4. Text-to-Avatar
-**[GAN 教材](https://github.com/rkuo2000/AI-course/blob/main/_posts/2024-08-09-GAN.md)** <br>
+**[GAN 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/GAN.html)** <br>
 
 ### [HeyGen](https://www.heygen.com/)
 [sample](https://app.heygen.com/share/576aab0e56ee484c91f7eb75ac2338be)<br>
