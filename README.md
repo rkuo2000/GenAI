@@ -367,6 +367,7 @@ Charactor Builder<br>
 ### examples
 * [python llava-1.5-7b-hf.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/llava-1.5-7b-hf.py)
 * [python llava-1.6-7b-hf.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/llava-1.6-7b-hf.py)
+* [forence-2.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/florence-2.py)
 * [phi-3.5-vision.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/pixtral.py)
 * [pixtral.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/pixtral.py)
 * [llama-3.2-vision.py](https://github.com/rkuo2000/GenAI/blob/main/Image-to-Text/llama-3.2-vision.py)
