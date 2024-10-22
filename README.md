@@ -360,7 +360,10 @@ Charactor Builder<br>
 ### LoRA
 [fine-tune-gemma-models-in-keras-using-lora](https://www.kaggle.com/code/rkuo2000/fine-tune-gemma-models-in-keras-using-lora)<br>
 
-**Kaggle:** [https://www.kaggle.com/code/rkuo2000/fine-tuning-tinyllama](https://www.kaggle.com/code/rkuo2000/fine-tuning-tinyllama)<br>
+### exmaples
+* [https://www.kaggle.com/code/tommyadams/fine-tuning-tinyllama](https://www.kaggle.com/code/tommyadams/fine-tuning-tinyllama)<br>
+* [https://www.kaggle.com/code/ejaz22/finetune-tinyllama-addr-extraction](https://www.kaggle.com/code/ejaz22/finetune-tinyllama-addr-extraction)<br>
+* [https://www.kaggle.com/code/schock/training-tinyllama-for-tool-calling](https://www.kaggle.com/code/schock/training-tinyllama-for-tool-calling)<br>
 
 ---
 ## 10. Image-to-Text (VLM)
