@@ -422,10 +422,11 @@ For running client, (post image & text to VLM server)<br>
 
 ---
 ## 參考書籍
-**[LLM 大型語言模型的絕世祕笈](https://www.tenlong.com.tw/products/9786263339293)**<br>
+
+### [LLM 大型語言模型的絕世祕笈](https://www.tenlong.com.tw/products/9786263339293)
 ![](https://cf-assets2.tenlong.com.tw/products/images/000/213/023/webp/9786263339293.webp?1721374719)
 
-### [中二技能翻譯](https://github.com/penut85420/SpellTrans) 
+* [中二技能翻譯](https://github.com/penut85420/SpellTrans) 
 這是一個 LangChain 練習專案，透過 LLM 結合 Riot API 取得的英雄技能翻譯，以 Few-Shot Prompt 的方式獲得中二的技能翻譯。
 ![](https://camo.githubusercontent.com/b21a9836a321a5830eccebe49abd558441d895b6f39fa6dce2f725fd0049e908/68747470733a2f2f692e696d6775722e636f6d2f386b61476e50712e706e67)
 
