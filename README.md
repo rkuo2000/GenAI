@@ -1,11 +1,11 @@
 # Generative AI
+**[生成式人工智慧職缺](https://www.cake.me/campaigns/artificial-intelligence/jobs)** <br>
+
 **[AI 教材](https://rkuo2000.github.io/AI-course/)**<br>
 **[AIGC 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/12/AIGC.html)** <br>
 **[GenAI-projects 教材](https://rkuo2000.github.io/GenAI-projects/)** <br>
 
 **範例程式：** `git clone https://github.com/rkuo2000/GenAI`<br>
-
-**[生成式人工智慧職缺](https://www.cake.me/campaigns/artificial-intelligence/jobs)** <br>
 
 ---
 ## 1. Text-to-Image 
