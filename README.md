@@ -41,6 +41,9 @@
 #### [fluxpro.ai](https://www.fluxpro.ai/)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/gZTQiyQCgUw)](https://youtu.be/gZTQiyQCgUw)
 
+#### SD 3.5
+[ComfyUI Now Supports Stable Diffusion 3.5!](https://blog.comfy.org/sd3-5-comfyui/)<br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/R6dPhx96GNQ)](https://youtu.be/R6dPhx96GNQ)
 
 ---
 ### ComfyUI
