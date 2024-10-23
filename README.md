@@ -353,7 +353,7 @@ Charactor Builder<br>
 
 ---
 #### [gemini.html](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/gemini.html)
-![](https://github.com/rkuo2000/GenAI/blob/main/assets/Gemini_html.png?raw=true)  
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/Gemini_html.jpg?raw=true)  
 
 ---
 #### [Gemini_Talk App 教學](https://rkuo2000.github.io/GenAI-projects/AI2_Gemini_Talk_app/)
