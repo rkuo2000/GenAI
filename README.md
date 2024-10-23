@@ -351,10 +351,16 @@ Charactor Builder<br>
 ### [Gemini API](https://ai.google.dev/api/generate-content?hl=zh-tw)
 **[get Gemini API Key](https://aistudio.google.com/app/apikey)** <br>
 
-* [gemini.html](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/gemini.html)
+#### [gemini.html](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/gemini.html)
   
-* `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
+#### [Gemini App](https://rkuo2000.github.io/GenAI-projects/AI2_Gemini_Talk_app/)
+MIT App Inventor 2 example for using Google Gemini<br>  
+* Download [Gemini_Talk.aia ](https://github.com/rkuo2000/GenAI/blob/main/Gemini_Talk.aia), import to [[ai2.mit](https://ai2.appinventor.mit.edu/)](https://ai2.appinventor.mit.edu/)
+  
+* [Get API Key](https://aistudio.google.com/app/apikey) and put into the `blank`<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/Gemini_Talk_edit_API_key.png?raw=true)
+
+* Build apk, download & install to run on smartphone<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/Gemini_Talk.jpg?raw=true)
 
 ---
