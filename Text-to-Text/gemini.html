@@ -84,7 +84,7 @@
                     .then(data => {
                         const msg = data.candidates[0].content.parts[0].text;
                         document.getElementById("chatHistory").innerHTML +=
-                            "<div><div class='author'>Bot:</div>" +
+                            "<div><div class='author'>LLM:</div>" +
                             converter.makeHtml(msg) +
                             "</div>";
                         thread.push({
