@@ -5,6 +5,8 @@
 
 **範例程式：** `git clone https://github.com/rkuo2000/GenAI`<br>
 
+**[生成式人工智慧職缺](https://www.cake.me/campaigns/artificial-intelligence/jobs)** <br>
+
 ---
 ## 1. Text-to-Image 
 * [LCM-LoRA.py](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Image/lcm-lora.py)
