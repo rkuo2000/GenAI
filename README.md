@@ -354,6 +354,8 @@ Charactor Builder<br>
 * [gemini.html](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/gemini.html)
   
 * `Gemini_Talk.aia` : MIT App Inventor 2 example for using Google Gemini
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/Gemini_Talk_edit_API_key.png?raw=true)
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/Gemini_Talk.jpg?raw=true)
 
 ---
 ## 9. LLM Fine-Tuning
