@@ -1,5 +1,5 @@
 # Generative AI
-
+**[AI 教材](https://rkuo2000.github.io/AI-course/)**<br>
 **[AIGC 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/12/AIGC.html)** <br>
 **[GenAI-projects 教材](https://rkuo2000.github.io/GenAI-projects/)** <br>
 
