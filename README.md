@@ -435,3 +435,7 @@ For running client, (post image & text to VLM server)<br>
 這是一個 LangChain 練習專案，透過 LLM 結合 Riot API 取得的英雄技能翻譯，以 Few-Shot Prompt 的方式獲得中二的技能翻譯。<br>
 ![](https://camo.githubusercontent.com/b21a9836a321a5830eccebe49abd558441d895b6f39fa6dce2f725fd0049e908/68747470733a2f2f692e696d6775722e636f6d2f386b61476e50712e706e67)
 
+---
+### [最強 AI 投資分析：打造自己的股市顧問機器人，股票趨勢分析×年報解讀×選股推薦×風險管理](https://www.tenlong.com.tw/products/9789863127727)
+![](https://cf-assets2.tenlong.com.tw/products/images/000/195/999/webp/9789863127727_%E5%A4%A9%E7%93%8F.webp?1699843474)
+
