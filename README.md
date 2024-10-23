@@ -344,6 +344,7 @@ Charactor Builder<br>
 
 ---
 ### [Gemini API](https://ai.google.dev/api/generate-content?hl=zh-tw)
+**[get Gemini API Key](https://aistudio.google.com/app/apikey)** <br>
 
 * [gemini.html](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Text/gemini.html)
   
