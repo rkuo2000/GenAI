@@ -365,6 +365,7 @@ MIT App Inventor 2 example for using Google Gemini<br>
 
 * Build apk, download & install to run on smartphone<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/Gemini_Talk.jpg?raw=true)
+
 (三星手機使用三星文字轉語音引擎應用程式, 語言設繁體中文講不出話, 需改成簡體中文, 或使用英文）
 
 ---
