@@ -121,13 +121,11 @@ A modern office building design with 6 floors. The design language of the buildi
 
 ---
 ### Krita
+#### 安裝與 ComfyUI 工作流匯入（建築景觀與室內設計應用)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/Y99_C0C28UE)](https://youtu.be/k8qoo1hFPic)
 
 #### FLUX.1[dev]模型在Krita完美整合
 [![](https://markdown-videos-api.jorgenkh.no/youtube/Y99_C0C28UE)](https://youtu.be/Y99_C0C28UE)
-1. Download [krita](https://krita.org/zh-tw/download/)
-2. Download [krita_ai_diffusion-1.25.0.zip](https://github.com/Acly/krita-ai-diffusion/releases/download/v1.25.0/krita_ai_diffusion-1.25.0.zip)
-3. Go to Tools ‣ Scripts ‣ Import Python Plugin…, find the *.zip file and press OK. Restart Krita.
-4. Go to Settings ‣ Configure Krita ‣ Python Plugins Manager, find the plugin and enable it. Restart Krita.
 
 ---
 ## 2. Text-to-3D
