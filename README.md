@@ -112,14 +112,6 @@ A modern office building design with 6 floors. The design language of the buildi
 ![](https://github.com/AUTOMATIC1111/stable-diffusion-webui/raw/master/screenshot.png)
 
 ---
-#### AI繪畫(Stable Diffusion),在WebUI Forge和ComfyUI使用
-[![](https://markdown-videos-api.jorgenkh.no/youtube/uTqLiNo2GzI)](https://youtu.be/uTqLiNo2GzI)
-1. Download [WebUI-Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge/releases/tag/latest)<br>
-2. Decompress `7z x webui_forge_cu124_torch24.7z`<br>
-3. Rename `mv webui_forge_cu124_torch24 WebUI-Forge`<br>
-4. Run `./webui.sh`
-
----
 ### Krita
 #### 安裝與 ComfyUI 工作流匯入（建築景觀與室內設計應用)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/Y99_C0C28UE)](https://youtu.be/k8qoo1hFPic)
@@ -195,7 +187,7 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 
 ---
 ### SORA
-[![](https://markdown-videos-api.jorgenkh.no/youtube/IBVAf7XJCFg)](https://youtu.be/IBVAf7XJCFg)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/iVtqtu6HceI)](https://youtu.be/iVtqtu6HceI)
 
 ---
 ### [Meta MovieGen](https://ai.meta.com/research/movie-gen/)
@@ -210,13 +202,14 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 
 ### [Hedra](https://www.hedra.com/)
 **[Tutorial](https://rkuo2000.github.io/GenAI-projects/Hedra/)** <br>
-[![](https://markdown-videos-api.jorgenkh.no/youtube/wBO0VsiWC2s)](https://youtu.be/wBO0VsiWC2s)
 
 ### [LivePortrait](https://github.com/KwaiVGI/LivePortrait)
 **[Tutorial](https://rkuo2000.github.io/GenAI-projects/LivePortrait/)** <br>
 ![](https://github.com/KwaiVGI/LivePortrait/raw/main/assets/docs/showcase2.gif)
 
 **[Demo](https://huggingface.co/spaces/KwaiVGI/LivePortrait)** <br>
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/wBO0VsiWC2s)](https://youtu.be/wBO0VsiWC2s)
 
 ---
 ### [MuskTalk](https://github.com/TMElyralab/MuseTalk)
