@@ -197,8 +197,8 @@ SV4D was trained to generate 40 frames (5 video frames x 8 camera views) at 576x
 [![](https://markdown-videos-api.jorgenkh.no/youtube/-1qcpu_VuVU)](https://youtu.be/-1qcpu_VuVU)
 
 ---
-### SORA
-[![](https://markdown-videos-api.jorgenkh.no/youtube/iVtqtu6HceI)](https://youtu.be/iVtqtu6HceI)
+### [SORA](https://openai.com/sora/)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/360ZqfabuPQ)](https://youtu.be/360ZqfabuPQ)
 
 ---
 ### [Meta MovieGen](https://ai.meta.com/research/movie-gen/)
