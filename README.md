@@ -46,6 +46,15 @@
 [![](https://markdown-videos-api.jorgenkh.no/youtube/R6dPhx96GNQ)](https://youtu.be/R6dPhx96GNQ)
 
 ---
+### SwapFace online tools
+1. [https://www.ismartta.com/](https://www.ismartta.com/) 
+2. [https://www.vidwud.com/free-face-swap.html](https://www.vidwud.com/free-face-swap.html)
+3. [https://aifaceswap.io/#face-swap-playground](https://aifaceswap.io/#face-swap-playground)
+4. [https://remaker.ai/face-swap-free/](https://remaker.ai/face-swap-free/)
+5. [https://www.swapface.org/](https://www.swapface.org/)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/qwHck8LqZUI)](https://youtu.be/qwHck8LqZUI)
+
+---
 ### ComfyUI
 
 #### [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
