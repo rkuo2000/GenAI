@@ -5,6 +5,7 @@
 **[AIGC 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/12/AIGC.html)** <br>
 **[GenAI-projects 教材](https://rkuo2000.github.io/GenAI-projects/)** <br>
 
+**[PC軟體安裝](https://rkuo2000.github.io/AI-course/lecture/2024/08/01/PC-Softwares.html)**
 **範例程式：** `git clone https://github.com/rkuo2000/GenAI`<br>
 
 ---
