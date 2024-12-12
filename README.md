@@ -294,8 +294,6 @@ Charactor Builder<br>
 * [whisper-large-v3.py](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/whisper-large-v3.py)
 * [faster-whisper.py](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/faster-whisper.py)
 * [canary-1b.py](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/canary-1b.py)
-
-* [qwen_audio.py](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/qwen_audio.py)
 * [gemini_audio.py](https://github.com/rkuo2000/GenAI/blob/main/Audio-to-Text/gemini_audio.py)
 
 ---
