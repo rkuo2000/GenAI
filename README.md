@@ -340,6 +340,7 @@ Charactor Builder<br>
 #### [ollama library](https://ollama.com/library)
 `ollama list`<br>
 `ollama run llama3.2`<br>
+`ollama run tinyllama`<br>
 
 #### ollama chat/generate
 * `python ollama_chat.py`
