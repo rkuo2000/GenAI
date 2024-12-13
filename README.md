@@ -394,6 +394,7 @@ MIT App Inventor 2 example for using Google Gemini<br>
 
 ---
 ## 10. Image-to-Text (VLM)
+**[VLM 教材](https://rkuo2000.github.io/AI-course/lecture/2024/08/16/VLM.html)** <br>
 
 ---
 ### examples
