@@ -430,13 +430,7 @@ For running client, (post image & text to VLM server)<br>
 ![](https://blogs.mathworks.com/deep-learning/files/2024/01/rag.png)
 
 ### Sampe Codes
-* [https://www.kaggle.com/code/rkuo2000/langchain-rag-chromadb](https://www.kaggle.com/code/rkuo2000/langchain-rag-chromadb)
-* [https://www.kaggle.com/code/rkuo2000/llm-llamaindex](https://www.kaggle.com/code/rkuo2000/llm-llamaindex) = LlamaIndex-RAG-pdf
-* Langchain-RAG-text.ipynb
-* Langchain-ReAct.ipynb
-* LlamaIndex-RAG-pdf.ipynb
-* LlamaIndex-RAG-pdf-community.ipynb
-* LlamaIndex-RAG-pdf-community.py
+* [https://www.kaggle.com/code/rkuo2000/langchain-rag](https://www.kaggle.com/code/rkuo2000/langchain-rag)
 
 ---
 ### [RAG Builder](https://github.com/KruxAI/ragbuilder)
