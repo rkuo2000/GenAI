@@ -251,9 +251,29 @@ Charactor Builder<br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/BvsP4ivkVyM)](https://youtu.be/BvsP4ivkVyM)
 
 ---
-### ChatGPT(作詞) + SunoAI(作曲) + RVC WebUI (轉換人聲)
+### Demucs
+**Paper:** [Music Source Separation in the Waveform Domain](https://arxiv.org/abs/1911.13254)<br>
+**Code:** [facebookresearch/demucs](https://github.com/facebookresearch/demucs)<br>
+**Kaggle:** [https://www.kaggle.com/code/rkuo2000/demucs](https://www.kaggle.com/code/rkuo2000/demucs)<br>
 
-#### [RVC-WebUI開源專案教學](https://gogoplus.net/%E7%BF%BB%E5%94%B1%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E9%96%8B%E6%BA%90%E7%A8%8B%E5%BC%8F-rvc-webui-%E5%85%8B%E9%9A%86%E4%BD%A0%E7%9A%84%E8%81%B2%E9%9F%B3/)
+---
+### RVC vs SoftVC
+"Retrieval-based Voice Conversion" 和 "SoftVC VITS Singing Voice Conversion" 是兩種聲音轉換技術的不同變種。以下是它們之間的一些區別：<br>
+
+1.方法原理：<br>
+Retrieval-based Voice Conversion：這種方法通常涉及使用大規模的語音資料庫或語音庫，從中檢索與輸入語音相似的聲音樣本，並將輸入語音轉換成與檢索到的聲音樣本相似的聲音。它使用檢索到的聲音作為目標來進行聲音轉換。<br>
+SoftVC VITS Singing Voice Conversion：這是一種基於神經網路的聲音轉換方法，通常使用變分自動編碼器（Variational Autoencoder，VAE）或其他神經網路架構。專注於歌聲轉換，它的目標是將輸入歌聲樣本轉換成具有不同特徵的歌聲，例如性別、音調等。<br>
+
+2.應用領域：<br>
+Retrieval-based Voice Conversion 通常用於語音轉換任務，例如將一個人的語音轉換成另一個人的語音。它也可以用於歌聲轉換，但在歌聲轉換方面通常不如專門設計的方法表現出色。<br>
+SoftVC VITS Singing Voice Conversion 主要用於歌聲轉換任務，特別是針對歌手之間的音樂聲音特徵轉換，例如將男性歌手的聲音轉換成女性歌手的聲音，或者改變歌曲的音調和音樂特徵。<br>
+
+3.技術複雜性：<br>
+Retrieval-based Voice Conversion 的實現通常較為簡單，因為它主要依賴於聲音樣本的檢索和聲音特徵的映射。<br>
+SoftVC VITS Singing Voice Conversion 更複雜，因為它需要訓練深度神經網路模型，可能需要大量的數據和計算資源。<br>
+
+---
+### [RVC-WebUI開源專案教學](https://gogoplus.net/%E7%BF%BB%E5%94%B1%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E9%96%8B%E6%BA%90%E7%A8%8B%E5%BC%8F-rvc-webui-%E5%85%8B%E9%9A%86%E4%BD%A0%E7%9A%84%E8%81%B2%E9%9F%B3/)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/9nHbw0eUJeE)](https://youtu.be/9nHbw0eUJeE)
 
 **[RVC WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)** <br>
@@ -261,6 +281,12 @@ Charactor Builder<br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/ocXOeMZc1XI)](https://youtu.be/ocXOeMZc1XI)
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/g__-dgRWd4s)](https://youtu.be/g__-dgRWd4s)
+
+---
+### GPT-SoVITS
+**Blog:** [GPT-SoVITS 用 AI 快速複製你的聲音，搭配 Colab 免費入門](https://medium.com/dean-lin/gpt-sovits-%E7%94%A8-ai-%E5%BF%AB%E9%80%9F%E8%A4%87%E8%A3%BD%E4%BD%A0%E7%9A%84%E8%81%B2%E9%9F%B3-%E6%90%AD%E9%85%8D-colab-%E5%85%8D%E8%B2%BB%E5%85%A5%E9%96%80-f6a620cf7fc6)<br>
+**Code:** [https://github.com/RVC-Boss/GPT-SoVITS/](https://github.com/RVC-Boss/GPT-SoVITS/)<br>
+**Kaggle:** [https://www.kaggle.com/code/rkuo2000/so-vits-svc-5-0](https://www.kaggle.com/code/rkuo2000/so-vits-svc-5-0)<br>
 
 ---
 ## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
