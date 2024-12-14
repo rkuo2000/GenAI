@@ -289,13 +289,15 @@ SoftVC VITS Singing Voice Conversion 更複雜，因為它需要訓練深度神�
 **Kaggle:** [https://www.kaggle.com/code/rkuo2000/so-vits-svc-5-0](https://www.kaggle.com/code/rkuo2000/so-vits-svc-5-0)<br>
 
 ---
-## [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
-* `python gTTS.py "How are you" en` : generate gTTS.mp3
-* `python gT2T.py "How are you" fr` : deep-translator 
-* `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
+
   
 ---
 ## 6. Text-to-Speech
+
+### [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2024/08/09/Generative-Speech.html)
+* `python gTTS.py "How are you" en` : generate gTTS.mp3
+* `python gT2T.py "How are you" fr` : deep-translator 
+* `python gSpeak.py "How are you" fr` : deep-translator, gTTS & Mpg123
 
 * **Parler TTS**: `python parler.py`
 * **Bark TTA**: `python bark_en.py`, `python bark_cn.py`
@@ -303,7 +305,7 @@ SoftVC VITS Singing Voice Conversion 更複雜，因為它需要訓練深度神�
 * **text-to-speech**: `python text_to_speech.py`
 * **gTTS**: `python gTTS.py "你好?" zh`
 * **gTranslate**: `python gTranslate.py`
-  
+
 ---
 ## 7. Audio-to-Text (ASR)
 
