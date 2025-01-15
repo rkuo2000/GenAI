@@ -5,7 +5,7 @@ import PIL.Image
 import os
 
 GOOGLE_API_KEY="get_it_from" ## https://aistudio.google.com/app/apikey
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key=GOOGLE_API_KEY, transport='rest')
 
 img = PIL.Image.open("images/test.jpg")
 #prompt = "Can you tell me about this photo?"
