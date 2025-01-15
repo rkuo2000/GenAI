@@ -11,7 +11,7 @@ img = PIL.Image.open("images/test.jpg")
 #prompt = "Can you tell me about this photo?"
 prompt = "你在這張照片看到了什麼?"
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash-exp")
 
 result = model.generate_content( [prompt , img] )
 print(result.text)
