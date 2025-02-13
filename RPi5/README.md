@@ -42,4 +42,29 @@
 ![](https://raw.githubusercontent.com/ultralytics/assets/refs/heads/main/yolo/performance-comparison.png)
 ![](https://github.com/rkuo2000/AI-course/blob/main/images/YOLOv11_Ultralytics_features.png?raw=true)
 
+---
+### YOLOv11 Architecture
+![](https://miro.medium.com/v2/resize:fit:1200/1*L8rMuwurmyBH1ixIqcrMSQ.png)
 
+---
+### [Kaggle YOLOv11 example](https://www.kaggle.com/code/rkuo2000/yolov11/)
+
+`!pip install ultralytics`<br>
+
+```
+from ultralytics import YOLO
+
+# Load a model
+model = YOLO("yolo11n.pt")
+
+# Train the model
+train_results = model.train(
+    data="coco8.yaml",  # path to dataset YAML
+    epochs=100,  # number of training epochs
+    imgsz=640,  # training image size
+    device="cpu",  # device to run on, i.e. device=0 or device=0,1,2,3 or device=cpu
+)
+# Perform object detection on an image
+results = model("input/image.jpg")
+results[0].show()
+```
