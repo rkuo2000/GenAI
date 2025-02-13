@@ -15,7 +15,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 sl = "zh-TW"
 prompt = "Can you tell me about the scene? simple description in traditional chinese."
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # define Button pins
 Button1 =  5
