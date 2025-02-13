@@ -5,14 +5,14 @@ SSID: TCFSTWIFI.ALL
 Pass: 035623116
 ```
 
-## AI 介紹
+## 1. AI 介紹
 
 ### [AI 簡介](https://rkuo2000.github.io/AI-course/lecture/2024/08/01/AI-Brief.html)
 
 ### [AI 硬體介紹](https://rkuo2000.github.io/AI-course/lecture/2024/08/01/AI-Hardwares.html)
 
 ---
-## RPi5 安裝介紹
+## 2. EdgeAI on RPi5
 
 ### RPi5 套件
 
@@ -42,7 +42,7 @@ sudo sudo apt install rpi-connect
 ![](https://www.raspberrypi.com/documentation/services/images/screen-sharing-in-progress.png?hash=5b58232d27f2c31b4b324f1187d80057)
 
 ---
-## Python & OpenCV
+## 3. OpenCV in Python
 
 ### [Python Programming](https://www.programiz.com/python-programming)
 ### [Python Tutorial](https://www.w3schools.com/python/python_intro.asp)
@@ -50,7 +50,7 @@ sudo sudo apt install rpi-connect
 ### [OpenCV for Python](https://rkuo2000.github.io/AI-course/lecture/2024/08/02/OpenCV-Python.html)
 
 ---
-## YOLOv11
+## 4. YOLOv11
 **[A Comprehensive Guide to YOLOv11 Object Detection](https://www.analyticsvidhya.com/blog/2024/10/yolov11-object-detection/)** <br>
 
 ### YOLO演化時間軸
@@ -127,7 +127,7 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 ```
 
 ---
-## ollama
+## 5. ollama
 
 ### [ollama download](https://ollama.com/download)
 `curl -fsSL https://ollama.com/install.sh | sh`<br>
@@ -145,7 +145,7 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 ![](https://github.com/rkuo2000/AI-course/blob/main/images/chatgpt_cheat_sheet_v2.jpg?raw=true)
 
 ---
-## APIs
+## 6. GenAI APIs
 
 ### Google Gemini
 [Gemini API](https://ai.google.dev/gemini-api/docs/models/experimental-models?hl=zh-tw#gemini-api)<br>
@@ -160,7 +160,21 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 * [gpio_gemini_cam_speak.py](https://github.com/rkuo2000/GenAI/blob/main/RPi5/gpio_gemini_cam_speak.py)<br>
 
 ---
-### [Retrieval-Augmented Generation（檢索增強生成)](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)
+## 7. EdgeAI on Smartphone
+
+### [App Inventor 2](https://rkuo2000.github.io/GenAI-projects/AppInventor2_Intro/)
+
+### [Gemini Talk](https://rkuo2000.github.io/GenAI-projects/AI2_Gemini_Talk_app/)
+
+---
+## 8. [Retrieval-Augmented Generation（檢索增強生成)](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)
+
+---
+## 9. [AI Agents (人工智慧代理)](https://rkuo2000.github.io/AI-course/lecture/2024/10/16/Agents.html)
+
+
+
+
 
 
 
