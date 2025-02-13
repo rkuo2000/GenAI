@@ -38,7 +38,8 @@ sudo sudo apt install rpi-connect
 Turn On Raspberry Pi Connect
 ![](https://www.raspberrypi.com/documentation/services/images/turn-on-connect.png?hash=f03f4519e48a4b6e5b1580d3f905f61a)
 
-Then, 
+Then, add Device
+![](https://www.raspberrypi.com/documentation/services/images/screen-sharing-in-progress.png?hash=5b58232d27f2c31b4b324f1187d80057)
 
 ---
 ## Python & OpenCV
