@@ -68,3 +68,39 @@ train_results = model.train(
 results = model("input/image.jpg")
 results[0].show()
 ```
+---
+### YOLO data format
+![](https://cdn.prod.website-files.com/5f6bc60e665f54545a1e52a5/614cd66c5d86816d057ef364_yolov5-coordinates.jpeg)
+
+**001.txt**<br>
+```
+1 0.617 0.3594420600858369 0.114 0.17381974248927037
+1 0.094 0.38626609442060084 0.156 0.23605150214592274
+1 0.295 0.3959227467811159 0.13 0.19527896995708155
+1 0.785 0.398068669527897 0.07 0.14377682403433475
+1 0.886 0.40879828326180256 0.124 0.18240343347639484
+1 0.723 0.398068669527897 0.102 0.1609442060085837
+1 0.541 0.35085836909871243 0.094 0.16952789699570817
+1 0.428 0.4334763948497854 0.068 0.1072961373390558
+1 0.375 0.40236051502145925 0.054 0.1351931330472103
+1 0.976 0.3927038626609442 0.044 0.17167381974248927
+```
+
+**data.yaml**<br>
+```
+train: ../train/images
+val: ../valid/images
+
+nc: 3
+names: ['head', 'helmet', 'person']
+```
+
+**convert coco format**<br>
+```
+from ultralytics.data.converter import convert_coco
+
+convert_coco(labels_dir="path/to/coco/annotations/")
+```
+
+---
+##
