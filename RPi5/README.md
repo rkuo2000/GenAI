@@ -18,4 +18,8 @@
 1. 下載image燒錄至SD卡（32GB以上)
 **[Raspberry Pi OS (64-bit)](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit)** <br>
 2. [使用 Raspberry Pi Imager安裝](https://www.raspberrypi.com/software/)
-   
+
+### [Raspberry Pi Connect](https://www.raspberrypi.com/software/connect/)
+![](https://assets.raspberrypi.com/static/abae19beca53f018d9c434ddee214cd9/38f47/screenshot.webp)
+
+---
