@@ -171,12 +171,6 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.pocketpalai)<br>
 
 
----
-## 8. [Retrieval-Augmented Generation（檢索增強生成)](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)
-
----
-## 9. [AI Agents (人工智慧代理)](https://rkuo2000.github.io/AI-course/lecture/2024/10/16/Agents.html)
-
 
 
 
