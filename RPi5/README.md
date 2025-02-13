@@ -40,6 +40,6 @@
 
 ### [YOLOv11 Ultralytics](https://github.com/ultralytics/ultralytics)
 ![](https://raw.githubusercontent.com/ultralytics/assets/refs/heads/main/yolo/performance-comparison.png)
+![](https://github.com/rkuo2000/AI-course/blob/main/images/YOLOv11_Ultralytics_features.png?raw=true)
 
-###
 
