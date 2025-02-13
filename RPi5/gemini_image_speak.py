@@ -7,13 +7,13 @@ from gtts import gTTS
 
 sl = "zh-TW"
 
-GOOGLE_API_KEY="AIzaSyCnRzbxgrMX1GjIHnN7U6EQVM8YKy9Ikw4" ## https://aistudio.google.com/app/apikey
+GOOGLE_API_KEY="get_it_from" ## https://aistudio.google.com/app/apikey
 genai.configure(api_key=GOOGLE_API_KEY)
 
 img = PIL.Image.open("out.jpg")
 prompt = "Can you tell me about this photo? simple description in traditional chinese."
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 result = model.generate_content( [prompt , img] )
 print(result.text)
