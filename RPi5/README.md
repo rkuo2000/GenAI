@@ -15,4 +15,7 @@
 ![](https://down-tw.img.susercontent.com/file/tw-11134207-7rasc-m5b7sf03lbg6b0@resize_w450_nl.webp)
 
 ### RPi5 OS 安裝
+1. 下載image燒錄至SD卡（32GB以上)
 **[Raspberry Pi OS (64-bit)](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit)** <br>
+2. [使用 Raspberry Pi Imager安裝](https://www.raspberrypi.com/software/)
+   
