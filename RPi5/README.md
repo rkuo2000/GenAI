@@ -18,8 +18,18 @@
 1. 下載image燒錄至SD卡（32GB以上)
 **[Raspberry Pi OS (64-bit)](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit)** <br>
 2. [使用 Raspberry Pi Imager安裝](https://www.raspberrypi.com/software/)
+3. [如何在 Raspberry Pi 5 使用 M.2 HAT+ 從 NVMe SSD 啟動](https://piepie.com.tw/55084/how-to-boot-from-nvme-ssd-using-m.2-hat-plus-on-raspberry-pi-5)
 
 ### [Raspberry Pi Connect](https://www.raspberrypi.com/software/connect/)
 ![](https://assets.raspberrypi.com/static/abae19beca53f018d9c434ddee214cd9/38f47/screenshot.webp)
 
 ---
+## Python & OpenCV
+
+### [Python Programming](https://www.programiz.com/python-programming)
+### [Python Tutorial](https://www.w3schools.com/python/python_intro.asp)
+
+### [OpenCV for Python](https://rkuo2000.github.io/AI-course/lecture/2024/08/02/OpenCV-Python.html)
+
+---
+
