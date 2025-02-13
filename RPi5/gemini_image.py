@@ -11,7 +11,7 @@ img = PIL.Image.open("images/test.jpg")
 #prompt = "Can you tell me about this photo? simple description in traditional chinese"
 prompt = "Can you tell me about this photo? answer in traditional chinese"
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 result = model.generate_content( [prompt , img] )
 print(result.text)
