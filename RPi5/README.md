@@ -167,6 +167,11 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 ### [Gemini Talk](https://rkuo2000.github.io/GenAI-projects/AI2_Gemini_Talk_app/)
 
 ---
+### [PocketPal](https://github.com/a-ghorbani/pocketpal-ai)
+[Get it on Google Play](https://play.google.com/store/apps/details?id=com.pocketpalai)<br>
+
+
+---
 ## 8. [Retrieval-Augmented Generation（檢索增強生成)](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)
 
 ---
