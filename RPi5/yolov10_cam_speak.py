@@ -9,7 +9,7 @@ from ultralytics import YOLO
 from deep_translator import GoogleTranslator
 from gtts import gTTS
 
-model = YOLO("yolov10n.pt")
+model = YOLO("yolo11n.pt")
 
 def Speak(text,tl):
     # Translate
