@@ -1,4 +1,9 @@
 # GenAI LLMs & EdgeAI devices 
+自強基金會 WiFi <br>
+```
+SSID: TCFSTWIFI.ALL
+Pass: 035623116
+```
 
 ## AI 介紹
 
@@ -22,6 +27,18 @@
 
 ### [Raspberry Pi Connect](https://www.raspberrypi.com/software/connect/)
 ![](https://assets.raspberrypi.com/static/abae19beca53f018d9c434ddee214cd9/38f47/screenshot.webp)
+
+```
+sudo apt update
+sudo apt full-upgrade
+
+sudo sudo apt install rpi-connect
+
+```
+Turn On Raspberry Pi Connect
+![](https://www.raspberrypi.com/documentation/services/images/turn-on-connect.png?hash=f03f4519e48a4b6e5b1580d3f905f61a)
+
+Then, 
 
 ---
 ## Python & OpenCV
