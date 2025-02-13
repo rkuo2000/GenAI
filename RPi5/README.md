@@ -32,4 +32,14 @@
 ### [OpenCV for Python](https://rkuo2000.github.io/AI-course/lecture/2024/08/02/OpenCV-Python.html)
 
 ---
+## YOLOv11
+**[A Comprehensive Guide to YOLOv11 Object Detection](https://www.analyticsvidhya.com/blog/2024/10/yolov11-object-detection/)** <br>
+
+### YOLO演化時間軸
+![](https://cdn.analyticsvidhya.com/wp-content/uploads/2024/10/TimelineCycle.webp)
+
+### [YOLOv11 Ultralytics](https://github.com/ultralytics/ultralytics)
+![](https://raw.githubusercontent.com/ultralytics/assets/refs/heads/main/yolo/performance-comparison.png)
+
+###
 
