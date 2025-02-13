@@ -51,6 +51,9 @@
 
 `!pip install ultralytics`<br>
 
+---
+### YOLO11 example code
+
 ```
 from ultralytics import YOLO
 
@@ -68,6 +71,9 @@ train_results = model.train(
 results = model("input/image.jpg")
 results[0].show()
 ```
+
+### [YOLO11+Camera+Speak example](https://github.com/rkuo2000/GenAI/blob/main/RPi5/yolo11_cam_speak.py)
+
 ---
 ### YOLO data format
 ![](https://cdn.prod.website-files.com/5f6bc60e665f54545a1e52a5/614cd66c5d86816d057ef364_yolov5-coordinates.jpeg)
@@ -103,4 +109,41 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 ```
 
 ---
-##
+## ollama
+
+### [ollama download](https://ollama.com/download)
+`curl -fsSL https://ollama.com/install.sh | sh`<br>
+
+### [ollama models](https://ollama.com/search)
+
+* **deepseek-r1**: DeepSeek's first-generation of reasoning models with comparable performance to OpenAI-o1, including six dense models distilled from DeepSeek-R1 based on Llama and Qwen.
+* **llama3.3** : New state of the art 70B model. Llama 3.3 70B offers similar performance compared to the Llama 3.1 405B model.
+* **phi4** : Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.
+* **mistral** : The 7B model released by Mistral AI, updated to version 0.3
+* **tinyllama** : The TinyLlama project is an open endeavor to train a compact 1.1B Llama model on 3 trillion tokens.
+
+---
+### [Prompt Engineering](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)
+![](https://github.com/rkuo2000/AI-course/blob/main/images/chatgpt_cheat_sheet_v2.jpg?raw=true)
+
+---
+## APIs
+
+### Google Gemini
+[Gemini API](https://ai.google.dev/gemini-api/docs/models/experimental-models?hl=zh-tw#gemini-api)<br>
+`response = client.models.generate_content(model="gemini-2.0-flash-exp", contents="How does RLHF work?")`<br>
+
+[Google AI Studio models](https://ai.google.dev/gemini-api/docs/models/experimental-models?hl=zh-tw#google-ai-studio)<br>
+
+### example codes
+* [gemini_image.py](https://github.com/rkuo2000/GenAI/blob/main/RPi5/gemini_image.py)<br>
+* [gemini_image_speak.py](https://github.com/rkuo2000/GenAI/blob/main/RPi5/gemini_image_speak.py)<br>
+* [test_gpio.py](https://github.com/rkuo2000/GenAI/blob/main/RPi5/test_gpio.py)<br>
+* [gpio_gemini_cam_speak.py](https://github.com/rkuo2000/GenAI/blob/main/RPi5/gpio_gemini_cam_speak.py)<br>
+
+---
+### [Retrieval-Augmented Generation（檢索增強生成)](https://rkuo2000.github.io/AI-course/lecture/2024/08/18/RAG.html)
+
+
+
+
