@@ -167,14 +167,8 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 ### [Gemini Talk](https://rkuo2000.github.io/GenAI-projects/AI2_Gemini_Talk_app/)
 
 ---
+### [Breeze2-android-demo](https://github.com/mtkresearch/Breeze2-android-demo)
+
+---
 ### [PocketPal](https://github.com/a-ghorbani/pocketpal-ai)
 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.pocketpalai)<br>
-
-
-
-
-
-
-
-
-
