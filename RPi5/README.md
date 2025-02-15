@@ -201,8 +201,8 @@ Training Sushi dataset on Kaggle:<br>
 ### [ollama models](https://ollama.com/search)
 
 * **deepseek-r1**: DeepSeek's first-generation of reasoning models with comparable performance to OpenAI-o1, including six dense models distilled from DeepSeek-R1 based on Llama and Qwen.
-* **llama3.3** : New state of the art 70B model. Llama 3.3 70B offers similar performance compared to the Llama 3.1 405B model.
-* **phi4** : Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.
+* **qwen2.5** : Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.
+* **llama3.2** : Meta's Llama 3.2 goes small with 3B models
 * **mistral** : The 7B model released by Mistral AI, updated to version 0.3
 * **tinyllama** : The TinyLlama project is an open endeavor to train a compact 1.1B Llama model on 3 trillion tokens.
 
