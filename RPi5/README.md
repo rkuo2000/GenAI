@@ -211,6 +211,7 @@ Training Sushi dataset on Kaggle:<br>
 ![](https://github.com/rkuo2000/AI-course/blob/main/images/chatgpt_cheat_sheet_v2.jpg?raw=true)
 
 [https://github.com/lanesky/thinking-gemini](https://github.com/lanesky/thinking-gemini)<br>
+[gemini-from-thinking-claude-v5.1-extensive-20241201.md](https://github.com/rkuo2000/GenAI/blob/main/RPi5/gemini-from-thinking-claude-v5.1-extensive-20241201.md)<br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/GkkWtA6MLXs)](https://youtu.be/GkkWtA6MLXs)
 
 ---
