@@ -210,7 +210,7 @@ Training Sushi dataset on Kaggle:<br>
 ### [Prompt Engineering](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)
 ![](https://github.com/rkuo2000/AI-course/blob/main/images/chatgpt_cheat_sheet_v2.jpg?raw=true)
 
-[https://github.com/lanesky/thinking-gemini](https://github.com/lanesky/thinking-gemini/tree/main)
+[https://github.com/lanesky/thinking-gemini](https://github.com/lanesky/thinking-gemini)<br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/GkkWtA6MLXs)](https://youtu.be/GkkWtA6MLXs)
 
 ---
