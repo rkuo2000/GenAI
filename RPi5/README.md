@@ -111,22 +111,43 @@ cv2.imshow("contours", img)
 ---
 ### YOLO11 example code
 
+[cam_yolo11.py](https://github.com/rkuo2000/cv2/blob/master/cam_yolo11.py)<br>
 ```
+import os
+import cv2
 from ultralytics import YOLO
 
-# Load a model
 model = YOLO("yolo11n.pt")
 
-# Train the model
-train_results = model.train(
-    data="coco8.yaml",  # path to dataset YAML
-    epochs=100,  # number of training epochs
-    imgsz=640,  # training image size
-    device="cpu",  # device to run on, i.e. device=0 or device=0,1,2,3 or device=cpu
-)
-# Perform object detection on an image
-results = model("input/image.jpg")
-results[0].show()
+cap = cv2.VideoCapture(0)
+while True:
+    ret, frame = cap.read()
+    #frame = cv2.flip(frame, 1) # mirror
+
+    ## Object Detection 
+    results = model(frame)
+
+    ## Object Counting
+    labels = results[0].names
+    cls = results[0].boxes.cls.tolist()
+    unique = list(dict.fromkeys(cls))
+
+    text = "There are "
+    for label in unique:
+        count = cls.count(label)
+        text = text + str(count) + " " + labels[int(label)] + ","
+    print(text)
+
+    results[0].save("out.jpg")
+    img = cv2.imread("out.jpg")
+    cv2.imshow('webcam', img)
+
+    k = cv2.waitKey(1) & 0xFF
+    if k==27:
+        break
+
+cap.release()
+cv2.destroyAllWindows()
 ```
 
 ### [YOLO11+Camera+Speak example](https://github.com/rkuo2000/GenAI/blob/main/RPi5/yolo11_cam_speak.py)
