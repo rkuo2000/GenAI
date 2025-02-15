@@ -54,7 +54,7 @@ sudo sudo apt install rpi-connect
 2. 輸入`pip install opencv-python` 安裝opencv
 3. 輸入`git clone https://github.com/rkuo2000/cv2` 下載opencv程式範例
 
-4. 執行camera範例
+4. 執行camera範例 (PC要插入USB WebCam)
 ```
 cd cv2
 python cam.py
