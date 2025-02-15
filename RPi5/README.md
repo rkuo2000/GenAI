@@ -65,6 +65,11 @@ python cam.py
 python cam_canny.py
 ```
 
+6. 執行jpg 辨識輪廓
+```
+python jpg_contours.py
+```
+
 ---
 ## 4. YOLOv11
 **[A Comprehensive Guide to YOLOv11 Object Detection](https://www.analyticsvidhya.com/blog/2024/10/yolov11-object-detection/)** <br>
