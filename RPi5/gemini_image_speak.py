@@ -17,7 +17,7 @@ prompt = "Can you tell me about this photo? answer in traditional chinese"
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 result = model.generate_content( [prompt , img] )
-print(result.txt)
+print(result.text)
 
 tts=gTTS(result.text, lang=sl)
 tts.save("gTTS.mp3")
