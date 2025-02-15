@@ -50,6 +50,20 @@ sudo sudo apt install rpi-connect
 ### [Python Tutorial](https://www.w3schools.com/python/python_intro.asp)
 
 ### [OpenCV for Python](https://rkuo2000.github.io/AI-course/lecture/2024/08/02/OpenCV-Python.html)
+1. 開GitBash視窗
+2. 輸入`pip install opencv-python` 安裝opencv
+3. 輸入`git clone https://github.com/rkuo2000/cv2` 下載opencv程式範例
+
+4. 執行camera範例
+```
+cd cv2
+python cam.py
+```
+
+5. 執行camera 顯示邊緣
+```
+python cam_canny.py
+```
 
 ---
 ## 4. YOLOv11
