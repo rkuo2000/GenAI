@@ -187,6 +187,12 @@ convert_coco(labels_dir="path/to/coco/annotations/")
 ```
 
 ---
+### [Roboflow Dataset](https://universe.roboflow.com/)
+
+Training Sushi dataset on Kaggle:<br>
+[https://www.kaggle.com/code/rkuo2000/yolov11-sushi](https://www.kaggle.com/code/rkuo2000/yolov11-sushi)<br>
+
+---
 ## 5. ollama
 
 ### [ollama download](https://ollama.com/download)
