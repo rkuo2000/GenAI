@@ -210,6 +210,9 @@ Training Sushi dataset on Kaggle:<br>
 ### [Prompt Engineering](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)
 ![](https://github.com/rkuo2000/AI-course/blob/main/images/chatgpt_cheat_sheet_v2.jpg?raw=true)
 
+[https://github.com/lanesky/thinking-gemini](https://github.com/lanesky/thinking-gemini/tree/main)
+<iframe width="750" height="422" src="https://www.youtube.com/embed/GkkWtA6MLXs" title="（注意⚠️：不保证有效，并且很费token）Thinking Gemini| 复制17岁高中生写的神级Prompt到Gemini" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 ## 6. GenAI APIs
 
