@@ -11,6 +11,8 @@ Pass: 035623116
 
 ### [AI 硬體介紹](https://rkuo2000.github.io/AI-course/lecture/2024/08/01/AI-Hardwares.html)
 
+### [PC 軟體安裝](https://rkuo2000.github.io/AI-course/lecture/2024/08/01/PC-Softwares.html)
+
 ---
 ## 2. EdgeAI on RPi5
 
