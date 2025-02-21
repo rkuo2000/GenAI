@@ -99,7 +99,6 @@ cv2.imshow("contours", img)
 ![](https://github.com/sunsmarterjie/yolov12/raw/main/assets/tradeoff.svg)
 
 ### [Ultralytics](https://github.com/ultralytics/ultralytics)
-![](https://raw.githubusercontent.com/ultralytics/assets/refs/heads/main/yolo/performance-comparison.png)
 `!pip install ultralytics`<br>
 
 ---
