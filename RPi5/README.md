@@ -89,35 +89,29 @@ cv2.imshow("contours", img)
 ```
 
 ---
-## 4. YOLOv11
+## 4. Object Detection
 **[A Comprehensive Guide to YOLOv11 Object Detection](https://www.analyticsvidhya.com/blog/2024/10/yolov11-object-detection/)** <br>
 
 ### YOLO演化時間軸
 ![](https://cdn.analyticsvidhya.com/wp-content/uploads/2024/10/TimelineCycle.webp)
 
-### [YOLOv11 Ultralytics](https://github.com/ultralytics/ultralytics)
+### [YOLOv12](https://github.com/sunsmarterjie/yolov12)
+![](https://github.com/sunsmarterjie/yolov12/raw/main/assets/tradeoff.svg)
+
+### [Ultralytics](https://github.com/ultralytics/ultralytics)
 ![](https://raw.githubusercontent.com/ultralytics/assets/refs/heads/main/yolo/performance-comparison.png)
-![](https://github.com/rkuo2000/AI-course/blob/main/images/YOLOv11_Ultralytics_features.png?raw=true)
-
----
-### YOLOv11 Architecture
-![](https://miro.medium.com/v2/resize:fit:1200/1*L8rMuwurmyBH1ixIqcrMSQ.png)
-
----
-### [Kaggle YOLOv11 example](https://www.kaggle.com/code/rkuo2000/yolov11/)
-
 `!pip install ultralytics`<br>
 
 ---
-### YOLO11 example code
-
-[cam_yolo11.py](https://github.com/rkuo2000/cv2/blob/master/cam_yolo11.py)<br>
+### YOLOv12 example code
+[Kaggle YOLOv12](https://www.kaggle.com/code/rkuo2000/yolov12/)
+[cv2/cam_yolo12.py](https://github.com/rkuo2000/cv2/blob/master/cam_yolo12.py)<br>
 ```
 import os
 import cv2
 from ultralytics import YOLO
 
-model = YOLO("yolo11n.pt")
+model = YOLO("yolo12n.pt")
 
 cap = cv2.VideoCapture(0)
 while True:
@@ -138,8 +132,8 @@ while True:
         text = text + str(count) + " " + labels[int(label)] + ","
     print(text)
 
-    results[0].save("out.jpg")
-    img = cv2.imread("out.jpg")
+    #results[0].save("out.jpg")
+    img=results[0].plot()
     cv2.imshow('webcam', img)
 
     k = cv2.waitKey(1) & 0xFF
@@ -149,8 +143,6 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 ```
-
-### [YOLO11+Camera+Speak example](https://github.com/rkuo2000/GenAI/blob/main/RPi5/yolo11_cam_speak.py)
 
 ---
 ### YOLO data format
