@@ -210,7 +210,7 @@ Training Sushi dataset on Kaggle:<br>
 
 ### Google Gemini
 [Gemini API](https://ai.google.dev/gemini-api/docs/models/experimental-models?hl=zh-tw#gemini-api)<br>
-`response = client.models.generate_content(model="gemini-2.0-flash-exp", contents="How does RLHF work?")`<br>
+`response = client.models.generate_content(model="gemini-2.0-flash", contents="How does RLHF work?")`<br>
 
 [Google AI Studio models](https://ai.google.dev/gemini-api/docs/models/experimental-models?hl=zh-tw#google-ai-studio)<br>
 
