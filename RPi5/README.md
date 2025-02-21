@@ -103,7 +103,7 @@ cv2.imshow("contours", img)
 
 ---
 ### YOLOv12 example code
-[Kaggle YOLOv12](https://www.kaggle.com/code/rkuo2000/yolov12/)
+[Kaggle YOLOv12](https://www.kaggle.com/code/rkuo2000/yolov12/)<br>
 [cv2/cam_yolo12.py](https://github.com/rkuo2000/cv2/blob/master/cam_yolo12.py)<br>
 ```
 import os
