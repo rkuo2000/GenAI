@@ -198,6 +198,12 @@ Training Sushi dataset on Kaggle:<br>
 * **tinyllama** : The TinyLlama project is an open endeavor to train a compact 1.1B Llama model on 3 trillion tokens.
 
 ### [ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md)
+```
+curl http://localhost:11434/api/generate -d '{
+  "model": "llama3.2",
+  "prompt": "Why is the sky blue?"
+}'
+```
 
 ---
 ### [Prompt Engineering](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)
