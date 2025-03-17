@@ -190,12 +190,14 @@ Training Sushi dataset on Kaggle:<br>
 `curl -fsSL https://ollama.com/install.sh | sh`<br>
 
 ### [ollama models](https://ollama.com/search)
-
+* **gemma3**: The current, most capable model that runs on a single GPU
 * **deepseek-r1**: DeepSeek's first-generation of reasoning models with comparable performance to OpenAI-o1, including six dense models distilled from DeepSeek-R1 based on Llama and Qwen.
 * **qwen2.5** : Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.
 * **llama3.2** : Meta's Llama 3.2 goes small with 3B models
 * **mistral** : The 7B model released by Mistral AI, updated to version 0.3
 * **tinyllama** : The TinyLlama project is an open endeavor to train a compact 1.1B Llama model on 3 trillion tokens.
+
+### [ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md)
 
 ---
 ### [Prompt Engineering](https://rkuo2000.github.io/AI-course/lecture/2024/08/15/Prompt-Engineering.html)
