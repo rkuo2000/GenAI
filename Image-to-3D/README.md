@@ -22,10 +22,6 @@ To display `output/0/mesh.obj`: [Online 3D Viewer](https://3dviewer.net/), F3D /
 ## Text-to-3D
 Translate + SDXL-Lightning + TripoSR + [FreeCAD](https://www.freecad.org/) / [AppInventor2 OBJ Viewer](https://community.appinventor.mit.edu/t/3d-model-loader-extension/43741)/ Blender<br>
 
-### Translate 
-`pip install googletrans==4.0.0rc1`<br>
-`python gTranslage.py`<br>
-
 ### Text-to-Image
 `python sdxl-lightning-lora.py`<br>
 
