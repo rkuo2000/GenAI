@@ -5,8 +5,8 @@ import PIL.Image
 from gtts import gTTS
 import os
 
-GOOGLE_API_KEY="get_it_from" ## https://aistudio.google.com/app/apikey
-genai.configure(api_key=GOOGLE_API_KEY, transport='rest')
+api_key = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=api_key, transport='rest')
 
 img = PIL.Image.open("images/test.jpg")
 prompt = "Can you tell me about this photo? simple description in traditional chinese"

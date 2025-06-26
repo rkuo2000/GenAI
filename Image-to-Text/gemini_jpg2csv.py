@@ -5,12 +5,8 @@ import google.generativeai as genai
 import PIL.Image
 import os
 
-GOOGLE_API_KEY="get-it-from" ## https://aistudio.google.com/app/apikey
-genai.configure(api_key=GOOGLE_API_KEY)
-
-## for table in jpg
-#img = PIL.Image.open("images/Bldg_E_neighbors.jpg")
-#prompt = "根據這張圖片,請按照樓層與住戶姓名列出一個表格"
+api_key = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=api_key)
 
 ## for 存摺影本
 filename = sys.argv[1]

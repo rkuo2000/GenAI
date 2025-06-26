@@ -4,8 +4,8 @@ import google.generativeai as genai
 import PIL.Image
 import os
 
-GOOGLE_API_KEY="paste_api_key_here" ## https://aistudio.google.com/app/apikey
-genai.configure(api_key=GOOGLE_API_KEY, transport='rest')
+api_key = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=api_key, transport='rest')
 
 img = PIL.Image.open("images/test_big_data.png")
 #prompt = "Can you tell me about this photo?" + "please answer in traditional chinese"
