@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini-2.5-flash Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="password"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .output-container {
+            background-color: #e9e9e9;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 4px;
+            min-height: 100px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .warning {
+            color: orange;
+            background-color: #fff3e0;
+            border-left: 5px solid orange;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gemini-2.5-flash Playground</h1>
+
+        <label for="apiKey">Gemini API Key:</label>
+        <input type="password" id="apiKey" placeholder="Enter your Gemini API Key" required>
+
+        <label for="prompt">Prompt:</label>
+        <textarea id="prompt" placeholder="Enter your prompt here..." required>What is the AGI?</textarea>
+
+        <button id="generateBtn">Generate Output</button>
+
+        <div class="error" id="errorMessage"></div>
+
+        <label>Generated Output:</label>
+        <pre class="output-container" id="output"></pre>
+    </div>
+
+    <script>
+        const apiKeyInput = document.getElementById('apiKey');
+        const promptInput = document.getElementById('prompt');
+        const generateBtn = document.getElementById('generateBtn');
+        const outputDiv = document.getElementById('output');
+        const errorMessageDiv = document.getElementById('errorMessage');
+
+        generateBtn.addEventListener('click', async () => {
+            const apiKey = apiKeyInput.value.trim();
+            const prompt = promptInput.value.trim();
+
+            outputDiv.textContent = 'Generating...';
+            errorMessageDiv.textContent = '';
+
+            if (!apiKey) {
+                errorMessageDiv.textContent = 'Please enter your Gemini API Key.';
+                outputDiv.textContent = '';
+                return;
+            }
+
+            if (!prompt) {
+                errorMessageDiv.textContent = 'Please enter a prompt.';
+                outputDiv.textContent = '';
+                return;
+            }
+
+            try {
+                // The Gemini API endpoint for text generation (using gemini-2.5-flash model as an example)
+                // You might need to adjust the model and API version based on your needs.
+                // For a list of models and their capabilities, refer to the Gemini API documentation.
+                const API_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`; // [5, 9]
+
+                const response = await fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json', // [5, 9]
+                    },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{
+                                text: prompt
+                            }]
+                        }]
+                    }) // [5, 9]
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(`API Error: ${response.status} - ${errorData.error.message || 'Unknown error'}`);
+                }
+
+                const data = await response.json();
+                // The structure of the response might vary slightly based on the model and API version.
+                // This example assumes a simple text response.
+                const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text || 'No output received.';
+                outputDiv.textContent = generatedText;
+
+            } catch (error) {
+                console.error('Error calling Gemini API:', error);
+                errorMessageDiv.textContent = `Failed to generate: ${error.message}`;
+                outputDiv.textContent = '';
+            }
+        });
+    </script>
+</body>
+</html>
