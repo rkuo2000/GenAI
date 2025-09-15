@@ -42,7 +42,7 @@ CMRR/PSRR：高（使用差動輸入與對稱偏壓）
 
 輸出臨界：若要驅動低阻抗或大電容，輸出級用 source follower（PMOS/NMOS push-pull, class-AB）來增強驅動能力與輸出範圍。
 
-## 簡化方塊圖（ASCII）：
+### 簡化方塊圖（ASCII）：
 
 Vin+ ---|> M1  \
                  >--- node1 ---\
@@ -70,6 +70,7 @@ Slew rate (SR): SR ≈ Ibias / Cc （當輸入階差飽和時，Miller capacitor
 
 假設設計思路：使差動對 gm1 ≈ 5 mS（0.005 S） → Cc 約 gm1/(2π·GBW) = 0.005/(2π·1e8) ≈ 7.96e-9 = 8 nF — 這太大（不合理）→ 我們看錯規模：通常 gm1 會更小或我們希望較小 Cc。實務上對 0.18 μm，要 100 MHz GBW，Cc 多在 1—5 pF 範圍，換算得 gm1 約 = 2π·GBW·Cc → 若 Cc=2 pF, gm1 ≈ 2π·1e8·2e-12 ≈ 1.26e-3 = 1.26 mS。 所以設計符合性：選 gm1 ≈ 1—5 mS 與 Cc ≈ 1—5 pF 是合理搭配。
 
+## 元件尺寸與偏壓
 我下面給出一組 範例元件尺寸與偏流（供你直接在 Cadence 建立 netlist 做第一輪模擬）：
 
 假設 & 設計基準
@@ -90,7 +91,7 @@ Miller Cc 初始選 2 pF（可在模擬調整）
 
 若要 SR ≥ 10 V/μs，Cc=2 pF → Icharge ≈ SR * Cc = 10e6 * 2e-12 = 20 μA 足夠（但若想容錯，實際驅動電流要更多，故第二級採 300—500 μA）
 
-元件尺寸建議（初始）
+### 元件尺寸建議（初始）
 
 單位：W / L（μm/μm）
 
@@ -108,7 +109,7 @@ M7/M8 (PMOS 在輸出側的鏡像或源極 follower): W/L = 80 / 0.36
 
 Output stage (class-AB) PMOS/NMOS if used: large W: 200 / 0.36 (視驅動負載)
 
-為什麼這些大小？
+### 為什麼這些大小？
 
 輸入 transistor 要大以提高 gm（gm ≈ sqrt(2 μ C_ox W/L · Id)），但也要考慮輸入容抗與匹配。
 
@@ -130,7 +131,7 @@ node1 搭配偏壓（由電流鏡），接到第二級 M6.gate。 M6 source 接�
 
 Vout 接到輸出緩衝（若要單端輸出到外界），並接 CL。
 
-### Cadence / Virtuoso 模擬流程（步驟）
+## Cadence / Virtuoso 模擬流程（步驟）
 
 * **建立 schematic**：輸入級、電流鏡、第二級、Miller Cc、輸出級（可先用簡單電阻負載模擬）。
 
