@@ -18,7 +18,7 @@
 ---
 ### FireRedTTS-2
 **Paper**: [FireRedTTS-2: Towards Long Conversational Speech Generation for Podcast and Chatbot](https://arxiv.org/abs/2509.02020)<br>
-**HuggingFace**: [FireRedTeam/FireRedTTS2https](https://huggingface.co/FireRedTeam/FireRedTTS2)
+**HuggingFace**: [FireRedTeam/FireRedTTS2https](https://huggingface.co/FireRedTeam/FireRedTTS2)<br>
 **Github**: [https://github.com/FireRedTeam/FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)<br>
 FireRedTTS‑2 is a long-form streaming TTS system for multi-speaker dialogue generation, delivering stable, natural speech with reliable speaker switching and context-aware prosody<br>
 * Long Conversational Speech Generation
