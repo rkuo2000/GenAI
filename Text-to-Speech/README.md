@@ -15,7 +15,6 @@
 **Code**: [https://github.com/index-tts/index-tts](https://github.com/index-tts/index-tts)<br>
 ![](https://arxiv.org/html/2506.21619v2/x1.png)
 ![](https://arxiv.org/html/2506.21619v2/x2.png)
-![](https://github.com/index-tts/index-tts/raw/main/assets/IndexTTS2.png)
 
 ---
 ### FireRedTTS-2
