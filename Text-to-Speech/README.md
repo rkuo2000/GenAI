@@ -18,7 +18,7 @@
 
 ```
 git lfs install
-git clone https://github.com/index-tts/index-tts.git
+git clone https://github.com/rkuo2000/index-tts
 cd index-tts
 git lfs pull  # download large repository files
 ```
