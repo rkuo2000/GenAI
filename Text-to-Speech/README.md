@@ -12,9 +12,9 @@
 ---
 ### IndexTTS2
 **Paper**: [IndexTTS2: A Breakthrough in Emotionally Expressive and Duration-Controlled Auto-Regressive Zero-Shot Text-to-Speech](https://arxiv.org/abs/2506.21619)<br>
+**Code**: [https://github.com/index-tts/index-tts](https://github.com/index-tts/index-tts)<br>
 ![](https://arxiv.org/html/2506.21619v2/x1.png)
 ![](https://arxiv.org/html/2506.21619v2/x2.png)
-**Code**: [https://github.com/index-tts/index-tts](https://github.com/index-tts/index-tts)<br>
 ![](https://github.com/index-tts/index-tts/raw/main/assets/IndexTTS2.png)
 
 ---
