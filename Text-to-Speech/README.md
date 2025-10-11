@@ -7,7 +7,7 @@
 **Inference Overview of Controlled Generation** <br>
 ![](https://github.com/SparkAudio/Spark-TTS/raw/main/src/figures/infer_control.png)
 
-**Kaggle**: [https://www.kaggle.com/code/rkuo2000/spark-tts](https://www.kaggle.com/code/rkuo2000/spark-tts)<br>
+**Kaggle**: [https://www.kaggle.com/code/rkuo2000/Spark-TTS](https://www.kaggle.com/code/rkuo2000/spark-tts)<br>
 
 ---
 ### IndexTTS2
