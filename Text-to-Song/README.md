@@ -48,6 +48,9 @@ pip install -e externals/DeepPhonemizer
 
 `pip install -r requirements.txt`<br>
 
+#### ONNX-runtime GPU
+`pip install onnxruntime-gpu`<br>
+
 #### For inference using a reference WAV file
 `bash scripts/infer_wav_ref.sh`<br>
 
