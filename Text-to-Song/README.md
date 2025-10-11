@@ -1,6 +1,6 @@
 ## [Jamify](https://github.com/declare-lab/jamify)
 
-### Paper: [https://arxiv.org/abs/2507.20880](https://arxiv.org/abs/2507.20880)
+### Paper: [JAM: A Tiny Flow-based Song Generator with Fine-grained Controllability and Aesthetic Alignment](https://arxiv.org/abs/2507.20880)
 ![](https://github.com/declare-lab/jamify/raw/main/jam-teaser.png)
 ![](https://github.com/declare-lab/jamify/raw/main/jam.png)
 
