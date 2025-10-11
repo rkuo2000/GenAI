@@ -20,6 +20,6 @@
 ---
 ### FireRedTTS-2
 **Paper**: [FireRedTTS-2: Towards Long Conversational Speech Generation for Podcast and Chatbot](https://arxiv.org/abs/2509.02020)<br>
-**HuggingFace**: [FireRedTeam/FireRedTTS2https](https://huggingface.co/FireRedTeam/FireRedTTS2)
+**HuggingFace**: [FireRedTeam/FireRedTTS2https](https://huggingface.co/FireRedTeam/FireRedTTS2)<br>
 **Github**: [https://github.com/FireRedTeam/FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)<br>
 ![](https://arxiv.org/html/2509.02020v2/image/tts_model_framework.png)
