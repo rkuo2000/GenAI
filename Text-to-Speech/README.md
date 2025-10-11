@@ -16,6 +16,22 @@
 ![](https://arxiv.org/html/2506.21619v2/x1.png)
 ![](https://arxiv.org/html/2506.21619v2/x2.png)
 
+```
+git lfs install
+git clone https://github.com/index-tts/index-tts.git
+cd index-tts
+git lfs pull  # download large repository files
+```
+```
+pip install -U uv
+uv sync --all-extras
+uv tool install "huggingface-hub[cli,hf_xet]"
+hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints
+
+uv run tools/gpu_check.py
+uv run webui.py
+```
+
 ---
 ### FireRedTTS-2
 **Paper**: [FireRedTTS-2: Towards Long Conversational Speech Generation for Podcast and Chatbot](https://arxiv.org/abs/2509.02020)<br>
