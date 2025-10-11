@@ -12,6 +12,22 @@ pip install -e .
 pip install -e externals/DeepPhonemizer
 ```
 
+### Inference
+**input/inputs.json** <br>
+```
+[
+  {
+    "id": "my_song",
+    "audio_path": "inputs/reference_audio.mp3",
+    "lrc_path": "inputs/lyrics.json", 
+    "duration": 180.0,
+    "prompt_path": "inputs/style_prompt.txt"
+  }
+]
+```
+
+`python inference.py`<br>
+
 ---
 ## [DiffRhythm](https://github.com/ASLP-lab/DiffRhythm)
 
