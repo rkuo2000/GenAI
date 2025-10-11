@@ -38,7 +38,6 @@ pip install -e externals/DeepPhonemizer
 ![](https://github.com/ASLP-lab/DiffRhythm/raw/main/src/diffrhythm.jpg)
 
 ### Install
-
 `git clone https://github.com/ASLP-lab/DiffRhythm.git`<br>
 `cd DiffRhythm`<br>
 
@@ -47,11 +46,11 @@ pip install -e externals/DeepPhonemizer
 `python -m venv .DiffRhythm`<br>
 `source .DiffRhythm/bin/activate`<br>
 
+`pip install -r requirements.txt`<br>
+
 #### For inference using a reference WAV file
 `bash scripts/infer_wav_ref.sh`<br>
 
 #### For inference using a text prompt reference
 `bash scripts/infer_prompt_ref.sh`<br>
 
-## install requirements
-pip install -r requirements.txt
