@@ -29,8 +29,13 @@ uv tool install "huggingface-hub[cli,hf_xet]"
 hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints
 
 uv run tools/gpu_check.py
-uv run webui.py
 ```
+
+#### WebUI
+`uv run webui.py`<br>
+
+#### Infer
+`uv run infer_test.py`<br>
 
 ---
 ### FireRedTTS-2
