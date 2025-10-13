@@ -1,19 +1,9 @@
-# pip install git+https://github.com/NVIDIA/NeMo.git@r1.23.0#egg=nemo_toolkit[asr]
+# pip install nemo_toolkit['asr']
 
-from nemo.collections.asr.models import EncDecMultiTaskModel
+import nemo.collections.asr as nemo_asr
 
-# load model
-model_name = "nvidia/canary-1b"
-model = EncDecMultiTaskModel.from_pretrained(model_name)
+asr_model = nemo_asr.models.ASRModel.from_pretrained("nvidia/canary-1b-v2")
 
-# update dcode params
-decode_cfg = model.cfg.decoding
-decode_cfg.beam.beam_size = 1
-model.change_decoding_strategy(decode_cfg)
+text = asr_model.transcribe(["audio/audio4.flac"])[0].text
 
-# model transcribe
-predicted_text = model.transcribe(
-    paths2audio_files=['gTTS.mp3'],
-    batch_size=16,  # batch size to run the inference with
-)
-print(predicted_text[0])
+print(text)
