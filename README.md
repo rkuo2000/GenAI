@@ -1,8 +1,7 @@
 ## Generative AI
 
 ### Grok Image 0.9
-[![](https://markdown-videos-api.jorgenkh.no/youtube/awl4vLMbUP4)](https://youtu.be/awl4vLMbUP4) [![](https://markdown-videos-api.jorgenkh.no/youtube/zm7a4uVA6Ws)](https://youtu.be/zm7a4uVA6Ws) 
-
+[![](https://markdown-videos-api.jorgenkh.no/youtube/awl4vLMbUP4)](https://youtu.be/awl4vLMbUP4) [![](https://markdown-videos-api.jorgenkh.no/youtube/0nKyRitp0L0)](https://youtu.be/0nKyRitp0L0) 
 
 ### Gemini Nano-Banana
 
