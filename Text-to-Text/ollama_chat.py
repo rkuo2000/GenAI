@@ -3,7 +3,7 @@ import ollama
 prompt = 'Why is the sky blue? please answer briefly.'
 
 response = ollama.chat(
-    model='gpt-oss',
+    model='gemma3',
     messages=[ { 'role': 'user', 'content': prompt, } ]
 )
 
