@@ -3,9 +3,10 @@
 
 ### [LM Studio](https://lmstudio.ai/)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_studio_server.png?raw=true)
-
+<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_studio_client.png?raw=true)
 
+---
 ### [LangChain RAG](https://python.langchain.com/docs/tutorials/rag/)
 * [LangChain RAG](https://www.kaggle.com/code/rkuo2000/langchain-rag)
 * [LangChain RAG Webpage](https://www.kaggle.com/code/rkuo2000/langchain-rag-webpage)
