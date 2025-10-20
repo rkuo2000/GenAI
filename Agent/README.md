@@ -3,6 +3,7 @@
 
 ### [LM Studio](https://lmstudio.ai/)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_studio_server.png?raw=true)
+
 <br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_studio_client.png?raw=true)
 
