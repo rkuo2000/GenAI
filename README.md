@@ -12,7 +12,7 @@
 ### OpenAI [Sora2](https://sora.chatgpt.com)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) [![](https://markdown-videos-api.jorgenkh.no/youtube/sGS1JwnD6Ik)](https://youtu.be/sGS1JwnD6Ik)
 
-### Google [VEO3](https://aistudio.google.com/models/veo-3)
+### Google [VEO3.1](https://aistudio.google.com/models/veo-3)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
 
 ---
