@@ -1,6 +1,8 @@
 # Generative AI
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+* torch   == 2.8.0+cu128
+* torchao == 1.3.0
 
 ---
 ## 1. [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2025/09/09/Generative-Speech.html)
