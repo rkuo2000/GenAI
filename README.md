@@ -19,6 +19,13 @@
 ---
 ## Lecture 2. [Generative Song](https://rkuo2000.github.io/AI-course/lecture/2025/09/10/Generative-Song.html)
 
+### [DiffRhythm](https://github.com/ASLP-lab/DiffRhythm)
+
+### [Jamify](https://github.com/declare-lab/jamify)
+
+### [ACE-step](https://github.com/ace-step/ACE-Step)
+[ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)<br>
+
 ---
 ## Lecture 3. [Generative Image](https://rkuo2000.github.io/AI-course/lecture/2025/09/11/Generative-Image.html)
 
