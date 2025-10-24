@@ -1,6 +1,7 @@
 # Generative AI
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+* python  == 3.12.3
 * torch   == 2.8.0+cu128
 * torchao == 1.3.0
 
