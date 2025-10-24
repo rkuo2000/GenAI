@@ -1,3 +1,1 @@
-# Generative AI - ComfyUI
-
-# LLM - LM Studio
+# [Generative AI](https://github.com/rkuo2000/GenAI/blob/main/Generative-AI.md)
