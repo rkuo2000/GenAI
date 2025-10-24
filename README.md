@@ -13,8 +13,6 @@
 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 
-### [RVC-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
-
 ---
 ## 2. [Generative Song](https://rkuo2000.github.io/AI-course/lecture/2025/09/10/Generative-Song.html)
 
