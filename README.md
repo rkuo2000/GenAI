@@ -5,11 +5,9 @@
 ---
 ## 1. [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2025/09/09/Generative-Speech.html)
 
-### [Spark-TTS](https://github.com/SparkAudio/Spark-TTS)
-[https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS)<br>
+### [Spark-TTS](https://github.com/SparkAudio/Spark-TTS) [https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS)<br>
 
-### [Index-TTS2](https://github.com/index-tts/index-tts)
-[https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2)<br>
+### [Index-TTS2](https://github.com/index-tts/index-tts) [https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2)<br>
 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 
@@ -18,7 +16,7 @@
 
 ### [DiffRhythm](https://github.com/ASLP-lab/DiffRhythm)
 
-### [Jamify](https://github.com/declare-lab/jamify)
+### [Jamify](https://github.com/declare-lab/jamify) [https://www.kaggle.com/code/rkuo2000/jamify](https://www.kaggle.com/code/rkuo2000/jamify)
 
 ### [ACE-step](https://github.com/ace-step/ACE-Step): [ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)
 
