@@ -23,8 +23,7 @@
 
 ### [Jamify](https://github.com/declare-lab/jamify)
 
-### [ACE-step](https://github.com/ace-step/ACE-Step)
-[ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)<br>
+### [ACE-step](https://github.com/ace-step/ACE-Step): [ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)
 
 ---
 ## Lecture 3. [Generative Image](https://rkuo2000.github.io/AI-course/lecture/2025/09/11/Generative-Image.html)
