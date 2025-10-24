@@ -3,7 +3,7 @@
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
 ---
-## Lecture 1. [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2025/09/09/Generative-Speech.html)
+## 1. [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2025/09/09/Generative-Speech.html)
 
 ### [Spark-TTS](https://github.com/SparkAudio/Spark-TTS)
 [https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS)<br>
@@ -16,7 +16,7 @@
 ### [RVC-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
 
 ---
-## Lecture 2. [Generative Song](https://rkuo2000.github.io/AI-course/lecture/2025/09/10/Generative-Song.html)
+## 2. [Generative Song](https://rkuo2000.github.io/AI-course/lecture/2025/09/10/Generative-Song.html)
 
 ### [DiffRhythm](https://github.com/ASLP-lab/DiffRhythm)
 
@@ -25,7 +25,7 @@
 ### [ACE-step](https://github.com/ace-step/ACE-Step): [ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)
 
 ---
-## Lecture 3. [Generative Image](https://rkuo2000.github.io/AI-course/lecture/2025/09/11/Generative-Image.html)
+## 3. [Generative Image](https://rkuo2000.github.io/AI-course/lecture/2025/09/11/Generative-Image.html)
 
 ### Grok Image 0.9
 [![](https://markdown-videos-api.jorgenkh.no/youtube/awl4vLMbUP4)](https://youtu.be/awl4vLMbUP4) [![](https://markdown-videos-api.jorgenkh.no/youtube/0nKyRitp0L0)](https://youtu.be/0nKyRitp0L0) 
@@ -34,7 +34,7 @@
 [![](https://markdown-videos-api.jorgenkh.no/youtube/93fYXstDrjc)](https://youtu.be/93fYXstDrjc)
 
 ---
-## Lecture 4. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
+## 4. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
 
 ### OpenAI [Sora2](https://sora.chatgpt.com)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) [![](https://markdown-videos-api.jorgenkh.no/youtube/sGS1JwnD6Ik)](https://youtu.be/sGS1JwnD6Ik)
