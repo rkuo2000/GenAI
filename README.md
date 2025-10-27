@@ -28,6 +28,11 @@
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/awl4vLMbUP4)](https://youtu.be/awl4vLMbUP4) [![](https://markdown-videos-api.jorgenkh.no/youtube/93fYXstDrjc)](https://youtu.be/93fYXstDrjc)
 
+### [Grok.imagine](https://grok.com/imagine)
+**Prompt**: `Photorealistic close-up portrait of a young East Asian female singer (K-pop idol aesthetic) on a dark stage. big eyes with thick lips wearing a black off-the-shoulder top with spaghetti straps. Her light brown hair is styled in wavy and curry. She is holding a professional stage microphone and singing with a focused, emotional expression. Dramatic, high-contrast volumetric lighting, strong spotlight isolating the subject, deep shadows, blue/black background. Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16`<br>
+ `
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/Grok_Kpop_girl.jpg?raw=true)
+
 ---
 ## 4. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
 
