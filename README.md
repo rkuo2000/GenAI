@@ -37,3 +37,11 @@
 ## 4. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
+
+### 5. Image-to-Viode
+1) Text-to-Image  : `Grok.com/imagine`<br>
+2) Lyrics-to-Song : `Suno.com`<br>
+3) Image-to-Video : `ComfyUI + Wan2.1 Video + InfiniteTalk`<br>
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/vTt7lkq-p9A)](https://youtu.be/vTt7lkq-p9A) 
+
