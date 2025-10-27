@@ -38,7 +38,7 @@
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
 
-### 5. Image-to-Viode
+### 5. Image-to-Video
 1) Text-to-Image  : `Grok.com/imagine`<br>
 2) Lyrics-to-Song : `Suno.com`<br>
 3) Image-to-Video : `ComfyUI + Wan2.1 Video + InfiniteTalk`<br>
