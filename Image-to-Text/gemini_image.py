@@ -12,7 +12,7 @@ img = PIL.Image.open("images/test_big_data.png")
 #prompt = "請問這張照片的內容有什麼?"
 prompt = "請問前三名跟佳作總共可獲得多少錢?"
 
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-flash-latest")
 
 result = model.generate_content( [prompt , img] )
 print(result.text)
