@@ -82,6 +82,7 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 
 1) Text-to-Image  : `Grok.com/imagine`<br>
 2) Lyrics-to-Song : `Suno.com`<br>
-3) Image-to-Video : `ComfyUI + Wan2.1 Video + InfiniteTalk`<br>
+3) Image-to-Video : `ComfyUI + Wan2.1 Video + InfiniteTalk`
+   
 [![](https://markdown-videos-api.jorgenkh.no/youtube/vTt7lkq-p9A)](https://youtu.be/vTt7lkq-p9A) 
 
