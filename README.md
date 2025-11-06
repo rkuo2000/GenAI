@@ -48,6 +48,15 @@
 <img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/blob/main/assets/NanoBanana_lady.png?raw=true">
 
 ---
+### Imagen4
+**Prompt**:<br>
+```
+A beautiful young woman with long, voluminous, wavy brown hair and hazel eyes, looking thoughtfully to the side. She is illuminated by soft, natural light coming from a nearby window with sheer curtains. She is wearing a simple, beige off-the-shoulder top.
+The mood is serene and pensive. The style should be a photorealistic portrait with a shallow depth of field, creating a soft, blurred background.
+```
+![]()
+
+---
 ### [Grok.imagine](https://grok.com/imagine)
 **Prompt**: 
 ```
