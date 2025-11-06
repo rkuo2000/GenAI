@@ -28,6 +28,26 @@
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/awl4vLMbUP4)](https://youtu.be/awl4vLMbUP4) [![](https://markdown-videos-api.jorgenkh.no/youtube/93fYXstDrjc)](https://youtu.be/93fYXstDrjc)
 
+### [NanoBanana]()
+**Prompt**: <br>
+```
+請生成年輕女性
+臉部特徵與妝容
+​五官: 擁有清秀、柔和的五官，臉型屬於鵝蛋臉或偏瓜子臉。豐滿上圍凸出
+​眼睛: 眼神清澈且專注，是單眼皮或內雙眼皮，帶有自然的東方美感。
+​膚質/妝容: 膚色白皙、透亮，妝容非常自然、輕薄，呈現出**「偽素顏」或「裸妝」的效果，強調肌膚的光澤感和無瑕疵**。
+​💇 髮型
+​髮色/髮質: 髮色是深棕色或自然黑，髮質看起來柔順且有光澤。
+​造型: 髮型是半紮式馬尾（或公主頭），將上半部的頭髮向後梳起，展現出俐落感；同時保留了幾縷髮絲自然地垂落在臉頰兩側，增添了柔美的氣息。
+​👚 服裝與整體風格
+​服裝: 穿著一件米色或淺裸色的上衣，材質似乎是輕薄的針織或有細紋理的布料，
+​風格: 整體風格是清新、自然、優雅，模特兒的形象。
+​🌟 簡潔重點總結
+​她是一位外型清新、氣質溫柔的女性。擁有白皙透亮的自然裸妝，搭配柔順的深棕色半紮髮，整體散發出優雅而專注的氛圍。在咖啡廳
+```
+<img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/blob/main/assets/NanoBanana_lady.png?raw=true">
+
+---
 ### [Grok.imagine](https://grok.com/imagine)
 **Prompt**: `Photorealistic close-up portrait of a young East Asian female singer (K-pop idol aesthetic) on a dark stage. big eyes with thick lips wearing a black off-the-shoulder top with spaghetti straps. Her light brown hair is styled in wavy and curry. She is holding a professional stage microphone and singing with a focused, emotional expression. Dramatic, high-contrast volumetric lighting, strong spotlight isolating the subject, deep shadows, blue/black background. Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16`<br>
  `
