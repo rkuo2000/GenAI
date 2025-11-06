@@ -15,7 +15,7 @@ img = PIL.Image.open( filename)
 prompt = "根據這張圖片,按年月日,摘要,支出, 存入, 結存, 備註, 產生csv表格,並去掉數值的逗點"
 #prompt = "根據這張圖片,轉換成markdown格式的表格"
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-flash-latest")
 
 result = model.generate_content( [prompt , img] )
 print(result.text)
