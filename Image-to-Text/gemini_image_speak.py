@@ -11,7 +11,7 @@ genai.configure(api_key=api_key, transport='rest')
 img = PIL.Image.open("images/test.jpg")
 prompt = "Can you tell me about this photo? simple description in traditional chinese"
 
-model = genai.GenerativeModel("gemini-2.0-flash-exp")
+model = genai.GenerativeModel("gemini-flash-latest")
 
 result = model.generate_content( [prompt , img] )
 print(result.text)
