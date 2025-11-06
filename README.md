@@ -77,10 +77,11 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 [![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
 
 ### 5. Image-to-Video
+**Blog**: [[AI tutorial] Wan2.1 InfiniteTalk 讓圖片、影片生成的人物完美對應口型](https://home.gamer.com.tw/artwork.php?sn=6197438)<br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/C64RibgbgTg)](https://youtu.be/C64RibgbgTg) 
+
 1) Text-to-Image  : `Grok.com/imagine`<br>
 2) Lyrics-to-Song : `Suno.com`<br>
 3) Image-to-Video : `ComfyUI + Wan2.1 Video + InfiniteTalk`<br>
-[![](https://markdown-videos-api.jorgenkh.no/youtube/C64RibgbgTg)](https://youtu.be/C64RibgbgTg) 
-
 [![](https://markdown-videos-api.jorgenkh.no/youtube/vTt7lkq-p9A)](https://youtu.be/vTt7lkq-p9A) 
 
