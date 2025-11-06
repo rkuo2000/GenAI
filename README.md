@@ -48,7 +48,7 @@
 <img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/blob/main/assets/NanoBanana_lady.png?raw=true">
 
 ---
-### Imagen4
+### [Imagen4](https://aistudio.google.com/prompts/new_image?model=imagen-4.0-generate-001)
 **Prompt**:<br>
 ```
 A beautiful young woman with long, voluminous, wavy brown hair and hazel eyes, looking thoughtfully to the side.
