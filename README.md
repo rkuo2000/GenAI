@@ -28,7 +28,7 @@
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/awl4vLMbUP4)](https://youtu.be/awl4vLMbUP4) [![](https://markdown-videos-api.jorgenkh.no/youtube/93fYXstDrjc)](https://youtu.be/93fYXstDrjc)
 
-### [NanoBanana]()
+### [NanoBanana](https://aistudio.google.com/prompts/new_chat)
 **Prompt**: <br>
 ```
 請生成年輕女性
