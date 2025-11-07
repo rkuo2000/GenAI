@@ -8,9 +8,11 @@
 ---
 ## 1. [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2025/09/09/Generative-Speech.html)
 
-### [Spark-TTS](https://github.com/SparkAudio/Spark-TTS) [https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS)
+### [Spark-TTS](https://github.com/SparkAudio/Spark-TTS) 
+[https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS)
 
-### [Index-TTS2](https://github.com/index-tts/index-tts) [https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2)
+### [Index-TTS2](https://github.com/index-tts/index-tts) 
+[https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2)
 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 
