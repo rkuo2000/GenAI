@@ -26,7 +26,7 @@
 ### [Suno](https://suno.com/home)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/WYIvrVZNm5M)](https://youtu.be/WYIvrVZNm5M) 
 
-#### [Suno%E5%B0%8F%E6%A8%99%E7%B1%A4%E6%8F%90%E7%A4%BA%E8%A9%9E1.pdf](https://github.com/rkuo2000/GenAI/blob/main/assets/Suno%E5%B0%8F%E6%A8%99%E7%B1%A4%E6%8F%90%E7%A4%BA%E8%A9%9E1.pdf)
+#### [Suno小標籤提示詞1.pdf](https://github.com/rkuo2000/GenAI/blob/main/assets/Suno%E5%B0%8F%E6%A8%99%E7%B1%A4%E6%8F%90%E7%A4%BA%E8%A9%9E1.pdf)
 
 ---
 ## 3. [Generative Image](https://rkuo2000.github.io/AI-course/lecture/2025/09/11/Generative-Image.html)
