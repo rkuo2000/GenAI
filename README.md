@@ -87,7 +87,7 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 [![](https://markdown-videos-api.jorgenkh.no/youtube/vTt7lkq-p9A)](https://youtu.be/vTt7lkq-p9A) 
 
 ---
-#### Image-to-Text + Text-to-Video
+#### I2T -> T2I -> I2V
 **Code**: [https://github.com/IuvenisSapiens/ComfyUI_Qwen3-VL-Instruct](https://github.com/IuvenisSapiens/ComfyUI_Qwen3-VL-Instruct)<br>
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/OZk4yhlFJhk)](https://youtu.be/OZk4yhlFJhk) 
