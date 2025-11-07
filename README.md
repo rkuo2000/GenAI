@@ -21,7 +21,8 @@
 
 ### [DiffRhythm](https://github.com/ASLP-lab/DiffRhythm)
 
-### [Jamify](https://github.com/declare-lab/jamify) [https://www.kaggle.com/code/rkuo2000/jamify](https://www.kaggle.com/code/rkuo2000/jamify)
+### [Jamify](https://github.com/declare-lab/jamify) 
+[https://www.kaggle.com/code/rkuo2000/jamify](https://www.kaggle.com/code/rkuo2000/jamify)
 
 ### [ACE-step](https://github.com/ace-step/ACE-Step): [ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)
 
