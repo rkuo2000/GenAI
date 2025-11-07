@@ -2,8 +2,9 @@
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 * python  == 3.12.3
-* torch   == 2.8.0+cu128
-* torchao == 1.3.0
+* torch   == 2.9.0+cu128
+* torchvision == 0.24.0+cu128
+* torchao == 0.14.1
 
 ---
 ## 1. [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2025/09/09/Generative-Speech.html)
