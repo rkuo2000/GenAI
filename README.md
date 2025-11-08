@@ -20,7 +20,7 @@
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/FireRedTTS2_gradio_monologue.png?raw=true)
 
-[audio.mp3](https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/audio.mp3)<br>
+[audio.mp3](https://gabalpha.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/audio.mp3)<br>
 
 ---
 ## 2. [Generative Song](https://rkuo2000.github.io/AI-course/lecture/2025/09/10/Generative-Song.html)
