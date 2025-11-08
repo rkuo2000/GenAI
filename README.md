@@ -17,7 +17,9 @@
 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/FireRedTTS2_gradio_monologue.png?raw=true)
-![Audio](https://github.com/rkuo2000/GenAI/blob/main/assets/audio.mp3?controlsList=nodownload-nofullscreen-noremoteplayback)
+<audio controls>
+  <source src="https://github.com/rkuo2000/GenAI/blob/main/assets/audio.mp3?raw=True" type="audio/mpeg">
+</audio>
 
 ---
 ## 2. [Generative Song](https://rkuo2000.github.io/AI-course/lecture/2025/09/10/Generative-Song.html)
