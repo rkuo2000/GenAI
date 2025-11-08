@@ -10,10 +10,10 @@
 ## 1. [Generative Speech](https://rkuo2000.github.io/AI-course/lecture/2025/09/09/Generative-Speech.html)
 
 ### [Spark-TTS](https://github.com/SparkAudio/Spark-TTS) 
-[https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS) : [spark.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/spark.mp3)<br>
+[https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS) ~ [spark.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/spark.mp3)<br>
 
 ### [Index-TTS2](https://github.com/index-tts/index-tts) 
-[https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2) : [gen.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/gen.mp3)<br>
+[https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2) ~ [gen.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/gen.mp3)<br>
 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/FireRedTTS2_gradio_monologue.png?raw=true) 
