@@ -11,12 +11,12 @@
 
 ### [Spark-TTS](https://github.com/SparkAudio/Spark-TTS) 
 [https://kaggle.com/code/rkuo2000/Spark-TTS](https://kaggle.com/code/rkuo2000/Spark-TTS)
-
-[example/results/20250225113521.wav](https://storage.googleapis.com/kaggle-script-versions/274118093/output/Spark-TTS/example/results/20250225113521.wav?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20251108%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20251108T045849Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=298cee15a0dceb87e5c37198bf3a7f74eac01e87057ac0666cc90cddc4fd41d57e431834d4986ce1a1c412421b15aebd000b15d7fe0861e3bcf31368305197e589d068ae5bba818eb297180a2d45a51317c78a00e42d5a2379037888b7d4c3e8b1c859152a271568ff32851ae5c7f523814eb386a835f4980e12aa99f511117e4e48bf9c457a20cabd0b275a6beeb10fc4d56763ef9c0f74af3d6312ada5df6b77e4a104d8257ad0e7cd14043bee6cdbbfd2e46424c841f147bb41ef0607ef4e3e9a33c1fc7cc75b308a3cfe0b2f2a7708f360f3d807758678097b107e90457d16dad349c50568e845499d2b8268fad7777b319c2c850a35ceeae4328dc2295d)
+* [example/results/20250225113521.wav](https://storage.googleapis.com/kaggle-script-versions/274118093/output/Spark-TTS/example/results/20250225113521.wav?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20251108%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20251108T045849Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=298cee15a0dceb87e5c37198bf3a7f74eac01e87057ac0666cc90cddc4fd41d57e431834d4986ce1a1c412421b15aebd000b15d7fe0861e3bcf31368305197e589d068ae5bba818eb297180a2d45a51317c78a00e42d5a2379037888b7d4c3e8b1c859152a271568ff32851ae5c7f523814eb386a835f4980e12aa99f511117e4e48bf9c457a20cabd0b275a6beeb10fc4d56763ef9c0f74af3d6312ada5df6b77e4a104d8257ad0e7cd14043bee6cdbbfd2e46424c841f147bb41ef0607ef4e3e9a33c1fc7cc75b308a3cfe0b2f2a7708f360f3d807758678097b107e90457d16dad349c50568e845499d2b8268fad7777b319c2c850a35ceeae4328dc2295d)
 
 ### [Index-TTS2](https://github.com/index-tts/index-tts) 
 [https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2)
-
+* [gen.wav](https://storage.googleapis.com/kaggle-script-versions/267965394/output/index-tts/gen.wav?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20251108%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20251108T050515Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=09c308d6b822e32f4e66dd2817b46fdbfca0e523bfdf05f643c5b15425b0ab4578454b00237b89e7ddd9d2610d9fe0446428507eb0880f918aec802266c3aabc54b08e4b4f941e3c086dcf8829e9f65d6457bd74ddcd60b39e89aeba21ae9c051b6d9ca273a869abc8e7eaebd6cd51003c96912edaeb4537d7b7220058495df15591bded21c36acb457de26ae6e8258a82f511243e2409ee7351044d0759eb3a78ebfbec26ca4b5d3154605469fc400a61fde9cb19c9ec465e2aed09e1a624a74c94b2c08fab9e1cc6e470bb20a8aab809c2e9c9ea1fe6509e12b3d862fc0fbe8c664b06ccdd6cd41c77fb662b5ba733802a79255a7b8a7bb868b9dc69cd4539)
+* 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/FireRedTTS2_gradio_monologue.png?raw=true)
 
