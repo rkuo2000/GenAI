@@ -17,6 +17,7 @@
 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/FireRedTTS2_gradio_monologue.png?raw=true)
+
 <audio controls>
   <source src="https://github.com/rkuo2000/GenAI/blob/main/assets/audio.mp3?raw=True" type="audio/mpeg">
 </audio>
