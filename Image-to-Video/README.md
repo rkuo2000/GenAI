@@ -2,6 +2,8 @@
 
 ### Installation
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
+`git clone https://github.com/comfyanonymous/ComfyUI`<br>
+`cd ComfyUI`<br>
 
 **[ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)** <br>
 `cd ComfyUI/custom_nodes`<br>
