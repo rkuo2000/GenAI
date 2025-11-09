@@ -96,10 +96,12 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 
 ---
 ## 5. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
+**[ComfyUI - WAN2.2](https://docs.comfy.org/tutorials/video/wan/wan2_2)** <br>
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
 
-### 6. Image-to-Video
+---
+## 6. Image-to-Video
 **Blog**: [[AI tutorial] Wan2.1 InfiniteTalk 讓圖片、影片生成的人物完美對應口型](https://home.gamer.com.tw/artwork.php?sn=6197438)<br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/C64RibgbgTg)](https://youtu.be/C64RibgbgTg) 
 
