@@ -31,9 +31,9 @@ GUI: http://127.0.0.1:8188
 **[ComfyUI - Wan2.1 InfiniteTalk 讓圖片、影片生成的人物完美對應口型](https://home.gamer.com.tw/artwork.php?sn=6197438)** <br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/C64RibgbgTg)](https://youtu.be/C64RibgbgTg) 
 
-1) Text-to-Image  : `Grok.com/imagine`<br>
-2) Lyrics-to-Song : `Suno.com`<br>
-3) Image-to-Video : `ComfyUI + Wan2.1 Video + InfiniteTalk`
+1) Text-to-Image  : Grok.com/imagine<br>
+2) Lyrics-to-Song : Suno.com<br>
+3) Image-to-Video : ComfyUI with Wan2.1 Video + InfiniteTalk<br>
    
 [![](https://markdown-videos-api.jorgenkh.no/youtube/vTt7lkq-p9A)](https://youtu.be/vTt7lkq-p9A) 
 
