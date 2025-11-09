@@ -54,16 +54,28 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 
 ---
 ## 2. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
-[ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
-### Text-to-Video, Image-to-Video
-**[ComfyUI - WAN2.2](https://docs.comfy.org/tutorials/video/wan/wan2_2)** <br>
+### Sora2
+[![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) 
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/5XgvjKV1iEw)](https://youtu.be/5XgvjKV1iEw) [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
+### Veo3.1
+[![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
 
 ---
-### Audio-to-Video
-**Blog**: [[AI tutorial] Wan2.1 InfiniteTalk 讓圖片、影片生成的人物完美對應口型](https://home.gamer.com.tw/artwork.php?sn=6197438)<br>
+### Text-to-Video, Image-to-Video
+**[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
+
+**[ComfyUI - WAN2.2](https://docs.comfy.org/tutorials/video/wan/wan2_2)** <br>
+
+---
+### Animate
+**[ComfyUI - Wan2.2 Animate](https://docs.comfy.org/tutorials/video/wan/wan2-2-animate)** <br>
+
+---
+### Audio-drvien Video
+**[ComfyUI - Wan2.2 S2V](https://docs.comfy.org/tutorials/video/wan/wan2-2-s2v)** <br>
+
+**[ComfyUI - Wan2.1 InfiniteTalk 讓圖片、影片生成的人物完美對應口型](https://home.gamer.com.tw/artwork.php?sn=6197438)** <br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/C64RibgbgTg)](https://youtu.be/C64RibgbgTg) 
 
 1) Text-to-Image  : `Grok.com/imagine`<br>
