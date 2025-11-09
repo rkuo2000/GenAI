@@ -129,8 +129,10 @@ GUI: http://127.0.0.1:8188
 ### [Jamify](https://github.com/declare-lab/jamify) 
 [https://www.kaggle.com/code/rkuo2000/jamify](https://www.kaggle.com/code/rkuo2000/jamify)
 
+---
 ### [ACE-step](https://github.com/ace-step/ACE-Step)
 **[ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)** <br>
+![](https://github.com/billwuhao/ComfyUI_ACE-Step/blob/main/images/2025-05-10_19-26-46.png?raw=true)
 
 ---
 ### [Suno](https://suno.com/home)
