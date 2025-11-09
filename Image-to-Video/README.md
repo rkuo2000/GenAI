@@ -9,7 +9,7 @@
 `git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager`<br>
 
 **To run ComfyUI**<br>
-`cd ~/ComfyUI`
+`cd ~/ComfyUI`<br>
 `python main.py`<br>
 
 GUI: http://127.0.0.1:8188
