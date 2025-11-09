@@ -1,6 +1,6 @@
-## ComfyUI
+# ComfyUI
 
-### Installation
+## Installation
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
 `git clone https://github.com/comfyanonymous/ComfyUI`<br>
 
@@ -15,14 +15,20 @@
 GUI: http://127.0.0.1:8188
 
 ---
+## Text-to-Video / Image-to-Video
+
 ### Wan2.2 T2V & I2V
 **[ComfyUI - WAN2.2](https://docs.comfy.org/tutorials/video/wan/wan2_2)** <br>
 
 ---
+## Animate
+
 ### Wan2.2 Animate
 **[ComfyUI - Wan2.2 Animate](https://docs.comfy.org/tutorials/video/wan/wan2-2-animate)** <br>
 
 ---
+## Audio-driven Video
+
 ### Wan2.2 S2V
 **[ComfyUI - Wan2.2 S2V](https://docs.comfy.org/tutorials/video/wan/wan2-2-s2v)** <br>
 
@@ -44,7 +50,9 @@ GUI: http://127.0.0.1:8188
 [![](https://markdown-videos-api.jorgenkh.no/youtube/OZk4yhlFJhk)](https://youtu.be/OZk4yhlFJhk) 
 
 ---
-### Lyric-to-Song
+## Lyric-to-Song
 
-**[ACE-step](https://github.com/ace-step/ACE-Step)** <br>
+### [ACE-step](https://github.com/ace-step/ACE-Step)
+
 **[ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)** <br>
+![](https://github.com/billwuhao/ComfyUI_ACE-Step/raw/main/images/2025-05-14_14-23-50.png)
