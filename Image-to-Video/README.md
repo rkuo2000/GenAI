@@ -8,7 +8,7 @@
 `cd ComfyUI/custom_nodes`<br>
 `git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager`<br>
 
-**Run ComfyUI**<br>
+**To run ComfyUI**<br>
 `cd ~/ComfyUI`
 `python main.py`<br>
 
