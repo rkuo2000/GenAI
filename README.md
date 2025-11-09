@@ -65,6 +65,10 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 ### Text-to-Video, Image-to-Video
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
 
+**[ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)** <br>
+`cd ComfyUI/custom_nodes`<br>
+`git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager`<br>
+
 **[ComfyUI - WAN2.2](https://docs.comfy.org/tutorials/video/wan/wan2_2)** <br>
 
 ---
