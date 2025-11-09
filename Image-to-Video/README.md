@@ -3,11 +3,16 @@
 ### Installation
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
 `git clone https://github.com/comfyanonymous/ComfyUI`<br>
-`cd ComfyUI`<br>
 
 **[ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)** <br>
 `cd ComfyUI/custom_nodes`<br>
 `git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager`<br>
+
+** Run ComfyUI
+`cd ~/ComfyUI`
+`python main.py`<br>
+
+GUI: http://127.0.0.1:8188
 
 ---
 ### Wan2.2 T2V & I2V
