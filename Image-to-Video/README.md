@@ -44,5 +44,7 @@ GUI: http://127.0.0.1:8188
 [![](https://markdown-videos-api.jorgenkh.no/youtube/OZk4yhlFJhk)](https://youtu.be/OZk4yhlFJhk) 
 
 ---
-### [ACE-step](https://github.com/ace-step/ACE-Step)
+### Lyric-to-Song
+
+**[ACE-step](https://github.com/ace-step/ACE-Step)** <br>
 **[ComfyUI ACE-step](https://github.com/billwuhao/ComfyUI_ACE-Step)** <br>
