@@ -62,23 +62,24 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
 
 ---
-### Text-to-Video, Image-to-Video
+### ComfyUI
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
 
 **[ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)** <br>
 `cd ComfyUI/custom_nodes`<br>
 `git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager`<br>
 
+#### Wan2.2 T2V & I2V
 **[ComfyUI - WAN2.2](https://docs.comfy.org/tutorials/video/wan/wan2_2)** <br>
 
----
-### Animate
+#### Wan2.2 Animate
 **[ComfyUI - Wan2.2 Animate](https://docs.comfy.org/tutorials/video/wan/wan2-2-animate)** <br>
 
----
-### Audio-drvien Video
+#### Wan2.2 S2V
 **[ComfyUI - Wan2.2 S2V](https://docs.comfy.org/tutorials/video/wan/wan2-2-s2v)** <br>
 
+---
+#### InfiniteTalk
 **[ComfyUI - Wan2.1 InfiniteTalk 讓圖片、影片生成的人物完美對應口型](https://home.gamer.com.tw/artwork.php?sn=6197438)** <br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/C64RibgbgTg)](https://youtu.be/C64RibgbgTg) 
 
