@@ -65,10 +65,15 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 ### ComfyUI
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
 `git clone https://github.com/comfyanonymous/ComfyUI`<br>
-
-**[ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)** <br>
 `cd ComfyUI/custom_nodes`<br>
-`git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager`<br>
+
+**Custom Nodes**:<br>
+* [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)
+`git clone https://github.com/ltdrdata/ComfyUI-Manager`<br>
+
+* [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)
+`git clone https://github.com/kijai/ComfyUI-WanVideoWrapper`<br>
+
 
 **To run ComfyUI**<br>
 `cd ~/ComfyUI`<br>
