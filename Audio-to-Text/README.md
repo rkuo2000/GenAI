@@ -30,4 +30,8 @@ Use one of the following:
 
 * run Client on PC to test Server: `python post_audio.py`<br>
 
+---
+### [Omnilingual-ASR](https://github.com/facebookresearch/omnilingual-asr)
+Open-Source Multilingual Speech Recognition for 1600+ Languages
+
 
