@@ -160,17 +160,19 @@ GUI: http://127.0.0.1:8188
 [audio.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/audio.mp3)<br>
 
 ---
-### Talking Avatar
+## 5. Talking Avatar
 
-#### [TalkMateAI](https://github.com/kiranbaby14/TalkMateAI)
+### [First Order Motion Model for Image Animation](https://github.com/AliaksandrSiarohin/first-order-model)
+
+### [TalkMateAI](https://github.com/kiranbaby14/TalkMateAI)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/dE_8TXmp2Sk)](https://youtu.be/dE_8TXmp2Sk) 
 
 ---
-#### [LipSync-Avatar](https://github.com/android-iceland/LipSync-Avatar)
+### [LipSync-Avatar](https://github.com/android-iceland/LipSync-Avatar)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/w8Qwrh8t0n4)](https://youtu.be/w8Qwrh8t0n4) 
 
 ---
-## 5. Image-to-3D
+## 6. Image-to-3D
 
 ### Hunyuan3D
 **Paper**: [Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details](https://arxiv.org/abs/2506.16504)<br>
