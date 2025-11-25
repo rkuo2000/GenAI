@@ -42,3 +42,5 @@ gnuplot gp v(out) v(in)
 .endc
 .end
 ```
+
+![](https://github.com/rkuo2000/GenAI/blob/main/Text-to-Analog/gp.png?raw=true)
