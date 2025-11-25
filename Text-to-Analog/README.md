@@ -1,7 +1,7 @@
-## ngspice 
-[Download](https://ngspice.sourceforge.io/download.htm)<br>
+## [ngspice](https://ngspice.sourceforge.io/)
+* [download](https://ngspice.sourceforge.io/download.htm)<br>
 
-### Install on Ubuntu
+### Install
 1. Download [ngspice-45.2.tar.gz](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/45.2/)
 2. `tar -xzvf ngspice-45.2.tar.gz`
 3. `cd ngspice-45.2`
