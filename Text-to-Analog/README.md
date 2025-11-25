@@ -4,9 +4,9 @@
 [Download](https://ngspice.sourceforge.io/download.htm)
 [ngspice-45.2](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/45.2/)
 1. Download ngspice-45.2.tar.gz
-2. tar -xzvf ngspice-45.2.tar.gz
-3. cd ngspice-45.2
-4. sudo ./compile_linux.sh
+2. `tar -xzvf ngspice-45.2.tar.gz`
+3. `cd ngspice-45.2`
+4. `sudo ./compile_linux.sh`
 
 ### simulation
 `ngspice -b bipamp.cir`<br>
