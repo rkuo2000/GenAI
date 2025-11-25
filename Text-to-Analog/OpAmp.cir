@@ -1,0 +1,17 @@
+.title Inverting OpAmp amplifier
+*file OpAmp.cir
+.include LF356.MOD
+XU1 3 2 7 4 6 LF356/NS
+R1 2 in 1k
+Vin in 0 dc 0 ac 1
+Vp 7 0 5
+Vm 4 0 -5
+Vin+ 3 0 0
+R2 6 2 100k
+.control
+dc Vin -50m 50m 2m
+set gnuplot_terminal="png"
+run
+gnuplot gp v(in) v(6)
+.endc
+.end
