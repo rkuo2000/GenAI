@@ -13,26 +13,32 @@
 `ngspice -b rc_filter.cir`<br>
 
 ### [tutorial](https://ngspice.sourceforge.io/ngspice-tutorial.html)
-![](https://ngspice.sourceforge.io/tutorial-images/fig10.png)
+![](https://ngspice.sourceforge.io/tutorial-images/fig8.png)
 
-Spice netlist: `OpAmp.cir`<br>
+Spice netlist: `bipamp.cir`<br>
 
 ```
-.title Inverting OpAmp amplifier
-*file OpAmp.cir
-.include LF356.MOD
-XU1 3 2 7 4 6 LF356/NS
-R1 2 in 1k
-Vin in 0 dc 0 ac 1
-Vp 7 0 5
-Vm 4 0 -5
-Vin+ 3 0 0
-R2 6 2 100k
-.control
-dc Vin -50m 50m 2m
+.title bipolar amplifier
+* file bipamp.cir
+.model BC546B npn ( IS=7.59E-15 VAF=73.4 BF=480 IKF=0.0962 NE=1.2665
++ ISE=3.278E-15 IKR=0.03 ISC=2.00E-13 NC=1.2 NR=1 BR=5 RC=0.25 CJC=6.33E-12
++ FC=0.5 MJC=0.33 VJC=0.65 CJE=1.25E-11 MJE=0.55 VJE=0.65 TF=4.26E-10
++ ITF=0.6 VTF=3 XTF=20 RB=100 IRB=0.0001 RBM=10 RE=0.5 TR=1.50E-07)
+R3 vcc intc 10k
+R1 vcc intb 68k
+R2 intb 0 10k
+Cout out intc 10u
+Cin intb in 10u
+VCC vcc 0 5
+Vin in 0 dc 0 ac 1 sin(0 1m 500)
+RLoad out 0 100k
+Q1 intc intb 0 BC546B
+.tran 10u 10m
+.ac dec 10 10 1Meg
+.control 
 set gnuplot_terminal="png"
-run
-gnuplot gp v(in) v(6)
+run 
+gnuplot gp v(out) v(in)
 .endc
 .end
 ```
