@@ -12,6 +12,7 @@
 `ngspice -b OpAmp.cir`<br> 
 `ngspice -b rc_filter.cir`<br>
 
+---
 ### [tutorial](https://ngspice.sourceforge.io/ngspice-tutorial.html)
 ![](https://ngspice.sourceforge.io/tutorial-images/fig8.png)
 
