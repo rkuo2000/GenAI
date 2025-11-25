@@ -10,8 +10,10 @@
 
 ### simulation
 `ngspice -b bipamp.cir`<br>
+`ngspice -b OpAmp.cir`<br> 
+`ngspice -b rc_filter.cir`<br>
 
-### example circuit 
+### example circuits
 Spice netlist: `bipamp.cir`<br>
 
 ```
