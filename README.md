@@ -1,8 +1,8 @@
 # Generative AI
-* python  == 3.12.3
-* torch   == 2.9.0+cu128
-* torchvision == 0.24.0+cu128
-* torchao == 0.14.1
+* python      == 3.12.3
+* torch       == 2.9.0+cu128  (2.8.0+cu128)
+* torchvision == 0.24.0+cu128 (0.23.0+cu128)
+* torchao     == 0.14.1       (0.13.0)
 
 ---
 ## 1. [Generative Image](https://rkuo2000.github.io/AI-course/lecture/2025/09/11/Generative-Image.html)
