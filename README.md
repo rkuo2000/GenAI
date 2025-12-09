@@ -163,13 +163,15 @@ GUI: http://127.0.0.1:8188
 ## 5. Talking Avatar
 
 ### [First Order Motion Model for Image Animation](https://github.com/AliaksandrSiarohin/first-order-model)
-
-### [TalkMateAI](https://github.com/kiranbaby14/TalkMateAI)
-[![](https://markdown-videos-api.jorgenkh.no/youtube/dE_8TXmp2Sk)](https://youtu.be/dE_8TXmp2Sk) 
+![](https://github.com/AliaksandrSiarohin/first-order-model/raw/master/sup-mat/relative-demo.gif)
 
 ---
 ### [LipSync-Avatar](https://github.com/android-iceland/LipSync-Avatar)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/w8Qwrh8t0n4)](https://youtu.be/w8Qwrh8t0n4) 
+
+---
+### [TalkMateAI](https://github.com/kiranbaby14/TalkMateAI)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/dE_8TXmp2Sk)](https://youtu.be/dE_8TXmp2Sk) 
 
 ---
 ## 6. Image-to-3D
