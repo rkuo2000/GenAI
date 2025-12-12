@@ -8,6 +8,26 @@
 * flash-attn==2.8.3
 
 ---
+### ComfyUI
+**[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
+`git clone https://github.com/comfyanonymous/ComfyUI`<br>
+`cd ComfyUI/custom_nodes`<br>
+
+**Custom Nodes**:<br>
+* [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)
+`git clone https://github.com/ltdrdata/ComfyUI-Manager`<br>
+
+* [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)
+`git clone https://github.com/kijai/ComfyUI-WanVideoWrapper`<br>
+
+
+**To run ComfyUI**<br>
+`cd ~/ComfyUI`<br>
+`python main.py`<br>
+
+GUI: http://127.0.0.1:8188
+
+---
 ## 1. [Generative Image](https://rkuo2000.github.io/AI-course/lecture/2025/09/11/Generative-Image.html)
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/awl4vLMbUP4)](https://youtu.be/awl4vLMbUP4) [![](https://markdown-videos-api.jorgenkh.no/youtube/93fYXstDrjc)](https://youtu.be/93fYXstDrjc)
@@ -56,6 +76,20 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 <img width="25%" height="25%" src="https://github.com/rkuo2000/GenAI/blob/main/assets/Grok_Kpop_girl.jpg?raw=true">
 
 ---
+### [Z-Image Turbo](https://docs.comfy.org/tutorials/image/z-image/z-image-turbo)
+**Model**: [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)<br>
+
+*text_encoders*/qwen_3_4b.safetensors<br>
+*diffusion_models*/z_image_turbo_bf16.safetensors<br>
+*vae*/ae.safetensors<br>
+
+<u>Additional model for ControlNet*</u><br>
+*model_patches*/Z-Image-Turbo-Fun-Controlnet-Union.safetensors<br>
+
+---
+### RED-Zimage 1.5
+
+---
 ## 2. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
 
 ### Sora2
@@ -63,26 +97,6 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 
 ### Veo3.1
 [![](https://markdown-videos-api.jorgenkh.no/youtube/PL_izvWJVLU)](https://youtu.be/PL_izvWJVLU)
-
----
-### ComfyUI
-**[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
-`git clone https://github.com/comfyanonymous/ComfyUI`<br>
-`cd ComfyUI/custom_nodes`<br>
-
-**Custom Nodes**:<br>
-* [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)
-`git clone https://github.com/ltdrdata/ComfyUI-Manager`<br>
-
-* [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)
-`git clone https://github.com/kijai/ComfyUI-WanVideoWrapper`<br>
-
-
-**To run ComfyUI**<br>
-`cd ~/ComfyUI`<br>
-`python main.py`<br>
-
-GUI: http://127.0.0.1:8188
 
 ---
 ### Wan2.2 T2V & I2V
