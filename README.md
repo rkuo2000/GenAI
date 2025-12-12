@@ -77,18 +77,14 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 
 ---
 ### [Z-Image Turbo](https://docs.comfy.org/tutorials/image/z-image/z-image-turbo)
-**Model**: [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)<br>
-
-*Model*/
-*text_encoders/* qwen_3_4b.safetensors<br>
-*diffusion_models/* z_image_turbo_bf16.safetensors<br>
-*vae/* ae.safetensors<br>
-
-<u>Additional model for ControlNet*</u><br>
-*model_patches/* Z-Image-Turbo-Fun-Controlnet-Union.safetensors<br>
+**Model**: [Comfy-Org/z_image_turbo](https://huggingface.co/Comfy-Org/z_image_turbo/tree/main/split_files)<br>
+<iframe width="514" height="289" src="https://www.youtube.com/embed/qHqRSXB4xPQ" title="ComfyUI 結合 Z-Image Turbo 全攻略｜不可思議的6B本機生圖模型，20秒出圖、支援中文！本機部署實測" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 ### RED-Zimage 1.5
+**Model**: [https://civitai.com/models/958009/redcraft-or-redzimage-or-updated-dec03-or-latest-red-z-v15](https://civitai.com/models/958009/redcraft-or-redzimage-or-updated-dec03-or-latest-red-z-v15)<br>
+**Blog**:[RED-Zimage 1.5 Review: Finally, Real AI Photos?](https://z-image.ai/zh/blog/red-zimage-1-5-review)<br>
+<iframe width="533" height="289" src="https://www.youtube.com/embed/DOkeQdxNjaU" title="50.ComfyUI完整指南：ComfyUI 新王者！REDZimage 1.5 全面超越 Zimage Turbo，寫實效果再進化！" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 ## 2. [Generative Video](https://rkuo2000.github.io/AI-course/lecture/2025/09/12/Generative-Video.html)
