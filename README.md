@@ -79,6 +79,7 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 ### [Z-Image Turbo](https://docs.comfy.org/tutorials/image/z-image/z-image-turbo)
 **Model**: [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)<br>
 
+*Model*/
 *text_encoders/* qwen_3_4b.safetensors<br>
 *diffusion_models/* z_image_turbo_bf16.safetensors<br>
 *vae/* ae.safetensors<br>
