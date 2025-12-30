@@ -2,10 +2,9 @@
 
 ### using index.html directly
 
-1. rename AI-generated html to index.html
+1. copy ai_studio_code.html to index.html
 2. `python3 -m httpserver`
-   
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ... <br>
+Open Browser at http://127.0.0.1:8000 <br>
 
 ---
 ### using FastAPI to provide html
