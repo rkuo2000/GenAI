@@ -2,7 +2,7 @@
 
 ### using index.html directly
 
-1. copy AI-generated.html to index.html
+1. copy AI-generated .html to index.html
 2. `python3 -m httpserver`
 
 Open Browser at http://127.0.0.1:8000 <br>
