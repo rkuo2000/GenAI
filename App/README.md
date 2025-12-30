@@ -1,4 +1,4 @@
-## running HTTP Server
+## HTTP Server
 
 ### using index.html directly
 
