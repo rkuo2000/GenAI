@@ -3,7 +3,8 @@
 ### using index.html directly
 
 1. rename AI-generated html to index.html
-2. `python3 -m httpserver` 
+2. `python3 -m httpserver`
+   
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ... <br>
 
 ---
