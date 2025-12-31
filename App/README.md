@@ -3,7 +3,7 @@
 ### using index.html directly
 
 1. copy ai_studio_code.html to index.html
-2. `python3 -m httpserver`
+2. `python3 -m http.server`
 
 Open Browser at http://127.0.0.1:8000 <br>
 
