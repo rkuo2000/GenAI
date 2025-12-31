@@ -12,3 +12,4 @@ Open Browser at http://127.0.0.1:8000 <br>
 `python home.py` <br>
 Open Browser at http://127.0.0.1:8080/ <br>
 Open Browser at http://127.0.0.1:8080/asr <br>
+Open Browser at http://127.0.0.1:8080/bpm <br>
