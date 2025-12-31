@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>煉金術實驗室</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
+        
+        body {
+            background: radial-gradient(circle at center, #1a1410 0%, #050505 100%);
+            color: #f1f5f9;
+            font-family: 'Noto Serif TC', serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* 兩側視窗古銅邊框 */
+        .bronze-panel {
+            background: rgba(25, 20, 15, 0.92);
+            border: 3px solid #5d4037;
+            box-shadow: 0 0 50px rgba(93, 64, 55, 0.3), inset 0 0 30px rgba(0,0,0,0.9);
+            border-radius: 3rem;
+            height: 100%;
+        }
+
+        /* 重置按鈕專用框線樣式 */
+        .reset-frame-btn {
+            border: 2px solid #5d4037;
+            background: rgba(0, 0, 0, 0.4);
+            color: #78350f;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reset-frame-btn:hover {
+            border-color: #f59e0b;
+            color: #f59e0b;
+            background: rgba(139, 94, 60, 0.1);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* 超大合成物標題 */
+        .big-result-name {
+            font-size: 5.8rem;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(to bottom, #fde68a, #b45309);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.7));
+            margin-bottom: 0.5rem;
+        }
+
+        .element-stone {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid rgba(93, 64, 55, 0.4);
+        }
+        .element-stone:hover {
+            transform: translateY(-10px) scale(1.05);
+            background: rgba(139, 94, 60, 0.2);
+            border-color: #f59e0b;
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+        }
+
+        #cauldron-canvas { width: 100%; height: 500px; } 
+        #molecule-canvas { width: 100%; height: 500px; } 
+
+        .fire-btn {
+            background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%);
+            box-shadow: 0 4px 30px rgba(185, 28, 28, 0.6);
+            border: 1px solid #ef4444;
+        }
+        .fire-btn:hover {
+            filter: brightness(1.2);
+            transform: scale(1.02);
+        }
+
+        /* 爐底背景光暈 */
+        .cauldron-aura {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(139, 94, 60, 0.2) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* 裝飾魔法圈 */
+        .magic-ring {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            border: 1px dashed rgba(139, 94, 60, 0.3);
+            border-radius: 50%;
+            animation: spin 40s linear infinite;
+        }
+        @keyframes spin { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+    </style>
+</head>
+<body class="p-4 lg:p-12">
+
+    <div class="max-w-[1900px] mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-black text-orange-100 tracking-[0.25em]">鍊金術實驗室</h1>
+            <p class="text-orange-900 font-bold mt-4 tracking-[0.5em] italic text-xl">Middle-School Chemistry Alchemy Lab</p>
+        </header>
+
+        <!-- 佈局比例調整：[左側 1.1] [空隔] [中間 0.8] [空隔] [右側 1.4] -->
+        <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.8fr_1.4fr] gap-x-20 px-4 lg:px-12 items-stretch">
+            
+            <!-- 左側視窗：元素抽取 -->
+            <div class="space-y-10 flex flex-col">
+                <div class="bronze-panel p-10 flex-grow">
+                    <h2 class="text-3xl text-orange-400 text-center font-bold mb-10 italic border-b border-orange-900/50 pb-5">選取元素</h2>
+                    <div class="grid grid-cols-2 gap-6" id="element-palette">
+                        <!-- JS 動態生成 -->
+                    </div>
+                </div>
+
+                <div class="bronze-panel p-10">
+                    <h3 class="text-sm text-orange-900 font-bold mb-4 uppercase tracking-[0.2em]">已納入古鼎：</h3>
+                    <div id="selected-box" class="flex flex-wrap gap-4 min-h-[100px] p-6 bg-black/60 rounded-[2rem] mb-10 border border-orange-900/40"></div>
+                    
+                    <div class="space-y-5">
+                        <button onclick="ignite()" class="fire-btn w-full py-7 rounded-3xl font-black text-3xl text-orange-100 transition-all">起火煉製</button>
+                        <button onclick="resetAll()" class="reset-frame-btn w-full py-4 rounded-2xl font-bold text-lg transition-all">
+                            清洗爐鼎 ‧ 重置物料
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中央區域：古銅鼎 (無邊框懸浮，兩側保留大空間) -->
+            <div class="relative flex flex-col justify-center items-center">
+                <div class="cauldron-aura"></div>
+                <div class="magic-ring"></div>
+                <div class="text-center mb-10 z-10">
+                    <span class="text-orange-900/60 font-bold italic tracking-[0.3em]">── 乾坤置中 ‧ 煉化萬物 ──</span>
+                </div>
+                
+                <div id="cauldron-canvas" class="relative z-10"></div>
+                
+                <div id="status-msg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-0 transition-opacity z-20 text-center">
+                    <span class="text-5xl font-bold text-red-500 blur-[0.2px] animate-pulse block">融合中</span>
+                    <span class="text-sm text-red-600 font-bold tracking-widest mt-2 block">元素重組...</span>
+                </div>
+                
+                <div class="mt-12 text-center text-sm text-orange-900/60 leading-relaxed max-w-xs z-10">
+                    古銅三腳鼎懸於太虛之中，靜候真火淬煉。
+                </div>
+            </div>
+
+            <!-- 右側視窗：分子神識 (大幅放大) -->
+            <div class="flex flex-col">
+                <div class="bronze-panel p-12 flex flex-col items-center justify-start min-h-[800px]">
+                    <h2 class="text-3xl text-blue-400 font-bold mb-10 tracking-[0.5em] italic uppercase">【 微觀分子結構 】</h2>
+                    
+                    <div class="w-full bg-black/60 rounded-[3.5rem] p-8 mb-10 border border-blue-900/40 shadow-2xl">
+                        <div id="molecule-canvas"></div>
+                    </div>
+                    
+                    <!-- 合成成功資訊 -->
+                    <div id="success-panel" class="hidden text-center animate-fade-in w-full">
+                        <div id="molecule-name" class="big-result-name"></div>
+                        <div id="molecule-formula" class="text-7xl font-mono text-blue-300 font-bold mb-8 tracking-tighter"></div>
+                        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-orange-900/60 to-transparent my-10"></div>
+                        <p id="molecule-desc" class="text-2xl text-slate-400 leading-relaxed px-10 font-light italic"></p>
+                    </div>
+
+                    <!-- 合成失敗提示 -->
+                    <div id="failure-panel" class="hidden mt-10 p-10 bg-red-900/10 border border-red-900/30 rounded-[2.5rem] text-red-300 text-2xl italic text-center leading-loose">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // --- 化學基礎資料庫 ---
+        const DATABASE = {
+            elements: {
+                'H': { name: '氫', color: 0xffffff, size: 0.4, icon: '⚪' },
+                'O': { name: '氧', color: 0xef4444, size: 0.54, icon: '🔴' },
+                'C': { name: '碳', color: 0x374151, size: 0.6, icon: '⚫' },
+                'Na': { name: '鈉', color: 0x8b5cf6, size: 0.64, icon: '🟣' },
+                'Cl': { name: '氯', color: 0x22c55e, size: 0.7, icon: '🟢' }
+            },
+            recipes: {
+                "H,H,O": { name: "水", formula: "H₂O", desc: "生命之源。一個氧原子與兩個氫原子鍵結，呈穩定的 V 型結構。" },
+                "C,O,O": { name: "二氧化碳", formula: "CO₂", desc: "直線型分子。常見於呼出的氣體與溫室氣體中。" },
+                "Cl,Na": { name: "氯化鈉", formula: "NaCl", desc: "食鹽。由強大的離子鍵將鈉與氯吸引在一起形成晶體。" },
+                "O,O": { name: "氧氣", formula: "O₂", desc: "雙原子分子。地球生命呼吸必需的氣體，具高度助燃性。" },
+                "C,H,H,H,H": { name: "甲烷", formula: "CH₄", desc: "正四面體結構。最簡單的有機烴類，是天然氣的主成分。" }
+            },
+            hints: [
+                "秘籍：二氫一氧，方能煉出清泉流水。",
+                "秘籍：一碳二氧，可成滅火之氣二氧化碳。",
+                "秘籍：鈉氯相投，成人間百味之首食鹽。",
+                "秘籍：四氫簇擁一碳，得地底火氣甲烷。"
+            ]
+        };
+
+        let currentSelection = [];
+        let sceneC, cameraC, rendererC, tripod, fireGroup;
+        let sceneM, cameraM, rendererM, moleculeGroup;
+        let isBurning = false;
+
+        window.onload = () => {
+            initCauldron();
+            initMoleculeViewer();
+            initUI();
+        };
+
+        function initUI() {
+            const pal = document.getElementById('element-palette');
+            for(let key in DATABASE.elements) {
+                const el = DATABASE.elements[key];
+                pal.innerHTML += `
+                    <button onclick="addToCauldron('${key}')" class="element-stone bronze-panel p-8 flex flex-col items-center">
+                        <span class="text-5xl mb-4">${el.icon}</span>
+                        <span class="text-3xl font-black text-white">${key}</span>
+                        <span class="text-xs text-orange-900 font-bold uppercase mt-2">${el.name}</span>
+                    </button>
+                `;
+            }
+        }
+
+        // --- 核心 3D：古銅鼎 ---
+        function initCauldron() {
+            sceneC = new THREE.Scene();
+            const container = document.getElementById('cauldron-canvas');
+            cameraC = new THREE.PerspectiveCamera(40, container.clientWidth/500, 0.1, 1000);
+            rendererC = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            rendererC.setSize(container.clientWidth, 500);
+            container.appendChild(rendererC.domElement);
+
+            sceneC.add(new THREE.AmbientLight(0xffffff, 0.5));
+            const sun = new THREE.DirectionalLight(0xffccaa, 1.4);
+            sun.position.set(5, 5, 5);
+            sceneC.add(sun);
+
+            const bronzeMat = new THREE.MeshStandardMaterial({ 
+                color: 0x5d4037, metalness: 0.95, roughness: 0.3, emissive: 0x1a0f00
+            });
+
+            tripod = new THREE.Group();
+            const belly = new THREE.Mesh(new THREE.SphereGeometry(1.5, 40, 40, 0, Math.PI*2, 0, Math.PI*0.8), bronzeMat);
+            belly.rotation.x = Math.PI;
+            tripod.add(belly);
+
+            const rim = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.4, 0.4, 40), bronzeMat);
+            rim.position.y = 0.3;
+            tripod.add(rim);
+
+            const hGeo = new THREE.TorusGeometry(0.35, 0.08, 16, 40);
+            const h1 = new THREE.Mesh(hGeo, bronzeMat);
+            h1.position.set(1.5, 0.6, 0); h1.rotation.y = Math.PI/2;
+            tripod.add(h1);
+            const h2 = h1.clone(); h2.position.x = -1.5;
+            tripod.add(h2);
+
+            for(let i=0; i<3; i++) {
+                const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.1, 1.3, 16), bronzeMat);
+                const angle = (i/3)*Math.PI*2;
+                leg.position.set(Math.cos(angle)*1.2, -1.4, Math.sin(angle)*1.2);
+                tripod.add(leg);
+            }
+
+            sceneC.add(tripod);
+            fireGroup = new THREE.Group();
+            sceneC.add(fireGroup);
+
+            cameraC.position.set(0, 2, 8);
+            cameraC.lookAt(0, -0.4, 0);
+
+            function animate() {
+                requestAnimationFrame(animate);
+                tripod.rotation.y += 0.007;
+                if(isBurning) {
+                    const p = new THREE.Mesh(new THREE.SphereGeometry(0.18), new THREE.MeshBasicMaterial({color: 0xff4500, transparent: true}));
+                    p.position.set((Math.random()-0.5)*1.8, -0.8, (Math.random()-0.5)*1.8);
+                    fireGroup.add(p);
+                    fireGroup.children.forEach(f => {
+                        f.position.y += 0.14;
+                        f.scale.multiplyScalar(0.95);
+                        f.material.opacity -= 0.03;
+                    });
+                    fireGroup.children = fireGroup.children.filter(f => f.material.opacity > 0);
+                }
+                rendererC.render(sceneC, cameraC);
+            }
+            animate();
+        }
+
+        // --- 分子 3D：觀測儀 ---
+        function initMoleculeViewer() {
+            sceneM = new THREE.Scene();
+            const container = document.getElementById('molecule-canvas');
+            cameraM = new THREE.PerspectiveCamera(40, container.clientWidth/500, 0.1, 1000);
+            rendererM = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            rendererM.setSize(container.clientWidth, 500);
+            container.appendChild(rendererM.domElement);
+            sceneM.add(new THREE.AmbientLight(0xffffff, 0.9));
+            cameraM.position.z = 8;
+
+            function animate() {
+                requestAnimationFrame(animate);
+                if(moleculeGroup) moleculeGroup.rotation.y += 0.012;
+                rendererM.render(sceneM, cameraM);
+            }
+            animate();
+        }
+
+        function createStick(v1, v2) {
+            const dir = new THREE.Vector3().subVectors(v2, v1);
+            const len = dir.length();
+            const geo = new THREE.CylinderGeometry(0.12, 0.12, len, 12);
+            const mat = new THREE.MeshStandardMaterial({ color: 0xdddddd, metalness: 0.6, roughness: 0.1 });
+            const stick = new THREE.Mesh(geo, mat);
+            stick.position.copy(v1.clone().add(v2).multiplyScalar(0.5));
+            stick.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir.clone().normalize());
+            return stick;
+        }
+
+        // --- 核心互動 ---
+        function addToCauldron(key) {
+            if(currentSelection.length < 5) {
+                currentSelection.push(key);
+                renderSelection();
+            }
+        }
+
+        function renderSelection() {
+            const box = document.getElementById('selected-box');
+            box.innerHTML = currentSelection.map(k => `<span class="bg-orange-800 text-orange-100 px-6 py-3 rounded-full text-xl font-black animate-bounce border border-orange-500 shadow-xl">${k}</span>`).join('');
+        }
+
+        function ignite() {
+            if(currentSelection.length === 0) return;
+            isBurning = true;
+            document.getElementById('status-msg').style.opacity = '1';
+
+            const key = currentSelection.sort().join(',');
+            const result = DATABASE.recipes[key];
+
+            setTimeout(() => {
+                isBurning = false;
+                document.getElementById('status-msg').style.opacity = '0';
+                if(result) showSuccess(key, result);
+                else showFailure();
+            }, 1800);
+        }
+
+        function showSuccess(key, data) {
+            if(moleculeGroup) sceneM.remove(moleculeGroup);
+            moleculeGroup = new THREE.Group();
+            const atoms = [];
+
+            const createAtom = (type, x, y, z) => {
+                const info = DATABASE.elements[type];
+                const mesh = new THREE.Mesh(new THREE.SphereGeometry(info.size, 32, 32), new THREE.MeshPhongMaterial({ color: info.color, shininess: 120 }));
+                mesh.position.set(x, y, z);
+                moleculeGroup.add(mesh);
+                atoms.push({ pos: new THREE.Vector3(x, y, z) });
+            };
+
+            if(key === "H,H,O") { 
+                createAtom('O', 0, 0.6, 0); createAtom('H', 1.3, -0.7, 0); createAtom('H', -1.3, -0.7, 0);
+                moleculeGroup.add(createStick(atoms[0].pos, atoms[1].pos)); moleculeGroup.add(createStick(atoms[0].pos, atoms[2].pos));
+            } else if(key === "C,O,O") {
+                createAtom('C', 0, 0, 0); createAtom('O', 2, 0, 0); createAtom('O', -2, 0, 0);
+                moleculeGroup.add(createStick(atoms[0].pos, atoms[1].pos)); moleculeGroup.add(createStick(atoms[0].pos, atoms[2].pos));
+            } else if(key === "Cl,Na") {
+                createAtom('Na', -1.1, 0, 0); createAtom('Cl', 1.1, 0, 0);
+                moleculeGroup.add(createStick(atoms[0].pos, atoms[1].pos));
+            } else if(key === "C,H,H,H,H") {
+                createAtom('C', 0, 0, 0); createAtom('H', 0, 1.7, 0); createAtom('H', 1.5, -0.5, 0.5); createAtom('H', -0.6, -0.5, 1.5); createAtom('H', -0.7, -0.5, -1.3);
+                for(let i=1; i<=4; i++) moleculeGroup.add(createStick(atoms[0].pos, atoms[i].pos));
+            } else {
+                const type = key.split(',')[0]; createAtom(type, -1.1, 0, 0); createAtom(type, 1.1, 0, 0);
+                moleculeGroup.add(createStick(atoms[0].pos, atoms[1].pos));
+            }
+
+            sceneM.add(moleculeGroup);
+            document.getElementById('success-panel').classList.remove('hidden');
+            document.getElementById('failure-panel').classList.add('hidden');
+            document.getElementById('molecule-name').innerText = data.name;
+            document.getElementById('molecule-formula').innerText = data.formula;
+            document.getElementById('molecule-desc').innerText = data.desc;
+        }
+
+        function showFailure() {
+            document.getElementById('success-panel').classList.add('hidden');
+            const fp = document.getElementById('failure-panel');
+            fp.classList.remove('hidden');
+            fp.innerText = "煉製失敗！爐中只有焦黑廢氣。\n" + DATABASE.hints[Math.floor(Math.random()*DATABASE.hints.length)];
+            if(moleculeGroup) sceneM.remove(moleculeGroup);
+        }
+
+        function resetAll() {
+            currentSelection = [];
+            renderSelection();
+            document.getElementById('success-panel').classList.add('hidden');
+            document.getElementById('failure-panel').classList.add('hidden');
+            if(moleculeGroup) sceneM.remove(moleculeGroup);
+        }
+
+        window.onresize = () => {
+            const c1 = document.getElementById('cauldron-canvas');
+            rendererC.setSize(c1.clientWidth, 500);
+            cameraC.aspect = c1.clientWidth / 500;
+            cameraC.updateProjectionMatrix();
+
+            const c2 = document.getElementById('molecule-canvas');
+            rendererM.setSize(c2.clientWidth, 500);
+            cameraM.aspect = c2.clientWidth / 500;
+            cameraM.updateProjectionMatrix();
+        };
+    </script>
+</body>
+</html>
