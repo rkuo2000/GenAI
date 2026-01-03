@@ -28,7 +28,7 @@
 
 ### image_poem.html
 ```
-寫一個html作詩系統，輸入主題的方式可選上傳照片或由webcam拍攝，選定輸入按鍵後使用Gemini辨識（輸入Gemini API) 並作詩一首， 最後產生照片與詩句結合的圖片，支援RWD
+寫一個html 影像作詩系統，輸入主題的方式可選上傳照片或由webcam拍攝，選定輸入按鍵後使用Gemini辨識（輸入Gemini API) 並作詩一首， 最後產生照片與詩句結合的圖片，支援RWD
 ```
 
 
