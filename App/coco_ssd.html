@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 物件辨識系統</title>
+    <!-- 引入 Tailwind CSS (RWD) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- 引入 COCO-SSD 模型 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <style>
+        .loading {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        canvas { max-width: 100%; height: auto; }
+        #video-preview { display: none; width: 100%; max-width: 600px; transform: scaleX(-1); }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">AI 物件辨識系統</h1>
+        
+        <!-- 模型載入提示 -->
+        <div id="status" class="mb-4 text-center text-blue-600 font-medium">
+            <div class="loading mr-2"></div> 正在載入 AI 模型，請稍候...
+        </div>
+
+        <!-- 功能按鈕區 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <button onclick="document.getElementById('file-input').click()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition">
+                📁 上傳照片
+            </button>
+            <button onclick="startWebcam()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition">
+                📷 開啟視訊鏡頭
+            </button>
+            <input type="file" id="file-input" accept="image/*" class="hidden" onchange="handleFileUpload(event)">
+        </div>
+
+        <!-- 顯示區域 -->
+        <div class="relative flex justify-center bg-gray-200 rounded-lg overflow-hidden min-h-[300px] mb-6">
+            <video id="video-preview" autoplay playsinline></video>
+            <canvas id="output-canvas"></canvas>
+            <div id="capture-overlay" class="absolute bottom-4 hidden">
+                <button onclick="captureImage()" class="bg-red-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-red-600">拍照辨識</button>
+            </div>
+        </div>
+
+        <!-- 辨識結果 -->
+        <div id="result-area" class="mb-6">
+            <h2 class="text-lg font-semibold mb-2 text-gray-700">辨識結果：</h2>
+            <div id="tags-container" class="flex flex-wrap gap-2">
+                <span class="text-gray-400 italic">尚未進行辨識</span>
+            </div>
+        </div>
+
+        <!-- 操作按鈕 -->
+        <div class="flex gap-4">
+            <button id="detect-btn" onclick="detectObjects()" disabled class="flex-1 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg disabled:opacity-50 transition">
+                🔍 開始辨識
+            </button>
+            <button onclick="resetAll()" class="w-1/4 bg-gray-400 hover:bg-gray-500 text-white font-bold py-3 px-4 rounded-lg transition">
+                重置
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let model = null;
+        const video = document.getElementById('video-preview');
+        const canvas = document.getElementById('output-canvas');
+        const ctx = canvas.getContext('2d');
+        const tagsContainer = document.getElementById('tags-container');
+        const detectBtn = document.getElementById('detect-btn');
+        const statusDiv = document.getElementById('status');
+        const captureOverlay = document.getElementById('capture-overlay');
+        
+        let currentImage = null; // 存儲目前要辨識的圖像源
+
+        // 中英對照表
+        const labelMap = {
+            'person': '人', 'bicycle': '自行車', 'car': '汽車', 'motorcycle': '摩托車', 'airplane': '飛機',
+            'bus': '巴士', 'train': '火車', 'truck': '卡車', 'boat': '船', 'traffic light': '紅綠燈',
+            'fire hydrant': '消防栓', 'stop sign': '停止標誌', 'parking meter': '停車收費表', 'bench': '長椅',
+            'bird': '鳥', 'cat': '貓', 'dog': '狗', 'horse': '馬', 'sheep': '羊', 'cow': '乳牛',
+            'elephant': '大象', 'bear': '熊', 'zebra': '斑馬', 'giraffe': '長頸鹿', 'backpack': '背包',
+            'umbrella': '雨傘', 'handbag': '手提包', 'tie': '領帶', 'suitcase': '行李箱', 'frisbee': '飛盤',
+            'skis': '滑雪板', 'snowboard': '單板滑雪', 'sports ball': '球', 'kite': '風箏', 'baseball bat': '球棒',
+            'baseball glove': '手套', 'skateboard': '滑板', 'surfboard': '衝浪板', 'tennis racket': '網球拍',
+            'bottle': '瓶子', 'wine glass': '酒杯', 'cup': '杯子', 'fork': '叉子', 'knife': '刀子', 'spoon': '湯匙',
+            'bowl': '碗', 'banana': '香蕉', 'apple': '蘋果', 'sandwich': '三明治', 'orange': '橘子',
+            'broccoli': '花椰菜', 'carrot': '紅蘿蔔', 'hot dog': '熱狗', 'pizza': '披薩', 'donut': '甜甜圈',
+            'cake': '蛋糕', 'chair': '椅子', 'couch': '沙發', 'potted plant': '盆栽', 'bed': '床',
+            'dining table': '餐桌', 'toilet': '馬桶', 'tv': '電視', 'laptop': '筆記型電腦', 'mouse': '滑鼠',
+            'remote': '遙控器', 'keyboard': '鍵盤', 'cell phone': '手機', 'microwave': '微波爐', 'oven': '烤箱',
+            'toaster': '烤麵包機', 'sink': '洗手台', 'refrigerator': '冰箱', 'book': '書本', 'clock': '時鐘',
+            'vase': '花瓶', 'scissors': '剪刀', 'teddy bear': '泰迪熊', 'hair drier': '吹風機', 'toothbrush': '牙刷'
+        };
+
+        // 1. 初始化載入模型
+        async function loadModel() {
+            try {
+                model = await cocoSsd.load();
+                statusDiv.innerHTML = '✅ 模型載入完成，請選擇輸入方式';
+                statusDiv.classList.replace('text-blue-600', 'text-green-600');
+            } catch (error) {
+                statusDiv.innerHTML = '❌ 模型載入失敗，請檢查網路';
+            }
+        }
+        loadModel();
+
+        // 2. 處理檔案上傳
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            resetUI();
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    drawImageToCanvas(img);
+                    currentImage = img;
+                    detectBtn.disabled = false;
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+
+        // 3. 處理視訊鏡頭
+        async function startWebcam() {
+            resetUI();
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
+                video.srcObject = stream;
+                video.style.display = 'block';
+                canvas.style.display = 'none';
+                captureOverlay.classList.remove('hidden');
+            } catch (err) {
+                alert('無法開啟相機: ' + err.message);
+            }
+        }
+
+        // 4. 拍照
+        function captureImage() {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0);
+            
+            currentImage = new Image();
+            currentImage.src = canvas.toDataURL('image/png');
+            
+            // 停止攝影機
+            const stream = video.srcObject;
+            stream.getTracks().forEach(track => track.stop());
+            
+            video.style.display = 'none';
+            canvas.style.display = 'block';
+            captureOverlay.classList.add('hidden');
+            detectBtn.disabled = false;
+        }
+
+        function drawImageToCanvas(img) {
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(img, 0, 0);
+            canvas.style.display = 'block';
+            video.style.display = 'none';
+        }
+
+        // 5. 執行辨識
+        async function detectObjects() {
+            if (!model || !currentImage) return;
+
+            detectBtn.innerText = '辨識中...';
+            detectBtn.disabled = true;
+            tagsContainer.innerHTML = '';
+
+            // 執行辨識 (這裡可以輸入圖片、影片或 Canvas)
+            const predictions = await model.detect(canvas);
+
+            // 繪製結果
+            ctx.drawImage(currentImage, 0, 0); // 重繪底圖
+            ctx.font = '24px Arial';
+            ctx.lineWidth = 4;
+
+            if (predictions.length === 0) {
+                tagsContainer.innerHTML = '<span class="text-red-500">未辨識出任何物件</span>';
+            }
+
+            const detectedLabels = new Set();
+
+            predictions.forEach(prediction => {
+                const [x, y, width, height] = prediction.bbox;
+                const labelEn = prediction.class;
+                const labelZh = labelMap[labelEn] || labelEn;
+                const score = Math.round(prediction.score * 100);
+
+                // 畫框
+                ctx.strokeStyle = '#00FFFF';
+                ctx.strokeRect(x, y, width, height);
+
+                // 畫標籤背景
+                ctx.fillStyle = '#00FFFF';
+                ctx.fillRect(x, y - 30, ctx.measureText(labelZh).width + 60, 30);
+                
+                // 寫字
+                ctx.fillStyle = '#000000';
+                ctx.fillText(`${labelZh} (${score}%)`, x, y - 5);
+
+                detectedLabels.add(`${labelZh} / ${labelEn}`);
+            });
+
+            // 顯示文字標籤
+            detectedLabels.forEach(label => {
+                const span = document.createElement('span');
+                span.className = 'bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-semibold border border-indigo-200';
+                span.innerText = label;
+                tagsContainer.appendChild(span);
+            });
+
+            detectBtn.innerText = '開始辨識';
+            detectBtn.disabled = false;
+        }
+
+        // 重置 UI
+        function resetUI() {
+            if (video.srcObject) {
+                video.srcObject.getTracks().forEach(track => track.stop());
+            }
+            video.style.display = 'none';
+            canvas.style.display = 'block';
+            captureOverlay.classList.add('hidden');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            tagsContainer.innerHTML = '<span class="text-gray-400 italic">尚未進行辨識</span>';
+            detectBtn.disabled = true;
+            currentImage = null;
+        }
+
+        function resetAll() {
+            resetUI();
+            document.getElementById('file-input').value = '';
+        }
+    </script>
+</body>
+</html>
