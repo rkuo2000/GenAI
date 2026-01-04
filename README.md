@@ -1,11 +1,11 @@
 # Generative AI
 * python==3.12.3
-* torch==2.8.0(+cu128)
+* torch==2.8.0+cu128
 * triton==3.4.0
-* torchvision==0.23.0(+cu128)
-* torchao==0.13.0
+* torchvision==0.23.0+cu128
+* torchao==0.14.0
 * torchaudio==2.8.0
-* flash-attn==2.8.3
+* flash-attn==2.8.3+cu128
 
 ---
 ### ComfyUI
