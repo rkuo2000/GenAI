@@ -5,6 +5,9 @@
 * torchvision==0.23.0+cu128
 * torchao==0.14.0
 * torchaudio==2.8.0
+* transformers==4.57.3
+* tokenizers==0.22.1
+* accelerate==1.12.0
 * flash-attn==2.8.3+cu128
 * peft==0.17.1
 
