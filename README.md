@@ -6,6 +6,7 @@
 * torchao==0.14.0
 * torchaudio==2.8.0
 * flash-attn==2.8.3+cu128
+* peft==0.17.1
 
 ---
 ### ComfyUI
