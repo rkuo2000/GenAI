@@ -40,8 +40,14 @@
   * 橫桿重量與長度（模擬慣性）
 3. 視覺與動畫：
   * 網頁上方顯示一個橫桿的簡易動畫，會根據當前角度傾斜。
-  * 
+  * 使用Chart.js同步繪製角度隨時間變化的響應曲線（類似MATLAB模擬圖）
+4. 功能按鍵：
+  *『開始模擬』：讓橫桿從傾斜30度開始，由PID回正。
+  *『重置』：恢復初始狀態。
+5. 介面要求：使用繁體中文，介面要乾淨現代化（使用Tailwindd CSS渲染）。所有代碼整合在一個html檔案中。
 ```
+
+### cmos_op.html
 
 ### [排球AI分析系統](https://chenrays.github.io/AI_COURSE_Project_Present_Volleyball_Game_Analysis/)
 
