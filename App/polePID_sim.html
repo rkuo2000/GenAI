@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單軸橫桿平衡 PID 模擬</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        canvas {
+            touch-action: none;
+        }
+
+        /* Custom scrollbar for better look */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 h-screen flex flex-col overflow-hidden">
+
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white p-4 shadow-md shrink-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+                <span>PID 單軸平衡模擬器</span>
+            </h1>
+            <div class="text-sm opacity-80">電機系專用工具</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 container mx-auto p-4 flex flex-col lg:flex-row gap-6 overflow-hidden">
+
+        <!-- Controls Panel -->
+        <aside
+            class="w-full lg:w-80 bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col gap-6 overflow-y-auto shrink-0">
+
+            <!-- PID Parameters -->
+            <div>
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">PID 控制參數</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <label class="w-8 font-mono font-bold text-indigo-600 text-lg">Kp</label>
+                        <div class="flex-1 flex flex-col">
+                            <input type="number" id="kp" value="25.0" step="0.1"
+                                class="bg-slate-50 border border-slate-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
+                            <span class="text-[10px] text-slate-400">比例增益</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <label class="w-8 font-mono font-bold text-indigo-600 text-lg">Ki</label>
+                        <div class="flex-1 flex flex-col">
+                            <input type="number" id="ki" value="0.1" step="0.01"
+                                class="bg-slate-50 border border-slate-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
+                            <span class="text-[10px] text-slate-400">積分增益</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <label class="w-8 font-mono font-bold text-indigo-600 text-lg">Kd</label>
+                        <div class="flex-1 flex flex-col">
+                            <input type="number" id="kd" value="15.0" step="0.1"
+                                class="bg-slate-50 border border-slate-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
+                            <span class="text-[10px] text-slate-400">微分增益</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-slate-100">
+
+            <!-- System Parameters -->
+            <div>
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">物理系統參數</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center">
+                        <label class="text-sm text-slate-600">重量 Mass (kg)</label>
+                        <input type="number" id="mass" value="0.5" step="0.1"
+                            class="w-20 bg-slate-50 border border-slate-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-right font-mono">
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <label class="text-sm text-slate-600">長度 Length (m)</label>
+                        <input type="number" id="length" value="1.0" step="0.1"
+                            class="w-20 bg-slate-50 border border-slate-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-right font-mono">
+                    </div>
+                    <div class="flex justify-between items-center opacity-70">
+                        <label class="text-sm text-slate-600">取樣 Sampling (s)</label>
+                        <input type="number" id="dt" value="0.02" readonly
+                            class="w-20 bg-slate-100 border border-slate-200 rounded px-2 py-1 text-sm text-slate-500 text-right font-mono cursor-not-allowed">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-auto flex flex-col gap-3 pt-4">
+                <button id="startBtn"
+                    class="group w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 active:scale-[0.98]">
+                    <svg id="playIcon" xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 transition-transform group-hover:scale-110" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span id="startBtnText">開始模擬</span>
+                </button>
+                <button id="resetBtn"
+                    class="w-full bg-white hover:bg-slate-50 text-slate-600 border border-slate-200 hover:border-slate-300 font-bold py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v3.27a1 1 0 11-2 0V13.1a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.277z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>重置狀態</span>
+                </button>
+            </div>
+
+            <div class="text-center mt-2 p-3 bg-slate-50 rounded border border-slate-100">
+                <div class="text-xs text-slate-400 mb-1">當前角度 (Theta)</div>
+                <div id="currentAngleDisplay" class="font-mono font-bold text-2xl text-indigo-600">30.0°</div>
+            </div>
+
+        </aside>
+
+        <!-- Visualization Area -->
+        <div class="flex-1 flex flex-col gap-4 overflow-hidden min-h-[500px]">
+
+            <!-- Animation Pane -->
+            <div
+                class="flex-[3] bg-white rounded-xl shadow-sm border border-slate-200 relative overflow-hidden flex items-center justify-center">
+                <!-- Background Grid -->
+                <div class="absolute inset-0 opacity-[0.03]"
+                    style="background-image: linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px); background-size: 40px 40px;">
+                </div>
+
+                <!-- Center line -->
+                <div class="absolute left-1/2 top-0 bottom-0 w-px bg-slate-200 border-l border-dashed border-slate-300">
+                </div>
+                <div class="absolute top-1/2 left-0 right-0 h-px bg-slate-200 border-t border-dashed border-slate-300">
+                </div>
+
+                <canvas id="simCanvas" class="w-full h-full relative z-10"></canvas>
+
+                <!-- Overlay Info -->
+                <div
+                    class="absolute top-4 right-4 bg-white/80 backdrop-blur px-4 py-2 rounded-lg border border-slate-200 shadow-sm z-20">
+                    <div class="flex flex-col gap-1 text-xs">
+                        <div class="flex justify-between gap-4">
+                            <span class="text-slate-500">模擬時間:</span>
+                            <span class="font-mono font-bold text-slate-700" id="timeDisplay">0.00s</span>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <span class="text-slate-500">馬達扭矩:</span>
+                            <span class="font-mono font-bold text-indigo-600" id="outputDisplay">0.00 N·m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart Pane -->
+            <div class="flex-[2] bg-white rounded-xl shadow-sm border border-slate-200 p-4 relative min-h-[200px]">
+                <canvas id="chartCanvas"></canvas>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        // --- System Constants & State ---
+        // Refined based on A2212 motor characteristics and user request
+        const config = {
+            dt: 0.02,             // 20ms Loop Time
+            g: 9.81,
+            maxTorque: 5.0,       // Reduced to realistic ~5N*m for a small setup (approx 1kg thrust * 0.5m)
+            airDragCoeff: 0.1,    // Increased damping per request
+            motorTimeConst: 0.05,  // 50ms delay (First order lag) for A2212 spool up
+            staticFriction: 0.05  // Stiction equivalent
+        };
+
+        let state = {
+            theta: 30 * (Math.PI / 180), // Angle in radians
+            omega: 0,                    // Angular velocity (rad/s)
+
+            // PID State
+            integral: 0,
+            prevError: 0,
+
+            // Motor State
+            actualTorque: 0,             // The filtered, real output torque
+
+            // System
+            time: 0,
+            running: false
+        };
+
+        // --- Chart.js Configuration ---
+        const ctxChart = document.getElementById('chartCanvas').getContext('2d');
+        const labelsBuffer = [];
+        const dataBuffer = [];
+        const setpointBuffer = [];
+
+        const responseChart = new Chart(ctxChart, {
+            type: 'line',
+            data: {
+                labels: labelsBuffer,
+                datasets: [
+                    {
+                        label: '角度 Angle (°)',
+                        data: dataBuffer,
+                        borderColor: '#6366f1',
+                        backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 0,
+                        pointHoverRadius: 4
+                    },
+                    {
+                        label: '目標 Setpoint',
+                        data: setpointBuffer,
+                        borderColor: '#10b981',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        pointRadius: 0,
+                        tension: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                interaction: {
+                    mode: 'nearest',
+                    axis: 'x',
+                    intersect: false
+                },
+                scales: {
+                    x: {
+                        type: 'linear',
+                        display: true,
+                        title: { display: true, text: 'Time (s)', color: '#94a3b8' },
+                        grid: { color: '#f1f5f9' },
+                        ticks: { color: '#64748b' }
+                    },
+                    y: {
+                        display: true,
+                        title: { display: true, text: 'Angle (°)', color: '#94a3b8' },
+                        grid: { color: '#f1f5f9' },
+                        ticks: { color: '#64748b' },
+                        suggestedMin: -40,
+                        suggestedMax: 40
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        align: 'end',
+                        labels: { boxWidth: 12, usePointStyle: true }
+                    }
+                }
+            }
+        });
+
+        // --- Physics Engine ---
+        function updatePhysics() {
+            // Read Inputs
+            const Kp = parseFloat(document.getElementById('kp').value);
+            const Ki = parseFloat(document.getElementById('ki').value);
+            const Kd = parseFloat(document.getElementById('kd').value);
+            const m = parseFloat(document.getElementById('mass').value);
+            const L = parseFloat(document.getElementById('length').value);
+
+            // 1. Inertia Calculation
+            // User requested "more inertia". 
+            // Standard rod J = 1/12 * m * L^2. 
+            // Adding simplified "motor mass" at ends: J_motors = 2 * (m_motor * (L/2)^2).
+            // Let's assume motor mass is ~10% of beam mass each.
+            const m_motor = m * 0.1;
+            const r_motor = L / 2;
+            const J_rod = (1 / 12) * m * L * L;
+            const J_motors = 2 * (m_motor * r_motor * r_motor);
+            const totalInertia = J_rod + J_motors + 0.01; // Added base inertia constant to stabilize small mass cases
+
+            // 2. Control Loop
+            const setpoint = 0;
+            const currentAngle = state.theta;
+
+            // Error: We want 0. If current is +30, error is -30.
+            const error = setpoint - currentAngle;
+
+            // PID Calculation
+            state.integral += error * config.dt;
+
+            // Anti-windup clamping for integral (optional but good practice)
+            // if (state.integral > 50) state.integral = 50;
+            // if (state.integral < -50) state.integral = -50;
+
+            const derivative = (error - state.prevError) / config.dt;
+            state.prevError = error;
+
+            let commandTorque = (Kp * error) + (Ki * state.integral) + (Kd * derivative);
+
+            // Saturation (Controller Output Limit)
+            if (commandTorque > config.maxTorque) commandTorque = config.maxTorque;
+            if (commandTorque < -config.maxTorque) commandTorque = -config.maxTorque;
+
+            // 3. Motor Dynamics (First Order Lag)
+            // T_new = T_old + alpha * (T_cmd - T_old)
+            // alpha = dt / (tau + dt) (approx) or 1 - exp(-dt/tau)
+            // Using simple Euler: dTorque/dt = (Command - Actual) / Tau
+            const dTorque = (commandTorque - state.actualTorque) / config.motorTimeConst;
+            state.actualTorque += dTorque * config.dt;
+
+            // 4. System Dynamics
+            // Torque_net = Torque_motor - Damping - Friction
+            // Damping is proportional to velocity (Air drag)
+            // Friction opposes motion (sign of omega)
+
+            let dampingTorque = config.airDragCoeff * state.omega;
+
+            // Add quadratic drag for more realism at high speeds? (Aerodynamic drag ~ v^2)
+            // Let's keep linear for simple PID tuning context, but make it significant.
+
+            let frictionTorque = 0;
+            if (Math.abs(state.omega) > 0.01) {
+                frictionTorque = config.staticFriction * Math.sign(state.omega);
+            }
+
+            // Net Torque
+            const netTorque = state.actualTorque - dampingTorque - frictionTorque;
+
+            // Acceleration
+            const alpha = netTorque / totalInertia;
+
+            // Integration
+            state.omega += alpha * config.dt;
+            state.theta += state.omega * config.dt;
+            state.time += config.dt;
+
+            return { torque: state.actualTorque, cmd: commandTorque };
+        }
+
+        // --- Visual Loop ---
+        const canvas = document.getElementById('simCanvas');
+        const ctx = canvas.getContext('2d');
+        let requestID;
+
+        function resize() {
+            canvas.width = canvas.parentElement.clientWidth;
+            canvas.height = canvas.parentElement.clientHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        function drawScene() {
+            const width = canvas.width;
+            const height = canvas.height;
+            const cx = width / 2;
+            const cy = height / 2;
+
+            ctx.clearRect(0, 0, width, height);
+
+            const L_sim = parseFloat(document.getElementById('length').value);
+            const screenScale = (Math.min(width, height) * 0.7) / L_sim;
+
+            ctx.save();
+            ctx.translate(cx, cy);
+
+            // Pivot
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(-15, 40);
+            ctx.lineTo(15, 40);
+            ctx.closePath();
+            ctx.fillStyle = '#94a3b8';
+            ctx.fill();
+
+            // Rotate Beam
+            // Visual: -Theta because Canvas +rotation is CW, Math +Theta is CCW
+            ctx.rotate(-state.theta);
+
+            // Beam
+            const beamW = L_sim * screenScale;
+            const beamH = 12;
+
+            ctx.fillStyle = '#475569';
+            ctx.shadowColor = 'rgba(0,0,0,0.2)';
+            ctx.shadowBlur = 10;
+            ctx.shadowOffsetY = 5;
+            ctx.roundRect(-beamW / 2, -beamH / 2, beamW, beamH, 4);
+            ctx.fill();
+            ctx.shadowColor = 'transparent';
+
+            // Motors
+            const motorOffset = beamW / 2;
+
+            function drawMotor(x, y, isRight) {
+                ctx.save();
+                ctx.translate(x, y);
+
+                // Mount
+                ctx.fillStyle = '#334155';
+                ctx.fillRect(-6, 0, 12, 10);
+
+                // Propeller
+                ctx.fillStyle = isRight ? '#3b82f6' : '#ef4444';
+                ctx.beginPath();
+                ctx.ellipse(0, -5, 12, 3, 0, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Spin Blur
+                // Use actual torque to visualize spin intensity
+                const torqueIntensity = Math.abs(state.actualTorque) / config.maxTorque;
+                if (state.running && torqueIntensity > 0.05) {
+                    ctx.fillStyle = `rgba(255,255,255,${0.3 + torqueIntensity * 0.6})`;
+                    ctx.beginPath();
+                    ctx.arc(0, -5, 14, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                ctx.restore();
+            }
+
+            drawMotor(-motorOffset, -beamH / 2, false);
+            drawMotor(motorOffset, -beamH / 2, true);
+
+            // Pivot Joint
+            ctx.beginPath();
+            ctx.arc(0, 0, 6, 0, Math.PI * 2);
+            ctx.fillStyle = '#e2e8f0';
+            ctx.fill();
+            ctx.strokeStyle = '#64748b';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.restore();
+        }
+
+        function loop() {
+            // Run physics multiple times per frame if needed for stability, 
+            // but we use dt=0.02 (50Hz) which is close to visual 60Hz.
+            // For smoother chart, we can run logic once per frame.
+
+            if (state.running) {
+                const updated = updatePhysics();
+                state.torque = updated.torque;
+
+                // UI Updates
+                document.getElementById('currentAngleDisplay').innerText = (state.theta * 180 / Math.PI).toFixed(1) + '°';
+                document.getElementById('timeDisplay').innerText = state.time.toFixed(2) + 's';
+                document.getElementById('outputDisplay').innerText = state.torque.toFixed(2) + ' N·m';
+
+                // Chart Update
+                responseChart.data.labels.push(state.time);
+                responseChart.data.datasets[0].data.push(state.theta * 180 / Math.PI);
+                responseChart.data.datasets[1].data.push(0);
+
+                // Windowing (Keep last 10s roughly: 10s / 0.02 = 500 points)
+                if (responseChart.data.labels.length > 500) {
+                    responseChart.data.labels.shift();
+                    responseChart.data.datasets[0].data.shift();
+                    responseChart.data.datasets[1].data.shift();
+                }
+
+                // Throttle chart render to save CPU? Not strictly needed for this scale.
+                responseChart.update('none');
+            }
+
+            drawScene();
+            requestID = requestAnimationFrame(loop);
+        }
+
+        // --- Event Listeners ---
+        const startBtn = document.getElementById('startBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const startBtnText = document.getElementById('startBtnText');
+        const playIcon = document.getElementById('playIcon');
+
+        startBtn.addEventListener('click', () => {
+            state.running = !state.running;
+
+            if (state.running) {
+                // To Pause
+                startBtn.classList.replace('from-indigo-600', 'from-amber-500');
+                startBtn.classList.replace('to-violet-600', 'to-amber-600');
+                startBtn.classList.replace('hover:from-indigo-700', 'hover:from-amber-600');
+                startBtn.classList.replace('hover:to-violet-700', 'hover:to-amber-700');
+                startBtnText.innerText = "暫停模擬";
+                playIcon.innerHTML = '<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />';
+            } else {
+                // To Play
+                startBtn.classList.replace('from-amber-500', 'from-indigo-600');
+                startBtn.classList.replace('to-amber-600', 'to-violet-600');
+                startBtn.classList.replace('hover:from-amber-600', 'hover:from-indigo-700');
+                startBtn.classList.replace('hover:to-amber-700', 'hover:to-violet-700');
+                startBtnText.innerText = "繼續模擬";
+                playIcon.innerHTML = '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />';
+            }
+        });
+
+        resetBtn.addEventListener('click', () => {
+            state.running = false;
+            state.theta = 30 * (Math.PI / 180);
+            state.omega = 0;
+            state.time = 0;
+            state.integral = 0;
+            state.prevError = 0;
+            state.actualTorque = 0;
+
+            responseChart.data.labels = [];
+            responseChart.data.datasets[0].data = [];
+            responseChart.data.datasets[1].data = [];
+            responseChart.update();
+
+            startBtn.classList.replace('from-amber-500', 'from-indigo-600');
+            startBtn.classList.replace('to-amber-600', 'to-violet-600');
+            startBtn.classList.replace('hover:from-amber-600', 'hover:from-indigo-700');
+            startBtn.classList.replace('hover:to-amber-700', 'hover:to-violet-700');
+            startBtnText.innerText = "開始模擬";
+            playIcon.innerHTML = '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />';
+
+            document.getElementById('currentAngleDisplay').innerText = "30.0°";
+            document.getElementById('timeDisplay').innerText = "0.00s";
+            document.getElementById('outputDisplay').innerText = "0.00 N·m";
+
+            drawScene();
+        });
+
+        // Set Defaults from user request
+        document.getElementById('kp').value = "1.0";
+        document.getElementById('ki').value = "0.82";
+        document.getElementById('kd').value = "0.31";
+        document.getElementById('mass').value = "0.7";
+        document.getElementById('length').value = "0.5";
+
+        // Init
+        drawScene();
+        loop();
+    </script>
+</body>
+
+</html>
