@@ -4,7 +4,7 @@
 * triton==3.4.0
 * torchvision==0.23.0+cu128
 * torchao==0.14.0
-* torchaudio==2.8.0
+* torchaudio==2.8.0+cu128
 * transformers==4.57.3
 * tokenizers==0.22.1
 * accelerate==1.12.0
