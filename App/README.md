@@ -31,5 +31,22 @@
 寫一個html 影像作詩系統，輸入主題的方式可選上傳照片或由webcam拍攝，選定輸入按鍵後使用Gemini辨識（輸入Gemini API) 並作詩一首， 最後產生照片與詩句結合的圖片，支援RWD
 ```
 
+### polePID_sim.html
+```
+我是一個電機系學生，請幫我寫一個單軸橫桿平衡的PID模擬網頁工具。
+1. 物理模型：模擬一個中間有支點的長桿，兩端有馬達推力。系統輸入為PID參數。
+2. 參數輸入項：PID 增益（Kp, Ki, Kd)
+  * 系統去樣時間（預設 0.02s)
+  * 橫桿重量與長度（模擬慣性）
+3. 視覺與動畫：
+  * 網頁上方顯示一個橫桿的簡易動畫，會根據當前角度傾斜。
+  * 
+```
+
+### [排球AI分析系統](https://chenrays.github.io/AI_COURSE_Project_Present_Volleyball_Game_Analysis/)
+
+### [Web3D全星空投像儀](https://anonymous-villager.github.io/Light_pollution/)
+
+
 
 
