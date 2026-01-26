@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Browser Whisper</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 50px; }
+        #status { margin: 10px; color: blue; }
+        #output { width: 80%; height: 200px; margin-top: 20px; border: 1px solid #ccc; padding: 10px; white-space: pre-wrap; }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Whisper In-Browser</h1>
+    <div id="status">Loading model (may take a minute)...</div>
+    <div>
+        <button id="recordBtn" disabled>Start Recording</button>
+        <button id="stopBtn" disabled>Stop & Transcribe</button>
+    </div>
+    <div id="output">Transcription will appear here...</div>
+
+    <script type="module">
+        import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2';
+
+        let transcriber;
+        let recorder;
+        let chunks = [];
+
+        const status = document.getElementById('status');
+        const output = document.getElementById('output');
+        const recordBtn = document.getElementById('recordBtn');
+        const stopBtn = document.getElementById('stopBtn');
+
+        // 1. Initialize Whisper Pipeline
+        (async () => {
+            try {
+                transcriber = await pipeline('automatic-speech-recognition', 'Xenova/whisper-tiny.en');
+                status.textContent = 'Model Loaded! Ready to record.';
+                recordBtn.disabled = false;
+            } catch (e) {
+                status.textContent = 'Error loading model: ' + e.message;
+            }
+        })();
+
+        // 2. Setup Recording
+        recordBtn.onclick = async () => {
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            recorder = new MediaRecorder(stream);
+            chunks = [];
+            
+            recorder.ondataavailable = e => chunks.push(e.data);
+            recorder.onstop = async () => {
+                const audioBlob = new Blob(chunks, { type: 'audio/wav' });
+                await transcribeAudio(audioBlob);
+            };
+
+            recorder.start();
+            recordBtn.disabled = true;
+            stopBtn.disabled = false;
+            status.textContent = 'Recording...';
+        };
+
+        stopBtn.onclick = () => {
+            recorder.stop();
+            recordBtn.disabled = false;
+            stopBtn.disabled = true;
+            status.textContent = 'Transcribing...';
+        };
+
+        // 3. Transcribe function
+        async function transcribeAudio(blob) {
+            const audioContext = new AudioContext({ sampleRate: 16000 });
+            const arrayBuffer = await blob.arrayBuffer();
+            const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+            
+            // Get float32 data
+            const audioData = audioBuffer.getChannelData(0);
+
+            const result = await transcriber(audioData);
+            output.textContent = result.text;
+            status.textContent = 'Done!';
+        }
+    </script>
+</body>
+</html>
