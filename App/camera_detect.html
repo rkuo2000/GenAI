@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Object Detection</title>
+    
+    <!-- Load TensorFlow.js and the COCO-SSD model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+
+        #placeholder {
+            width: 640px;
+            height: 480px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        canvas {
+            width: 640px; /* Display size */
+            height: 480px; /* Display size */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none; /* Hidden initially until camera loads */
+        }
+
+        .loading {
+            font-size: 1.5rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="placeholder">
+        <span id="loading-text" class="loading">Loading TensorFlow.js and Model...<br>Please wait.</span>
+    </div>
+
+    <!-- We will draw directly to this canvas -->
+    <canvas id="canvas"></canvas>
+
+    <script>
+        let model;
+        const video = document.createElement('video');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const placeholder = document.getElementById('placeholder');
+        const loadingText = document.getElementById('loading-text');
+
+        // 1. Load the model
+        cocoSsd.load().then(function(loadedModel) {
+            model = loadedModel;
+            loadingText.innerText = "Starting Camera...";
+            startCamera();
+        });
+
+        // 2. Start the camera
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    video: { facingMode: 'environment' }, // Use back camera on mobile
+                    audio: false
+                });
+                
+                video.srcObject = stream;
+                video.play();
+
+                // Wait for video to be ready
+                video.onloadedmetadata = () => {
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    placeholder.style.display = 'none';
+                    canvas.style.display = 'block';
+                    detectFrame();
+                };
+            } catch (err) {
+                console.error("Error accessing camera:", err);
+                loadingText.innerText = "Error accessing camera. Please allow permissions.";
+            }
+        }
+
+        // 3. Main detection loop
+        async function detectFrame() {
+            if (!model) return;
+
+            // Draw the video frame onto the canvas first (clears previous drawings)
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Detect objects in the current frame
+            const predictedObjects = await model.detect(canvas);
+
+            // Draw bounding boxes and labels
+            drawPredictions(predictedObjects);
+
+            // Loop
+            requestAnimationFrame(detectFrame);
+        }
+
+        function drawPredictions(predictions) {
+            predictions.forEach(prediction => {
+                const [x, y, width, height] = prediction.bbox;
+                const text = `${prediction.class} ${Math.round(prediction.score * 100)}%`;
+                const color = getRandomColor();
+
+                // Draw Box
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 4;
+                ctx.strokeRect(x, y, width, height);
+
+                // Draw Background for Text
+                ctx.fillStyle = color;
+                const textWidth = ctx.measureText(text).width;
+                ctx.fillRect(x, y, textWidth + 10, 25);
+
+                // Draw Text
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 16px sans-serif';
+                ctx.fillText(text, x + 5, y + 20);
+            });
+        }
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
