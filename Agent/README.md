@@ -1,10 +1,22 @@
 
 ## [Agent](https://rkuo2000.github.io/AI-course/lecture/2025/09/13/Agents.html)
 
+### [OpenClaw](https://github.com/openclaw/openclaw)
+1. `npm install -g openclaw@latest` <br>
+2. `openclaw onboard --install-daemon` <br>
+3. `openclaw gateway restart` <br>
+4. open browser http://127.0.0.1:18789
+
+---
+### [Ollama](https://ollama.com/search)
+`curl -fsSL https://ollama.com/install.sh | sh` <br>
+`ollama pull glm-4.7-flash:latest` <br>
+`ollama run glm-4.7-flash:latest` <br>
+**API:** `http://127.0.0.1:11434/v1`<br>
+
+---
 ### [LM Studio](https://lmstudio.ai/)
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_studio_server.png?raw=true)
-
-
 
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_studio_client.png?raw=true)
 
