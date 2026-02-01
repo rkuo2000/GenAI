@@ -6,6 +6,7 @@
 2. `openclaw onboard --install-daemon` <br>
 3. `openclaw gateway restart` <br>
 4. open browser `http://127.0.0.1:18789` <br>
+
 [.openclaw/openclaw.json](https://github.com/rkuo2000/GenAI/blob/main/Agent/openclaw.json)<br>
 
 ---
