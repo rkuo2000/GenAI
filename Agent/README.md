@@ -5,12 +5,15 @@
 1. `npm install -g openclaw@latest` <br>
 2. `openclaw onboard --install-daemon` <br>
 3. `openclaw gateway restart` <br>
-4. open browser http://127.0.0.1:18789
+4. open browser `http://127.0.0.1:18789` <br>
+[.openclaw/openclaw.json]()<br>
 
 ---
 ### [Ollama](https://ollama.com/search)
 `curl -fsSL https://ollama.com/install.sh | sh` <br>
+`ollama -v` <br>
 `ollama pull glm-4.7-flash:latest` <br>
+`ollama list`<br>
 `ollama run glm-4.7-flash:latest` <br>
 **API:** `http://127.0.0.1:11434/v1`<br>
 
