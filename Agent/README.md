@@ -37,21 +37,25 @@
 
 ![](https://github.com/anomalyco/opencode/raw/dev/packages/web/src/assets/lander/screenshot.png)
 
-<iframe width="1150" height="647" src="https://www.youtube.com/embed/8toBNmRDO90" title="OpenCode setup: Beginner’s Crash course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+**OpenCode setup: Beginner’s Crash course** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/8toBNmRDO90)](https://youtu.be/8toBNmRDO90)
 
-<iframe width="1150" height="647" src="https://www.youtube.com/embed/JYVTUU9ClUA" title="OpenCode详细攻略，开源版Claude Code，免费模型与神级插件  #ai #科技 #计算机 #编程 #coding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+**OpenCode詳細攻略** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/JYVTUU9ClUA)](https://youtu.be/JYVTUU9ClUA)
 
 ---
 ### [MCP-Servers](https://modelcontextprotocol.io/docs/getting-started/intro)
 
 * [Build an MCP server](https://modelcontextprotocol.io/docs/develop/build-server)
 
-<iframe width="1150" height="647" src="https://www.youtube.com/embed/twFjLiy2Pmc" title="🚀开发者福音！一人抵一个开发团队！OpenCode最强插件Oh My Opencode实测：Sisyphus智能体指挥多AI协作，复杂项目开发效率倍增！全程零干预！指挥大模型疯狂干活" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+**OpenCode最强插件** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/twFjLiy2Pmc)](https://youtu.be/twFjLiy2Pmc)
 
 ---
 ### [Skills](https://code.claude.com/docs/en/skills)
 
-<iframe width="1150" height="647" src="https://www.youtube.com/embed/3nm_hDALBmY" title="爆火的Skills怎么用？数据分析，内容创作，编程实战Agent Skills" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+**爆火的Skills怎麼用？** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/3nm_hDALBmY)](https://youtu.be/3nm_hDALBmY)
 
 ---
 ## Autonomous AI
