@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.1",
+    "lastTouchedAt": "2026-02-03T16:50:54.438Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-03T15:24:28.431Z",
+    "lastRunVersion": "2026.2.1",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://0.0.0.0:11434/v1",
+        "apiKey": "ollama-local",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "gpt-oss:latest",
+            "name": "GPT-OSS:20b (Local)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 16384
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/gpt-oss:latest"
+      },
+      "workspace": "/home/rkuo/.openclaw/workspace",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "models": {
+        "ollama/gpt-oss:latest": { "alias": "GPT-OSS" },
+        "google-antigravity/claude-opus-4-5-thinking": { "alias": "Opus-4.5" }
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+886972211921"
+      ],
+      "groupPolicy": "allowlist",
+      "mediaMaxMb": 50,
+      "debounceMs": 0
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "6891bcc3b908212d37a7b4a322c2e88ccd5ad2ed706c43c3"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      },
+      "google-antigravity-auth": {
+        "enabled": true
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "google-antigravity:rkuo2025@gmail.com": {
+        "provider": "google-antigravity",
+        "mode": "oauth",
+        "email": "rkuo2025@gmail.com"
+      }
+    }
+  }
+}
