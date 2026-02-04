@@ -7,9 +7,9 @@
 ### [Ollama](https://ollama.com/search)
 `curl -fsSL https://ollama.com/install.sh | sh` <br>
 `ollama -v` <br>
-`ollama pull glm-4.7-flash:latest` <br>
+`ollama pull gpt-oss:latest` <br>
 `ollama list`<br>
-`ollama run glm-4.7-flash:latest` <br>
+`ollama run gpt-oss:latest` <br>
 **API:** `http://127.0.0.1:11434/v1`<br>
 
 ---
@@ -58,7 +58,23 @@
 [![](https://markdown-videos-api.jorgenkh.no/youtube/3nm_hDALBmY)](https://youtu.be/3nm_hDALBmY)
 
 ---
-## Autonomous AI
+## Autonomous AI Agent
+
+### VPN: Tailscale
+```
+curl -fsSL <https://tailscale.com/install.sh> | sh
+sudo tailscale up
+```
+
+### setup Firewall
+```
+sudo apt install ufw -y
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow in on tailscale0 to any port 22
+sudo ufw enable #Type 『y』 to confirm`
+sudo ufw status
+```
 
 ### [OpenClaw](https://github.com/openclaw/openclaw)
 1. `npm install -g openclaw@latest` <br>
