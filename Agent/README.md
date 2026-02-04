@@ -58,15 +58,31 @@
 [![](https://markdown-videos-api.jorgenkh.no/youtube/3nm_hDALBmY)](https://youtu.be/3nm_hDALBmY)
 
 ---
-## Autonomous AI Agent
+## Personal AI Agent
 
-### VPN: Tailscale
+### OpenClaw Architecture
+![](https://help.apiyi.com/wp-content/uploads/2026/01/clawdbot-beginner-guide-personal-ai-assistant-2026-fr-image-1.png)
+
+**Blog**: [OpenClaw (Clawdbot) Architecture: Engineering Reliable and Controllable AI Agents](https://vertu.com/ai-tools/openclaw-clawdbot-architecture-engineering-reliable-and-controllable-ai-agents/)<br>
+The 6-Stage Execution Pipeline:
+1. Channel Adapter: Standardizes inputs from different platforms (e.g., Discord or Telegram) into a unified message format while extracting necessary attachments.
+2. Gateway Server: Acts as a session coordinator, determining which session a message belongs to and assigning it to the appropriate queue.
+3. Lane Queue: A critical reliability layer that enforces serial execution by default, allowing parallelism only for explicitly marked low-risk tasks.
+4. Agent Runner: The “assembly line” for the model. It handles model selection, API key cooling, prompt assembly, and context window management.
+5. Agentic Loop: The iterative cycle where the model proposes a tool call, the system executes it, the result is backfilled, and the loop continues until a resolution is reached or limits are hit.
+6. Response Path: Streams final content back to the user channel while simultaneously writing the entire process to a JSONL transcript for auditing and replay.
+
+---
+### OpenClaw Installation
+[![](https://markdown-videos-api.jorgenkh.no/youtube/daXOXSSyudM)](https://youtu.be/daXOXSSyudM)
+
+#### setup VPN : Tailscale
 ```
 curl -fsSL <https://tailscale.com/install.sh> | sh
 sudo tailscale up
 ```
 
-### setup Firewall
+#### setup Firewall
 ```
 sudo apt install ufw -y
 sudo ufw default deny incoming
@@ -76,7 +92,7 @@ sudo ufw enable #Type 『y』 to confirm`
 sudo ufw status
 ```
 
-### [OpenClaw](https://github.com/openclaw/openclaw)
+#### install [OpenClaw](https://github.com/openclaw/openclaw)
 1. `npm install -g openclaw@latest` <br>
 2. `openclaw onboard --install-daemon` <br>
 3. `openclaw gateway restart` <br>
