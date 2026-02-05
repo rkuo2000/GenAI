@@ -94,7 +94,7 @@ sudo ufw status
 ```
 
 #### install [OpenClaw](https://github.com/openclaw/openclaw)
-1. `npm install -g openclaw@latest` <br>
+1. `sudo npm install -g openclaw@latest` <br>
 2. `openclaw onboard --install-daemon` <br>
 3. `openclaw gateway restart` <br>
 4. open browser `http://127.0.0.1:18789` <br>
