@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="GALAXIAN - 80年代霓虹復古風格經典街機射擊遊戲">
+    <meta name="theme-color" content="#0a0a1a">
+    <title>GALAXIAN - NEON RETRO</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🚀</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 星云背景层 -->
+        <div id="nebula-bg"></div>
+        
+        <!-- HUD 界面 -->
+        <div id="hud">
+            <div class="hud-section left">
+                <div class="hud-item">
+                    <span class="hud-label">SCORE</span>
+                    <span id="score-display" class="hud-value neon-text">0</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">LEVEL</span>
+                    <span id="level-display" class="hud-value neon-text">1</span>
+                </div>
+            </div>
+            <div class="hud-section center">
+                <h1 class="game-title neon-title">GALAXIAN</h1>
+            </div>
+            <div class="hud-section right">
+                <div class="hud-item">
+                    <span class="hud-label">SHIELD</span>
+                    <span id="shield-display" class="hud-value neon-text">0</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">LIVES</span>
+                    <span id="lives-display" class="hud-value neon-text">❤️❤️❤️</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 高分榜 -->
+        <div id="high-score-panel" class="panel hidden">
+            <h2 class="neon-title">HIGH SCORES</h2>
+            <ol id="high-score-list"></ol>
+            <button id="close-high-score" class="neon-button">CLOSE</button>
+        </div>
+
+        <!-- 开始画面 -->
+        <div id="start-screen" class="screen">
+            <div class="screen-content">
+                <h1 class="main-title neon-title-glow">GALAXIAN</h1>
+                <p class="subtitle neon-text-pink">NEON RETRO EDITION</p>
+                <div class="instructions">
+                    <h3 class="neon-text">CONTROLS</h3>
+                    <div class="control-row">
+                        <span class="control-label">PC:</span>
+                        <span class="control-desc">方向鍵/滑鼠移動 | 空白鍵/左鍵射擊 | 右鍵護盾</span>
+                    </div>
+                    <div class="control-row">
+                        <span class="control-label">MOBILE:</span>
+                        <span class="control-desc">觸控拖曳移動 | 自動射擊 | 快速三擊護盾</span>
+                    </div>
+                </div>
+                <button id="start-btn" class="neon-button-large">START GAME</button>
+                <button id="high-score-btn" class="neon-button">HIGH SCORES</button>
+            </div>
+        </div>
+
+        <!-- 游戏结束画面 -->
+        <div id="game-over-screen" class="screen hidden">
+            <div class="screen-content">
+                <h1 class="neon-title-red">GAME OVER</h1>
+                <p class="final-score neon-text">SCORE: <span id="final-score">0</span></p>
+                <p id="new-record-msg" class="neon-text-pink hidden">NEW RECORD!</p>
+                <button id="restart-btn" class="neon-button-large">TRY AGAIN</button>
+                <button id="menu-btn" class="neon-button">MAIN MENU</button>
+            </div>
+        </div>
+
+        <!-- 关卡完成画面 -->
+        <div id="level-complete-screen" class="screen hidden">
+            <div class="screen-content">
+                <h2 class="neon-title-green">LEVEL COMPLETE!</h2>
+                <p class="neon-text">BONUS: <span id="level-bonus">0</span></p>
+                <button id="next-level-btn" class="neon-button-large">NEXT LEVEL</button>
+            </div>
+        </div>
+
+        <!-- 道具提示 -->
+        <div id="powerup-notify" class="hidden">
+            <span id="powerup-icon"></span>
+            <span id="powerup-text"></span>
+        </div>
+
+        <!-- 游戏画布 -->
+        <canvas id="game-canvas"></canvas>
+
+        <!-- 音效控制 -->
+        <div id="audio-controls">
+            <button id="mute-btn" class="audio-btn">🔊</button>
+            <button id="music-btn" class="audio-btn">🎵</button>
+        </div>
+
+        <!-- 暂停按钮 (移动端) -->
+        <button id="pause-btn" class="hidden">⏸️</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

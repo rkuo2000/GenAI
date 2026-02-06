@@ -1,0 +1,43 @@
+{
+  "name": "GALAXIAN - Neon Retro Edition",
+  "short_name": "GALAXIAN",
+  "description": "80年代霓虹復古風格經典街機射擊遊戲",
+  "version": "1.0.0",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#050510",
+  "theme_color": "#0a0a1a",
+  "orientation": "landscape",
+  "scope": ".",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%230a0a1a' width='192' height='192'/><text x='96' y='120' font-size='100' text-anchor='middle'>🚀</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%230a0a1a' width='512' height='512'/><text x='256' y='340' font-size='280' text-anchor='middle'>🚀</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%230a0a1a' width='1280' height='720'/><text x='640' y='360' font-size='60' fill='%230ff' text-anchor='middle' font-family='monospace'>GALAXIAN NEON RETRO</text></svg>",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "開始遊戲",
+      "short_name": "Play",
+      "description": "立即開始遊戲",
+      "url": "./?action=play"
+    }
+  ],
+  "prefer_related_applications": false
+}
