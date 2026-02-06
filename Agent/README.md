@@ -132,8 +132,11 @@ The 6-Stage Execution Pipeline:<br>
   - **應用程式類型** : 選`電腦版應用程式`
   - **名稱** : 填`OpenClaw` ==> 按`建立` ==> 下載JSON
   - 下載後改名 `client_secret.json` 移至`.openclaw/workspace`
-* 在`localhost:18789`, prompt輸入 `use .openclaw/workspace/client_secret.json to setup Gmail`
-* 按結果產生之程式gmail.js or gmail_auth.py，執行後會開啟瀏覽器，選定Gmail帳號，繼續完成授權後即可使用。
+* 在`localhost:18789`, prompt輸入 `read .openclaw/workspace/client_secret.json and make a gmail-auth.py to access Gmail API`
+* 自動會在workspace中產生 gmail_auth.py
+* `pip install --upgrade google-auth-oauthlib google-auth-httplib2`
+* `python gmail-auth.py`
+* 執行後會開啟瀏覽器，選定Gmail帳號，按**繼續** 即可完成授權。
   
 ---
 #### setup VPN : Tailscale
