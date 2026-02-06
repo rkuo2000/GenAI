@@ -124,20 +124,15 @@ The 6-Stage Execution Pipeline:<br>
 
 ---
 #### setup Gmail
-* **建立專案** [Google Console && create project](https://console.cloud.google.com/projectcreate)
-* **專案名稱** `Openclaw-Gmail-API`
-* **建立憑證** `https://console.cloud.google.com/apis/credentials?project=your_project_id`
-* **設定同意畫面** ==> **專案設定**
-  - **應用程式資訊** : 輸入應用程式名稱及使用者支援電子郵件
-  - **目標對象** : 點選 `外部`
-  - **聯絡資訊** : 輸入使用者Email
-  - **完成** : 勾選 `我同意`
-  - 按`繼續` ==> 按`建立`
-    
-* **建立 OAuth 用戶端 ID** : 應用程式類型 選`電腦版應用程式`, 名稱填`OpenClaw` ==> 按`建立` ==> 下載JSON
-* 下載後改名 `client_secret.json` 移至`.openclaw/workspace`
-* 檢查 **[API和服務]** 頁面之 **OAuth 2.0 用戶端ID** 應有一個名稱為 `OpenClaw` 的應用
-* 在localhost:18789, prompt輸入 `use .openclaw/workspace/client_secret.json to setup Gmail`
+* **API和服務**
+  - **建立專案** [Google Console && create project](https://console.cloud.google.com/projectcreate)
+  - **專案名稱** `Openclaw-Gmail-API`
+* **API和服務** ==> **+啟用API和服務** ==> **[Gmail API]** ==> Enable
+* **憑證** ==> **建立憑證** ==> **OAuth用戶端ID**
+  - **應用程式類型** : 選`電腦版應用程式`
+  - **名稱** : 填`OpenClaw` ==> 按`建立` ==> 下載JSON
+  - 下載後改名 `client_secret.json` 移至`.openclaw/workspace`
+* 在`localhost:18789`, prompt輸入 `use .openclaw/workspace/client_secret.json to setup Gmail`
 * 按結果產生之程式gmail.js or gmail_auth.py，執行後會開啟瀏覽器，選定Gmail帳號，繼續完成授權後即可使用。
   
 ---
