@@ -60,7 +60,7 @@
 ### [galaxian]
 **Blog**: [Galaxian 遊戲指南與開發更新](https://vocus.cc/article/697f7388fd89780001b59a98)<br>
 
-#### AnitGravity ~ open a folder & input prompt :
+#### opencode : `Kimi K2.5 Free`
 ```
 開發一款經典街機遊戲《Galaxian》的網頁版克隆作品，並嚴格採用了 80 年代霓虹復古 (Neon Retro) 的美學風格。
 
