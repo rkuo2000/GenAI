@@ -95,3 +95,4 @@ PWA 支援： 新增了 manifest.json，讓玩家可以將遊戲「新增至主�
 5. 操作方式
 裝置移動射擊護盾PC 端方向鍵 或 滑鼠空白鍵 或 滑鼠左鍵滑鼠右鍵行動端觸控並拖曳螢幕任意位置觸碰螢幕時自動射擊快速連按三下 (0.75秒內)
 ```
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/App-galaxian.png?raw=true)
