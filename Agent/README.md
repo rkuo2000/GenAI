@@ -4,13 +4,35 @@
 ---
 ## Local LLM
 
-### [Ollama](https://ollama.com/search)
+### install [Ollama](https://ollama.com/search)
 `curl -fsSL https://ollama.com/install.sh | sh` <br>
 `ollama -v` <br>
 `ollama pull gpt-oss:latest` <br>
 `ollama list`<br>
 `ollama run gpt-oss:latest` <br>
 **API:** `http://127.0.0.1:11434/v1`<br>
+
+---
+### setup Ollama service
+`sudo nano /etc/systemd/system/ollama.service` <br>
+
+#### to run with multiple GPUs
+```
+Environment="OLLAMA_SCHED_SPREAD=1"
+Environment="CUDA_VISIBLE_DEVICES=1,0"
+```
+
+#### to run with DEBUG level 2
+```
+Environment="OLLAMA_DEBUG=2"
+```
+
+#### restart Ollama service
+`sudo systemctl daemon-reload` <br>
+`sudo systemctl restart ollama` <br>
+
+#### monitor Ollama debug message
+`journalctl -f -b -u ollama` <br> 
 
 ---
 ### [LM Studio](https://lmstudio.ai/)
@@ -77,6 +99,48 @@ The 6-Stage Execution Pipeline:<br>
 ### OpenClaw Installation
 [![](https://markdown-videos-api.jorgenkh.no/youtube/daXOXSSyudM)](https://youtu.be/daXOXSSyudM)
 
+#### install [OpenClaw](https://github.com/openclaw/openclaw)
+1. `sudo npm install -g openclaw@latest` <br>
+2. `openclaw onboard --install-daemon` <br>
+3. `openclaw gateway restart` <br>
+4. open browser `http://127.0.0.1:18789` <br>
+
+[.openclaw/openclaw.json](https://github.com/rkuo2000/GenAI/blob/main/Agent/openclaw.json)<br>
+
+---
+#### setup WhatsApp
+*.openclaw/openclaw.json*<br>
+```
+  "channels": {
+    "whatsapp": {
+      "selfChatMode": true,
+      "dmPolicy": "allowlist",
+      "allowFrom": [
+        "+886972123456"
+      ]
+    }
+  },
+```
+
+---
+#### setup Gmail
+* **建立專案** [Google Console && create project](https://console.cloud.google.com/projectcreate)
+* **專案名稱** `Openclaw-Gmail-API`
+* **建立憑證** `https://console.cloud.google.com/apis/credentials?project=your_project_id`
+* **設定同意畫面** ==> **專案設定**
+  - **應用程式資訊** : 輸入應用程式名稱及使用者支援電子郵件
+  - **目標對象** : 點選 `外部`
+  - **聯絡資訊** : 輸入使用者Email
+  - **完成** : 勾選 `我同意`
+  - 按`繼續` ==> 按`建立`
+    
+* **建立 OAuth 用戶端 ID** : 應用程式類型 選`電腦版應用程式`, 名稱填`OpenClaw` ==> 按`建立` ==> 下載JSON
+* 下載後改名 `client_secret.json` 移至`.openclaw/workspace`
+* 檢查 **[API和服務]** 頁面之 **OAuth 2.0 用戶端ID** 應有一個名稱為 `OpenClaw` 的應用
+* 在localhost:18789, prompt輸入 `use .openclaw/workspace/client_secret.json to setup Gmail`
+* 按結果產生之程式gmail.js or gmail_auth.py，執行後會開啟瀏覽器，選定Gmail帳號，繼續完成授權後即可使用。
+  
+---
 #### setup VPN : Tailscale
 ```
 curl -fsSL <https://tailscale.com/install.sh> | sh
@@ -92,14 +156,6 @@ sudo ufw allow in on tailscale0 to any port 22
 sudo ufw enable #Type 『y』 to confirm`
 sudo ufw status
 ```
-
-#### install [OpenClaw](https://github.com/openclaw/openclaw)
-1. `sudo npm install -g openclaw@latest` <br>
-2. `openclaw onboard --install-daemon` <br>
-3. `openclaw gateway restart` <br>
-4. open browser `http://127.0.0.1:18789` <br>
-
-[.openclaw/openclaw.json](https://github.com/rkuo2000/GenAI/blob/main/Agent/openclaw.json)<br>
 
 ---
 #### Multiple Agents
