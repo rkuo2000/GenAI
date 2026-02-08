@@ -99,6 +99,9 @@ PWA 支援： 新增了 manifest.json，讓玩家可以將遊戲「新增至主�
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/App-galaxian.png?raw=true)
 
 ---
-## AntiGravity
-**Antigravity 設定與應用：規則（Rules）＋神技能（Skills）＋自動化（Workflows）** <br>
+## Vibe Coding
+
+### [Antigravity Vibe Coding 實戰工作坊](https://kevintsai1202.github.io/Antigravity_Course/)
+
+### Antigravity 設定與應用：規則（Rules）＋神技能（Skills）＋自動化（Workflows）
 [![](https://markdown-videos-api.jorgenkh.no/youtube/e-WNdM4JO2U)](https://youtu.be/e-WNdM4JO2U)
