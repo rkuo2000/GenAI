@@ -1,9 +1,11 @@
-## HTTPS Server
+# Vibe Coding
 
+## HTTPS Server
 1. 將AI產生的html (例如: ai_studio_code.html) 複製到 index.html
 2. `python main.py`
 3. 以電腦或手機打開Chrome瀏覽器，輸入`https://127.0.0.1:8000` 或 `https://192.168.0.14:8000` (192.168.0.14 是PC連網的位址）
 
+---
 ## App生成之提示詞
 
 ### [alphabet.html](https://rkuo2000.github.io/app-alphabet/)
@@ -61,7 +63,7 @@
 ### [galaxian](https://rkuo2000.github.io/app-galaxian)
 **Blog**: [Galaxian 遊戲指南與開發更新](https://vocus.cc/article/697f7388fd89780001b59a98)<br>
 
-#### opencode : `Kimi K2.5 Free`
+### opencode : `Kimi K2.5 Free`
 ```
 開發一款經典街機遊戲《Galaxian》的網頁版克隆作品，並嚴格採用了 80 年代霓虹復古 (Neon Retro) 的美學風格。
 
@@ -99,7 +101,7 @@ PWA 支援： 新增了 manifest.json，讓玩家可以將遊戲「新增至主�
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/App-galaxian.png?raw=true)
 
 ---
-## Vibe Coding
+## AntiGravity
 
 ### [Antigravity Vibe Coding 實戰工作坊](https://kevintsai1202.github.io/Antigravity_Course/)
 
