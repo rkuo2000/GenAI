@@ -150,9 +150,9 @@ add the following into `~/.openclaw/openclaw.json` <br>
       }
     }
 ```
-* *for remote ollama server, replace `127.0.0.1` to `192.168.0.12` (remote ip addr)* <br>*
-* *for allow other openclaw to access Ollama server remotely,
-  On ollama server: `sudo ufw allow from 192.168.0.18`*
+To access a remote Ollama server: <br>
+* modify openclaw.json, *replace `127.0.0.1` to `192.168.0.12` (remote ip addr)* 
+* modify ufw rules on Ollama server, `sudo ufw allow from 192.168.0.18`*
 
 ---
 #### setup WhatsApp
