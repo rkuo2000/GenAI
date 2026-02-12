@@ -112,6 +112,16 @@ v 11.9.0
 v 11.10.0
 
 ---
+### install brew
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"`<br>
+
+```
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+```
+
+---
 ### OpenClaw setup
 [![](https://markdown-videos-api.jorgenkh.no/youtube/daXOXSSyudM)](https://youtu.be/daXOXSSyudM)
 
