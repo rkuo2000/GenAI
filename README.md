@@ -1,8 +1,8 @@
 # Generative AI
 
-## [Vibe Coding](https://github.com/rkuo2000/GenAI/edit/main/App/README.md)
+## [Vibe Coding](https://github.com/rkuo2000/GenAI/tree/main/App)
 
-## [Agentic Coding](https://github.com/rkuo2000/GenAI/edit/main/Agnent/README.md)
+## [Agentic Coding](https://github.com/rkuo2000/GenAI/tree/main/Agent)
 
 ## [AI Generated Content](https://github.com/rkuo2000/GenAI/edit/main/AIGC.md)
 
