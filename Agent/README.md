@@ -108,6 +108,33 @@ The 6-Stage Execution Pipeline:<br>
 [.openclaw/openclaw.json](https://github.com/rkuo2000/GenAI/blob/main/Agent/openclaw.json)<br>
 
 ---
+#### setup Ollama
+add the following into `~/.openclaw/openclaw.json` <br>
+
+```
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "gpt-oss:latest",
+            "name": "GPT-OSS:20b (Local)",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 32768,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+```
+
+---
 #### setup WhatsApp
 *.openclaw/openclaw.json*<br>
 ```
