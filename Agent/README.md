@@ -96,14 +96,31 @@ The 6-Stage Execution Pipeline:<br>
 6. **Response Path**: Streams final content back to the user channel while simultaneously writing the entire process to a JSONL transcript for auditing and replay.
 
 ---
-### OpenClaw Installation
+### install node & npm
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install node
+```
+
+* `node -v`
+v25.6.1
+
+* `npm -v`
+v 11.9.0
+
+* `npm install -g npm@latest`
+v 11.10.0
+
+---
+### OpenClaw setup
 [![](https://markdown-videos-api.jorgenkh.no/youtube/daXOXSSyudM)](https://youtu.be/daXOXSSyudM)
 
 #### install [OpenClaw](https://github.com/openclaw/openclaw)
-1. `sudo npm install -g openclaw@latest` <br>
-2. `openclaw onboard --install-daemon` <br>
-3. `openclaw gateway restart` <br>
-4. open browser `http://127.0.0.1:18789` <br>
+1. `sudo npm install -g openclaw@latest`
+2. `openclaw -v`
+3. `openclaw onboard --install-daemon`
+4. `openclaw gateway restart`
+5. open browser `http://127.0.0.1:18789`
 
 [.openclaw/openclaw.json](https://github.com/rkuo2000/GenAI/blob/main/Agent/openclaw.json)<br>
 
@@ -133,6 +150,9 @@ add the following into `~/.openclaw/openclaw.json` <br>
       }
     }
 ```
+* *for remote ollama server, replace `127.0.0.1` to `192.168.0.12` (remote ip addr)* <br>*
+* *for allow other openclaw to access Ollama server remotely,
+  On ollama server: `sudo ufw allow from 192.168.0.18`
 
 ---
 #### setup WhatsApp
