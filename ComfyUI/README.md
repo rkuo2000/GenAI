@@ -1,4 +1,5 @@
 #  AI Generated Content
+## packages
 * python==3.12.3
 * torch==2.8.0+cu128
 * triton==3.4.0
@@ -12,7 +13,7 @@
 * peft==0.17.1
 
 ---
-### ComfyUI
+## ComfyUI
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
 `git clone https://github.com/comfyanonymous/ComfyUI`<br>
 `cd ComfyUI/custom_nodes`<br>
