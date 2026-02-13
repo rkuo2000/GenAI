@@ -36,17 +36,9 @@ Environment="OLLAMA_DEBUG=2"
 
 ---
 ### [LM Studio](https://lmstudio.ai/)
-![](https://github.com/rkuo2000/GenAI/blob/main/assets/LM_studio_server.png?raw=true)
 
 ---
-## Vibe Coding
-
-### [AntiGravity](https://antigravity.google/)
-* **[Getting-Started](https://antigravity.google/docs/get-started)**
-* **[Agent Modes / Settings](https://antigravity.google/docs/agent-modes-settings)**
-
----
-## Agentic AI coding tools
+## Agentic Coding Tools
 
 ### [Claud-code](https://github.com/anthropics/claude-code)
 **Install**: `curl -fsSL https://claude.ai/install.sh | bash` <br>
