@@ -22,6 +22,9 @@ Environment="OLLAMA_SCHED_SPREAD=1"
 Environment="CUDA_VISIBLE_DEVICES=1,0"
 ```
 
+---
+### set Ollama debugging 
+
 #### to run with DEBUG level 2
 ```
 Environment="OLLAMA_DEBUG=2"
