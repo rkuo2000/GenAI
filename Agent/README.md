@@ -79,4 +79,7 @@ Environment="OLLAMA_DEBUG=2"
 
 ### [OpenClaw](https://github.com/rkuo2000/GenAI/blob/main/Agent/OpenClaw.md)
 
+### [mimiClaw](https://github.com/memovai/mimiclaw)
+**Blog**: [mimiClaw](https://www.cnx-software.com/2026/02/13/mimiclaw-is-an-openclaw-like-ai-assistant-for-esp32-s3-boards/)<br>
+
 
