@@ -75,7 +75,7 @@ Environment="OLLAMA_DEBUG=2"
 [![](https://markdown-videos-api.jorgenkh.no/youtube/3nm_hDALBmY)](https://youtu.be/3nm_hDALBmY)
 
 ---
-## Personal AI Agent
+## Personal Agent
 
 ### [OpenClaw](https://github.com/rkuo2000/GenAI/blob/main/Agent/OpenClaw.md)
 
