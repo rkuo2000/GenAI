@@ -1,13 +1,45 @@
 # Vibe Coding
 
-## HTTPS Server
+---
+## Coder
+
+### [AntiGravity](https://antigravity.google/)
+
+#### [Getting-Started](https://antigravity.google/docs/get-started)**
+#### [Agent Modes / Settings](https://antigravity.google/docs/agent-modes-settings)**
+  
+**[Antigravity Vibe Coding 實戰工作坊](https://kevintsai1202.github.io/Antigravity_Course/)** <br>
+
+**Antigravity 設定與應用：規則（Rules）＋神技能（Skills）＋自動化（Workflows）** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/e-WNdM4JO2U)](https://youtu.be/e-WNdM4JO2U)
+
+---
+### [Claud-code](https://github.com/anthropics/claude-code)
+**Install**: `curl -fsSL https://claude.ai/install.sh | bash` <br>
+
+![](https://github.com/anthropics/claude-code/raw/main/demo.gif)
+
+---
+### [OpenCode](https://github.com/anomalyco/opencode)
+**Install**: `npm i -g opencode-ai@latest` <br>
+
+![](https://github.com/anomalyco/opencode/raw/dev/packages/web/src/assets/lander/screenshot.png)
+
+**OpenCode setup: Beginner’s Crash course** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/8toBNmRDO90)](https://youtu.be/8toBNmRDO90)
+
+**OpenCode詳細攻略** <br>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/JYVTUU9ClUA)](https://youtu.be/JYVTUU9ClUA)
+
+---
+## App 範例
+
+### HTTPS Server
 1. 將AI產生的html (例如: ai_studio_code.html) 複製到 index.html
 2. `python main.py`
 3. 以電腦或手機打開Chrome瀏覽器，輸入`https://127.0.0.1:8000` 或 `https://192.168.0.14:8000` (192.168.0.14 是PC連網的位址）
 
 ---
-## App生成之提示詞
-
 ### [alphabet.html](https://rkuo2000.github.io/app-alphabet/)
 ```
 寫出一個網頁給幼兒園學習26個英文字母，搭配單字，要能發出聲音與顯示圖片，要加上RWD
@@ -100,10 +132,3 @@ PWA 支援： 新增了 manifest.json，讓玩家可以將遊戲「新增至主�
 ```
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/App-galaxian.png?raw=true)
 
----
-## AntiGravity
-
-### [Antigravity Vibe Coding 實戰工作坊](https://kevintsai1202.github.io/Antigravity_Course/)
-
-### Antigravity 設定與應用：規則（Rules）＋神技能（Skills）＋自動化（Workflows）
-[![](https://markdown-videos-api.jorgenkh.no/youtube/e-WNdM4JO2U)](https://youtu.be/e-WNdM4JO2U)
