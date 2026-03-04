@@ -15,7 +15,7 @@
 | 🔧 **I/O 架構**   | RP1 I/O 控制器             | SoC 內建 I/O                  | 📈 I/O 效能更佳      |
 
 ---
-### Mac mini-M4 vs OrinNano-Super vs K230
+### OrinNano-Super vs K230
 | Feature               | NVIDIA Jetson Orin Nano Super            | Kendryte K230 (CanMV / 01Studio)  |
 | --------------------- | ---------------------------------------- | --------------------------------- |
 | 🎯 **Primary Focus**  | High-performance Edge AI / Generative AI | Ultra-low-power Vision / Audio AI |
