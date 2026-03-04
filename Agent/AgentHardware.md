@@ -1,4 +1,4 @@
-## 硬體比較
+## Agent 硬體比較
 
 ### RPi5 vs RPi4
 | 項目              | Raspberry Pi 5          | Raspberry Pi 4 Model B      | 差異重點             |
