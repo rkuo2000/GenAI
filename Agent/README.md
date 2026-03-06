@@ -50,7 +50,7 @@ Environment="OLLAMA_DEBUG=2"
 
 ---
 ### [OpenCode](https://github.com/anomalyco/opencode)
-**Install**: `npm i -g opencode-ai@latest` <br>
+**Install**: `curl -fsSL https://opencode.ai/install | bash` <br>
 
 ![](https://github.com/anomalyco/opencode/raw/dev/packages/web/src/assets/lander/screenshot.png)
 
