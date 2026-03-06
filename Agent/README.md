@@ -61,6 +61,10 @@ Environment="OLLAMA_DEBUG=2"
 [![](https://markdown-videos-api.jorgenkh.no/youtube/JYVTUU9ClUA)](https://youtu.be/JYVTUU9ClUA)
 
 ---
+### [gws](https://github.com/googleworkspace/cli)
+**Install**: `npm install -g @googleworkspace/cli`<br>
+
+---
 ### [MCP-Servers](https://modelcontextprotocol.io/docs/getting-started/intro)
 
 * [Build an MCP server](https://modelcontextprotocol.io/docs/develop/build-server)
