@@ -61,6 +61,8 @@ Environment="OLLAMA_DEBUG=2"
 [![](https://markdown-videos-api.jorgenkh.no/youtube/JYVTUU9ClUA)](https://youtu.be/JYVTUU9ClUA)
 
 ---
+## CLI
+
 ### [gws](https://github.com/googleworkspace/cli)
 **Install**: `npm install -g @googleworkspace/cli`<br>
 
