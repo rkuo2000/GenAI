@@ -20,7 +20,7 @@
 
 **Custom Nodes**:<br>
 * [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)
-`git clone https://github.com/ltdrdata/ComfyUI-Manager`<br>
+`git clone https://github.com/Comfy-Org/ComfyUI-Manager`<br>
 
 **To run ComfyUI**<br>
 `cd ~/ComfyUI`<br>
