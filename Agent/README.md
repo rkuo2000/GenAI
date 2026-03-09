@@ -83,9 +83,23 @@ Environment="OLLAMA_DEBUG=2"
 ---
 ## Personal Agent
 
-### [OpenClaw](https://github.com/rkuo2000/GenAI/blob/main/Agent/OpenClaw.md)
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*yWZcgi24bHe3AZOevKpWmQ.png)
 
-### [mimiClaw](https://github.com/memovai/mimiclaw)
+### [OpenClaw](https://github.com/openclaw/openclaw)
+OpenClaw is a personal AI assistant you run on your own devices
+
+### [NanoClaw](https://github.com/qwibitai/nanoclaw) 
+An AI assistant that runs agents securely in their own containers.
+
+### [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) - run on $10 hardware
+ZeroClaw is the runtime operating system for agentic workflows 
+
+### [PicoClaw](https://github.com/sipeed/picoclaw) 
+🦐 PicoClaw is an ultra-lightweight personal AI Assistant inspired by nanobot
+
+### [MimiClaw](https://github.com/memovai/mimiclaw)
+Pocket AI Assistant on a $5 Chip
+
 **Blog**: [mimiClaw](https://www.cnx-software.com/2026/02/13/mimiclaw-is-an-openclaw-like-ai-assistant-for-esp32-s3-boards/)<br>
 
 
