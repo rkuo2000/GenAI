@@ -14,17 +14,13 @@
 
 ---
 ## ComfyUI
-**[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <br>
-`git clone https://github.com/comfyanonymous/ComfyUI`<br>
+**[ComfyUI](https://github.com/Comfy-Org/ComfyUI)** <br>
+`git clone https://github.com/Comfy-Org/ComfyUI`<br>
 `cd ComfyUI/custom_nodes`<br>
 
 **Custom Nodes**:<br>
 * [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)
 `git clone https://github.com/ltdrdata/ComfyUI-Manager`<br>
-
-* [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)
-`git clone https://github.com/kijai/ComfyUI-WanVideoWrapper`<br>
-
 
 **To run ComfyUI**<br>
 `cd ~/ComfyUI`<br>
