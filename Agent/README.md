@@ -4,6 +4,8 @@
 ---
 ## Local LLM
 
+### llama-cpp-python
+
 ### install [Ollama](https://ollama.com/search)
 `curl -fsSL https://ollama.com/install.sh | sh` <br>
 `ollama -v` <br>
@@ -38,15 +40,10 @@ Environment="OLLAMA_DEBUG=2"
 `journalctl -f -b -u ollama` <br> 
 
 ---
-### [LM Studio](https://lmstudio.ai/)
-
----
 ## Agentic Coding Tools
 
 ### [Claud-code](https://github.com/anthropics/claude-code)
 **Install**: `curl -fsSL https://claude.ai/install.sh | bash` <br>
-
-![](https://github.com/anthropics/claude-code/raw/main/demo.gif)
 
 ---
 ### [OpenCode](https://github.com/anomalyco/opencode)
@@ -54,10 +51,8 @@ Environment="OLLAMA_DEBUG=2"
 
 ![](https://github.com/anomalyco/opencode/raw/dev/packages/web/src/assets/lander/screenshot.png)
 
-**OpenCode setup: Beginner’s Crash course** <br>
+**OpenCode setup** <br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/8toBNmRDO90)](https://youtu.be/8toBNmRDO90)
-
-**OpenCode詳細攻略** <br>
 [![](https://markdown-videos-api.jorgenkh.no/youtube/JYVTUU9ClUA)](https://youtu.be/JYVTUU9ClUA)
 
 ---
