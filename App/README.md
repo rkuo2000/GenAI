@@ -6,7 +6,6 @@
 ### [AntiGravity](https://antigravity.google/)
 
 #### [Getting-Started](https://antigravity.google/docs/get-started)
-#### [Agent Modes / Settings](https://antigravity.google/docs/agent-modes-settings)
   
 **[Antigravity Vibe Coding 實戰工作坊](https://kevintsai1202.github.io/Antigravity_Course/)** <br>
 
