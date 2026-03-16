@@ -4,5 +4,5 @@
 
 ## [Agentic Coding](https://github.com/rkuo2000/GenAI/tree/main/Agent)
 
-## [AI Generated Content](https://github.com/rkuo2000/GenAI/tree/main/ComfyUI)
+## [AI Generated Content](https://github.com/rkuo2000/GenAI/blob/main/AIGC.md)
 
