@@ -103,7 +103,7 @@ Cinematic shot, 8k, hyperdetailed, shallow depth of field, aspect ratio 9:16
 **[ComfyUI - WAN2.2](https://docs.comfy.org/tutorials/video/wan/wan2_2)** <br>
 
 ### [LTX-2.3](https://ltx.io/model/ltx-2-3)
-<iframe width="1051" height="586" src="https://www.youtube.com/embed/ZlqZEb8uBDM" title="本地可部署！LTX-2.3开源视频模型ComfyUI全流程：4090显卡生成电影级视频/武打片/宠物播客（附工作流）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/ZlqZEb8uBDM)](https://youtu.be/ZlqZEb8uBDM) 
 
 ---
 ## 3. [Generative Song](https://rkuo2000.github.io/AI-course/lecture/2025/09/10/Generative-Song.html)
