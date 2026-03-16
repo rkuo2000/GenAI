@@ -1,15 +1,15 @@
 # Generative AI
 * python==3.12.3
-* torch==2.8.0+cu128
-* triton==3.4.0
-* torchvision==0.23.0+cu128
-* torchao==0.14.0
-* torchaudio==2.8.0+cu128
-* transformers==4.57.3
-* tokenizers==0.22.1
+* torch==2.9.1+cu128
+* triton==3.5.1
+* torchvision==0.24.1+cu128
+* torchao==0.15.0
+* torchaudio==2.10.0+cu128
+* transformers==4.57.6
+* tokenizers==0.22.2
 * accelerate==1.12.0
 * flash-attn==2.8.3+cu128
-* peft==0.17.1
+* peft==0.18.1
 
 ---
 ### ComfyUI
