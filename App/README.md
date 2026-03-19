@@ -139,3 +139,4 @@ create matlab mcp server for my current-control project use
 ```
 create a 3-phase BLDC motor current-control circuit, and call Matlab to simulate the circuit to provide result
 ```
+![](https://raw.githubusercontent.com/rkuo2000/GenAI/refs/heads/main/assets/app-3phase-motor-current-control-sim.png)
