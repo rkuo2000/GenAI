@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日語假名學習 - 幼兒園互動教材</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #FF6B9D;
+      --secondary: #4ECDC4;
+      --accent: #FFE66D;
+      --bg: #FFF5F8;
+      --text: #2D3436;
+      --success: #00B894;
+      --card-bg: #FFFFFF;
+      --shadow: rgba(255, 107, 157, 0.2);
+      --shadow-hover: rgba(255, 107, 157, 0.35);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .header-decoration {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0.3;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .header-decoration:nth-child(1) { top: 10px; left: 10%; animation-delay: 0s; }
+    .header-decoration:nth-child(2) { top: 30px; right: 15%; animation-delay: 0.5s; }
+    .header-decoration:nth-child(3) { bottom: 10px; left: 20%; animation-delay: 1s; }
+    .header-decoration:nth-child(4) { bottom: 20px; right: 10%; animation-delay: 1.5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      color: var(--primary);
+      text-shadow: 3px 3px 0 var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .filter-btn {
+      padding: 12px 24px;
+      border: 3px solid var(--primary);
+      border-radius: 50px;
+      background: transparent;
+      color: var(--primary);
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .filter-btn:hover {
+      background: var(--primary);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 15px var(--shadow);
+    }
+
+    .kana-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .kana-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 20px 10px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 8px 25px var(--shadow);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kana-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .kana-card:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 15px 35px var(--shadow-hover);
+    }
+
+    .kana-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .kana-card:active {
+      transform: scale(0.95);
+    }
+
+    .kana-main {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .kana-sub {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 1.5rem;
+      color: var(--primary);
+      opacity: 0.7;
+      margin-top: 5px;
+    }
+
+    .kana-romaji {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.9rem;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-top: 8px;
+      text-transform: uppercase;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(45, 52, 54, 0.7);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal {
+      background: var(--card-bg);
+      border-radius: 30px;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      transform: scale(0.8);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+    }
+
+    .modal-overlay.active .modal {
+      transform: scale(1);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-close:hover {
+      background: var(--primary);
+      color: white;
+      transform: rotate(90deg);
+    }
+
+    .modal-kana-display {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .modal-kana-main {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(5rem, 15vw, 8rem);
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .modal-kana-sub {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(3rem, 8vw, 4rem);
+      color: var(--secondary);
+      opacity: 0.8;
+    }
+
+    .modal-romaji {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.5rem;
+      color: var(--text);
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .play-kana-btn {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px var(--shadow);
+    }
+
+    .play-kana-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 35px var(--shadow-hover);
+    }
+
+    .play-kana-btn:active {
+      transform: scale(0.95);
+    }
+
+    .play-kana-btn.playing {
+      animation: pulse 0.8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 8px 25px var(--shadow); }
+      50% { transform: scale(1.1); box-shadow: 0 15px 40px var(--shadow-hover); }
+    }
+
+    .words-section {
+      margin-top: 30px;
+    }
+
+    .words-section h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 1.3rem;
+      color: var(--text);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .word-card {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .word-card:hover {
+      transform: translateX(10px);
+      box-shadow: 0 5px 20px var(--shadow);
+    }
+
+    .word-image {
+      font-size: 4rem;
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .word-info {
+      flex: 1;
+    }
+
+    .word-japanese {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .word-chinese {
+      font-size: 1.1rem;
+      color: #636e72;
+      margin-top: 5px;
+    }
+
+    .word-play {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background: var(--secondary);
+      color: white;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .word-play:hover {
+      background: var(--success);
+      transform: scale(1.1);
+    }
+
+    .word-play.playing {
+      animation: pulse 0.8s ease-in-out infinite;
+    }
+
+    .no-support {
+      text-align: center;
+      padding: 20px;
+      background: #fff3cd;
+      border-radius: 15px;
+      color: #856404;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .kana-grid {
+        grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+        gap: 15px;
+      }
+
+      .kana-card {
+        padding: 15px 8px;
+      }
+
+      .modal {
+        padding: 30px 20px;
+      }
+
+      .word-card {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+      .word-info {
+        width: 100%;
+        order: 2;
+      }
+
+      .word-image {
+        width: 70px;
+        height: 70px;
+        font-size: 3rem;
+        order: 1;
+        margin: 0 auto;
+      }
+
+      .word-play {
+        order: 3;
+        margin: 10px auto 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .kana-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
+      .filters {
+        gap: 8px;
+      }
+
+      .filter-btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+
+      header {
+        padding: 25px 15px;
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="header-decoration">🌸</span>
+      <span class="header-decoration">⭐</span>
+      <span class="header-decoration">🌈</span>
+      <span class="header-decoration">🎈</span>
+      <h1>日語假名學習</h1>
+      <p class="subtitle">點擊假名卡片，開始學習吧！</p>
+    </header>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="vowel">母音</button>
+      <button class="filter-btn" data-filter="consonant">子音</button>
+      <button class="filter-btn" data-filter="dakuten">濁音</button>
+      <button class="filter-btn" data-filter="handakuten">半濁音</button>
+    </div>
+
+    <div class="kana-grid" id="kanaGrid"></div>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-kana-display">
+        <div class="modal-kana-main" id="modalKanaMain"></div>
+        <div class="modal-kana-sub" id="modalKanaSub"></div>
+        <div class="modal-romaji" id="modalRomaji"></div>
+      </div>
+      <button class="play-kana-btn" id="playKanaBtn">🔊</button>
+      <div id="speechSupport"></div>
+      <div class="words-section">
+        <h3>📚 相關單字</h3>
+        <div id="wordsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const kanaData = [
+      // 母音 (Vowels)
+      { kana: "あ", katakana: "ア", romaji: "a", type: "vowel", words: [
+        { japanese: "りんご", chinese: "蘋果", emoji: "🍎" },
+        { japanese: "あめ", chinese: "雨", emoji: "🌧️" }
+      ]},
+      { kana: "い", katakana: "イ", romaji: "i", type: "vowel", words: [
+        { japanese: "いぬ", chinese: "狗", emoji: "🐕" },
+        { japanese: "いえ", chinese: "房子", emoji: "🏠" }
+      ]},
+      { kana: "う", katakana: "ウ", romaji: "u", type: "vowel", words: [
+        { japanese: "うみ", chinese: "大海", emoji: "🌊" },
+        { japanese: "そら", chinese: "天空", emoji: "☁️" }
+      ]},
+      { kana: "え", katakana: "エ", romaji: "e", type: "vowel", words: [
+        { japanese: "えき", chinese: "車站", emoji: "🚉" },
+        { japanese: "えだまめ", chinese: "毛豆", emoji: "🌱" }
+      ]},
+      { kana: "お", katakana: "オ", romaji: "o", type: "vowel", words: [
+        { japanese: "おにぎり", chinese: "飯糰", emoji: "🍙" },
+        { japanese: "おかね", chinese: "金錢", emoji: "💴" }
+      ]},
+      
+      // K行 (Ka)
+      { kana: "か", katakana: "カ", romaji: "ka", type: "consonant", words: [
+        { japanese: "かさ", chinese: "雨傘", emoji: "☂️" },
+        { japanese: "かに", chinese: "螃蟹", emoji: "🦀" }
+      ]},
+      { kana: "き", katakana: "キ", romaji: "ki", type: "consonant", words: [
+        { japanese: "きく", chinese: "菊花", emoji: "🌼" },
+        { japanese: "きた", chinese: "北方", emoji: "❄️" }
+      ]},
+      { kana: "く", katakana: "ク", romaji: "ku", type: "consonant", words: [
+        { japanese: "くるま", chinese: "汽車", emoji: "🚗" },
+        { japanese: "くもり", chinese: "陰天", emoji: "☁️" }
+      ]},
+      { kana: "け", katakana: "ケ", romaji: "ke", type: "consonant", words: [
+        { japanese: "けしき", chinese: "景色", emoji: "🏔️" },
+        { japanese: "けた", chinese: "竹子", emoji: "🎋" }
+      ]},
+      { kana: "こ", katakana: "コ", romaji: "ko", type: "consonant", words: [
+        { japanese: "こえ", chinese: "歌聲", emoji: "🎤" },
+        { japanese: "こども", chinese: "小朋友", emoji: "👧" }
+      ]},
+      
+      // S行 (Sa)
+      { kana: "さ", katakana: "サ", romaji: "sa", type: "consonant", words: [
+        { japanese: "さくら", chinese: "櫻花", emoji: "🌸" },
+        { japanese: "さかな", chinese: "魚", emoji: "🐟" }
+      ]},
+      { kana: "し", katakana: "シ", romaji: "shi", type: "consonant", words: [
+        { japanese: "しんごう", chinese: "紅綠燈", emoji: "🚦" },
+        { japanese: "しお", chinese: "鹽", emoji: "🧂" }
+      ]},
+      { kana: "す", katakana: "ス", romaji: "su", type: "consonant", words: [
+        { japanese: "すし", chinese: "壽司", emoji: "🍣" },
+        { japanese: "すいか", chinese: "西瓜", emoji: "🍉" }
+      ]},
+      { kana: "せ", katakana: "セ", romaji: "se", type: "consonant", words: [
+        { japanese: "せんせい", chinese: "老師", emoji: "👨‍🏫" },
+        { japanese: "せかい", chinese: "世界", emoji: "🌍" }
+      ]},
+      { kana: "そ", katakana: "ソ", romaji: "so", type: "consonant", words: [
+        { japanese: "そら", chinese: "天空", emoji: "☁️" },
+        { japanese: "そと", chinese: "外面", emoji: "🏃" }
+      ]},
+      
+      // T行 (Ta)
+      { kana: "た", katakana: "タ", romaji: "ta", type: "consonant", words: [
+        { japanese: "たまご", chinese: "蛋", emoji: "🥚" },
+        { japanese: "たけ", chinese: "竹子", emoji: "🎋" }
+      ]},
+      { kana: "ち", katakana: "チ", romaji: "chi", type: "consonant", words: [
+        { japanese: "ちず", chinese: "地圖", emoji: "🗺️" },
+        { japanese: "ちきゅう", chinese: "地球", emoji: "🌎" }
+      ]},
+      { kana: "つ", katakana: "ツ", romaji: "tsu", type: "consonant", words: [
+        { japanese: "つき", chinese: "月亮", emoji: "🌙" },
+        { japanese: "つり", chinese: "釣魚", emoji: "🎣" }
+      ]},
+      { kana: "て", katakana: "テ", romaji: "te", type: "consonant", words: [
+        { japanese: "てがみ", chinese: "信", emoji: "💌" },
+        { japanese: "てら", chinese: "寺廟", emoji: "⛩️" }
+      ]},
+      { kana: "と", katakana: "ト", romaji: "to", type: "consonant", words: [
+        { japanese: "とり", chinese: "鳥", emoji: "🐦" },
+        { japanese: "ともだち", chinese: "朋友", emoji: "👫" }
+      ]},
+      
+      // N行 (Na)
+      { kana: "な", katakana: "ナ", romaji: "na", type: "consonant", words: [
+        { japanese: "なつ", chinese: "夏天", emoji: "☀️" },
+        { japanese: "なみだ", chinese: "眼淚", emoji: "😢" }
+      ]},
+      { kana: "に", katakana: "ニ", romaji: "ni", type: "consonant", words: [
+        { japanese: "にじ", chinese: "彩虹", emoji: "🌈" },
+        { japanese: "にほん", chinese: "日本", emoji: "🇯🇵" }
+      ]},
+      { kana: "ぬ", katakana: "ヌ", romaji: "nu", type: "consonant", words: [
+        { japanese: "いぬ", chinese: "狗", emoji: "🐕" }
+      ]},
+      { kana: "ね", katakana: "ネ", romaji: "ne", type: "consonant", words: [
+        { japanese: "ねこ", chinese: "貓", emoji: "🐱" },
+        { japanese: "ねむい", chinese: "想睡", emoji: "😴" }
+      ]},
+      { kana: "の", katakana: "ノ", romaji: "no", type: "consonant", words: [
+        { japanese: "のみもの", chinese: "飲料", emoji: "🥤" },
+        { japanese: "のり", chinese: "海苔", emoji: "🥬" }
+      ]},
+      
+      // H行 (Ha)
+      { kana: "は", katakana: "ハ", romaji: "ha", type: "consonant", words: [
+        { japanese: "はな", chinese: "花", emoji: "🌸" },
+        { japanese: "はし", chinese: "筷子", emoji: "🥢" }
+      ]},
+      { kana: "ひ", katakana: "ヒ", romaji: "hi", type: "consonant", words: [
+        { japanese: "ひと", chinese: "人", emoji: "👤" },
+        { japanese: "ひるね", chinese: "午睡", emoji: "😴" }
+      ]},
+      { kana: "ふ", katakana: "フ", romaji: "fu", type: "consonant", words: [
+        { japanese: "ふゆ", chinese: "冬天", emoji: "❄️" },
+        { japanese: "ふね", chinese: "船", emoji: "⛵" }
+      ]},
+      { kana: "へ", katakana: "ヘ", romaji: "he", type: "consonant", words: [
+        { japanese: "へや", chinese: "房間", emoji: "🚪" },
+        { japanese: "へび", chinese: "蛇", emoji: "🐍" }
+      ]},
+      { kana: "ほ", katakana: "ホ", romaji: "ho", type: "consonant", words: [
+        { japanese: "ほし", chinese: "星星", emoji: "⭐" },
+        { japanese: "ほん", chinese: "書本", emoji: "📕" }
+      ]},
+      
+      // M行 (Ma)
+      { kana: "ま", katakana: "マ", romaji: "ma", type: "consonant", words: [
+        { japanese: "まち", chinese: "城鎮", emoji: "🏘️" },
+        { japanese: "まど", chinese: "窗戶", emoji: "🪟" }
+      ]},
+      { kana: "み", katakana: "ミ", romaji: "mi", type: "consonant", words: [
+        { japanese: "みず", chinese: "水", emoji: "💧" },
+        { japanese: "みみ", chinese: "耳朵", emoji: "👂" }
+      ]},
+      { kana: "む", katakana: "ム", romaji: "mu", type: "consonant", words: [
+        { japanese: "むら", chinese: "村莊", emoji: "🏡" },
+        { japanese: "むし", chinese: "蟲", emoji: "🐛" }
+      ]},
+      { kana: "め", katakana: "メ", romaji: "me", type: "consonant", words: [
+        { japanese: "め", chinese: "眼睛", emoji: "👁️" },
+        { japanese: "めがね", chinese: "眼鏡", emoji: "👓" }
+      ]},
+      { kana: "も", katakana: "モ", romaji: "mo", type: "consonant", words: [
+        { japanese: "もり", chinese: "森林", emoji: "🌲" },
+        { japanese: "もも", chinese: "桃子", emoji: "🍑" }
+      ]},
+      
+      // Y行 (Ya)
+      { kana: "や", katakana: "ヤ", romaji: "ya", type: "consonant", words: [
+        { japanese: "やま", chinese: "山", emoji: "⛰️" },
+        { japanese: "やさい", chinese: "蔬菜", emoji: "🥬" }
+      ]},
+      { kana: "ゆ", katakana: "ユ", romaji: "yu", type: "consonant", words: [
+        { japanese: "ゆき", chinese: "雪", emoji: "❄️" },
+        { japanese: "ゆめ", chinese: "夢", emoji: "💭" }
+      ]},
+      { kana: "よ", katakana: "ヨ", romaji: "yo", type: "consonant", words: [
+        { japanese: "ようちえん", chinese: "幼兒園", emoji: "🏫" },
+        { japanese: "よる", chinese: "夜晚", emoji: "🌙" }
+      ]},
+      
+      // R行 (Ra)
+      { kana: "ら", katakana: "ラ", romaji: "ra", type: "consonant", words: [
+        { japanese: "らいねん", chinese: "明年", emoji: "📅" },
+        { japanese: "らくだ", chinese: "駱駝", emoji: "🐪" }
+      ]},
+      { kana: "り", katakana: "リ", romaji: "ri", type: "consonant", words: [
+        { japanese: "りんご", chinese: "蘋果", emoji: "🍎" },
+        { japanese: "りくつ", chinese: "道理", emoji: "💡" }
+      ]},
+      { kana: "る", katakana: "ル", romaji: "ru", type: "consonant", words: [
+        { japanese: "るす", chinese: "外出", emoji: "🚪" },
+        { japanese: "ルート", chinese: "路線", emoji: "🛤️" }
+      ]},
+      { kana: "れ", katakana: "レ", romaji: "re", type: "consonant", words: [
+        { japanese: "れきし", chinese: "歷史", emoji: "📜" },
+        { japanese: "れんぞく", chinese: "連續", emoji: "🔗" }
+      ]},
+      { kana: "ろ", katakana: "ロ", romaji: "ro", type: "consonant", words: [
+        { japanese: "ろく", chinese: "六", emoji: "6️⃣" },
+        { japanese: "ろうそく", chinese: "蠟燭", emoji: "🕯️" }
+      ]},
+      
+      // W行 (Wa)
+      { kana: "わ", katakana: "ワ", romaji: "wa", type: "consonant", words: [
+        { japanese: "わたし", chinese: "我", emoji: "🙋" },
+        { japanese: "わさび", chinese: "芥末", emoji: "🌿" }
+      ]},
+      { kana: "を", katakana: "ヲ", romaji: "wo", type: "consonant", words: [
+        { japanese: "お水を飲む", chinese: "喝水", emoji: "💧" }
+      ]},
+      { kana: "ん", katakana: "ン", romaji: "n", type: "consonant", words: [
+        { japanese: "にほん", chinese: "日本", emoji: "🇯🇵" },
+        { japanese: "せんせい", chinese: "老師", emoji: "👨‍🏫" }
+      ]},
+      
+      // 濁音 (Dakuten)
+      { kana: "が", katakana: "ガ", romaji: "ga", type: "dakuten", words: [
+        { japanese: "がいこく", chinese: "外國", emoji: "🌍" },
+        { japanese: "がくせい", chinese: "學生", emoji: "🎒" }
+      ]},
+      { kana: "ぎ", katakana: "ギ", romaji: "gi", type: "dakuten", words: [
+        { japanese: "ぎんか", chinese: "銀杏", emoji: "🍂" }
+      ]},
+      { kana: "ぐ", katakana: "グ", romaji: "gu", type: "dakuten", words: [
+        { japanese: "ぐんて", chinese: "雲手", emoji: "☁️" }
+      ]},
+      { kana: "げ", katakana: "ゲ", romaji: "ge", type: "dakuten", words: [
+        { japanese: "げんき", chinese: "健康", emoji: "💪" }
+      ]},
+      { kana: "ご", katakana: "ゴ", romaji: "go", type: "dakuten", words: [
+        { japanese: "ご饭", chinese: "飯", emoji: "🍚" },
+        { japanese: "ごりら", chinese: "猩猩", emoji: "🦍" }
+      ]},
+      { kana: "ざ", katakana: "ザ", romaji: "za", type: "dakuten", words: [
+        { japanese: "ざっし", chinese: "雜誌", emoji: "📖" }
+      ]},
+      { kana: "じ", katakana: "ジ", romaji: "ji", type: "dakuten", words: [
+        { japanese: "じかん", chinese: "時間", emoji: "⏰" },
+        { japanese: "じしょ", chinese: "辭典", emoji: "📚" }
+      ]},
+      { kana: "ず", katakana: "ズ", romaji: "zu", type: "dakuten", words: [
+        { japanese: "すずき", chinese: "鈴木", emoji: "🎵" }
+      ]},
+      { kana: "ぜ", katakana: "ゼ", romaji: "ze", type: "dakuten", words: [
+        { japanese: "せんせい", chinese: "老師", emoji: "👨‍🏫" }
+      ]},
+      { kana: "ぞ", katakana: "ゾ", romaji: "zo", type: "dakuten", words: [
+        { japanese: "ぞう", chinese: "大象", emoji: "🐘" }
+      ]},
+      { kana: "だ", katakana: "ダ", romaji: "da", type: "dakuten", words: [
+        { japanese: "だいがく", chinese: "大學", emoji: "🎓" }
+      ]},
+      { kana: "で", katakana: "デ", romaji: "de", type: "dakuten", words: [
+        { japanese: "でんわ", chinese: "電話", emoji: "📞" }
+      ]},
+      { kana: "ど", katakana: "ド", romaji: "do", type: "dakuten", words: [
+        { japanese: "どようび", chinese: "星期六", emoji: "📅" },
+        { japanese: "どうぶつ", chinese: "動物", emoji: "🦁" }
+      ]},
+      { kana: "ば", katakana: "バ", romaji: "ba", type: "dakuten", words: [
+        { japanese: "ばなな", chinese: "香蕉", emoji: "🍌" },
+        { japanese: "ばら", chinese: "玫瑰", emoji: "🌹" }
+      ]},
+      { kana: "び", katakana: "ビ", romaji: "bi", type: "dakuten", words: [
+        { japanese: "びょういん", chinese: "醫院", emoji: "🏥" }
+      ]},
+      { kana: "ぶ", katakana: "ブ", romaji: "bu", type: "dakuten", words: [
+        { japanese: "ぶとう", chinese: "武道", emoji: "🥋" }
+      ]},
+      { kana: "べ", katakana: "ベ", romaji: "be", type: "dakuten", words: [
+        { japanese: "ベッド", chinese: "床", emoji: "🛏️" }
+      ]},
+      { kana: "ぼ", katakana: "ボ", romaji: "bo", type: "dakuten", words: [
+        { japanese: "ぼうえんきょう", chinese: "望遠鏡", emoji: "🔭" }
+      ]},
+      { kana: "ぱ", katakana: "パ", romaji: "pa", type: "handakuten", words: [
+        { japanese: "ぱんだ", chinese: "熊貓", emoji: "🐼" },
+        { japanese: "ぱん", chinese: "麵包", emoji: "🍞" }
+      ]},
+      { kana: "ぴ", katakana: "ピ", romaji: "pi", type: "handakuten", words: [
+        { japanese: "ピンク", chinese: "粉紅色", emoji: "💗" }
+      ]},
+      { kana: "ぷ", katakana: "プ", romaji: "pu", type: "handakuten", words: [
+        { japanese: "プリン", chinese: "布丁", emoji: "🍮" }
+      ]},
+      { kana: "ぺ", katakana: "ペ", romaji: "pe", type: "handakuten", words: [
+        { japanese: "ぺん", chinese: "筆", emoji: "🖊️" }
+      ]},
+      { kana: "ぽ", katakana: "ポ", romaji: "po", type: "handakuten", words: [
+        { japanese: "ぽけっと", chinese: "口袋", emoji: "👝" },
+        { japanese: "ぽん", chinese: "積木", emoji: "🧱" }
+      ]}
+    ];
+
+    let currentFilter = 'all';
+    const kanaGrid = document.getElementById('kanaGrid');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalClose = document.getElementById('modalClose');
+    const playKanaBtn = document.getElementById('playKanaBtn');
+    const modalKanaMain = document.getElementById('modalKanaMain');
+    const modalKanaSub = document.getElementById('modalKanaSub');
+    const modalRomaji = document.getElementById('modalRomaji');
+    const wordsContainer = document.getElementById('wordsContainer');
+    const speechSupport = document.getElementById('speechSupport');
+
+    const synth = window.speechSynthesis;
+    const supported = 'speechSynthesis' in window;
+    if (!supported) {
+      speechSupport.innerHTML = '<div class="no-support">⚠️ 您的瀏覽器不支援語音功能</div>';
+    }
+
+    function renderKana(filter) {
+      kanaGrid.innerHTML = '';
+      const filtered = filter === 'all' 
+        ? kanaData 
+        : kanaData.filter(k => k.type === filter);
+      
+      filtered.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'kana-card fade-in';
+        card.style.animationDelay = `${index * 50}ms`;
+        card.innerHTML = `
+          <div class="kana-main">${item.kana}</div>
+          <div class="kana-sub">${item.katakana}</div>
+          <div class="kana-romaji">${item.romaji}</div>
+        `;
+        card.addEventListener('click', () => openModal(item));
+        kanaGrid.appendChild(card);
+      });
+    }
+
+    function openModal(item) {
+      modalKanaMain.textContent = item.kana;
+      modalKanaSub.textContent = item.katakana;
+      modalRomaji.textContent = item.romaji.toUpperCase();
+      
+      wordsContainer.innerHTML = item.words.map(word => `
+        <div class="word-card">
+          <div class="word-image">${word.emoji}</div>
+          <div class="word-info">
+            <div class="word-japanese">${word.japanese}</div>
+            <div class="word-chinese">${word.chinese}</div>
+          </div>
+          <button class="word-play" data-text="${word.japanese}">🔊</button>
+        </div>
+      `).join('');
+
+      wordsContainer.querySelectorAll('.word-play').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          speak(btn.dataset.text, btn);
+        });
+      });
+
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+      if (synth.speaking) {
+        synth.cancel();
+      }
+      playKanaBtn.classList.remove('playing');
+    }
+
+    function speak(text, btn) {
+      if (!supported) return;
+      
+      if (synth.speaking) {
+        synth.cancel();
+      }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'ja-JP';
+      utterance.rate = 0.8;
+      
+      if (btn) {
+        btn.classList.add('playing');
+        utterance.onend = () => btn.classList.remove('playing');
+      } else {
+        playKanaBtn.classList.add('playing');
+        utterance.onend = () => playKanaBtn.classList.remove('playing');
+      }
+      
+      synth.speak(utterance);
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.filter;
+        renderKana(currentFilter);
+      });
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) closeModal();
+    });
+
+    playKanaBtn.addEventListener('click', () => {
+      const kana = modalKanaMain.textContent;
+      speak(kana);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    renderKana('all');
+  </script>
+</body>
+</html>
