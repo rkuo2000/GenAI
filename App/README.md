@@ -15,6 +15,7 @@ Powershell> `node -v`<br>
 Powershell> `npm -v`<br>
 Powershell> `Set-ExecutionPolicy RemoteSigned`<br>
 Powershell> `npm i -g opencode-ai@latest` <br>
+Powershell> `opencode -v`<br>
 
 ![](https://github.com/anomalyco/opencode/raw/dev/packages/web/src/assets/lander/screenshot.png)
 
