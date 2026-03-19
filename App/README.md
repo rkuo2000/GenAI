@@ -10,6 +10,7 @@
 
 ### [OpenCode](https://github.com/anomalyco/opencode)
 For windows, download & install nodejs [windows installer](https://nodejs.org/dist/v25.8.1/node-v25.8.1-x64.msi)<br>
+use adminstrator(管理員權限) to open Powershell<br>
 Powershell> `node -v`<br>
 Powershell> `npm -v`<br>
 Powershell> `Set-ExecutionPolicy RemoteSigned`<br>
