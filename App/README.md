@@ -5,22 +5,15 @@
 
 ### [AntiGravity](https://antigravity.google/)
 
-#### [Getting-Started](https://antigravity.google/docs/get-started)
-  
-**[Antigravity Vibe Coding 實戰工作坊](https://kevintsai1202.github.io/Antigravity_Course/)** <br>
-
-**Antigravity 設定與應用：規則（Rules）＋神技能（Skills）＋自動化（Workflows）** <br>
-[![](https://markdown-videos-api.jorgenkh.no/youtube/e-WNdM4JO2U)](https://youtu.be/e-WNdM4JO2U)
-
----
 ### [Claud-code](https://github.com/anthropics/claude-code)
 **Install**: `curl -fsSL https://claude.ai/install.sh | bash` <br>
 
-![](https://github.com/anthropics/claude-code/raw/main/demo.gif)
-
----
 ### [OpenCode](https://github.com/anomalyco/opencode)
-**Install**: `npm i -g opencode-ai@latest` <br>
+For windows, download & install nodejs [windows installer](https://nodejs.org/dist/v25.8.1/node-v25.8.1-x64.msi)<br>
+Powershell> `node -v`<br>
+Powershell> `npm -v`<br>
+Powershell> `Set-ExecutionPolicy RemoteSigned`<br>
+Powershell> `npm i -g opencode-ai@latest` <br>
 
 ![](https://github.com/anomalyco/opencode/raw/dev/packages/web/src/assets/lander/screenshot.png)
 
