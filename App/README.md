@@ -1,4 +1,5 @@
 # Vibe Coding
+**Paper**: [Vibe Coding vs Agentic Coding](https://arxiv.org/html/2505.19443v1)<br>
 
 ---
 ## Coder
