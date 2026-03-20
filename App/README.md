@@ -52,7 +52,7 @@ Powershell> `opencode -v`<br>
 顯示最後之合成物的分子結構，及此合成物的圖片, 加上RWD, 合成鍋畫成一個古代爐鼎，無法合成時提示可合成之元素組成
 ```
 
-### [heartbeat.html](https://rkuo2000.github.io/app-heartbeat/)
+### [heartbeat.html](https://rkuo2000.github.io/app-heartbeat/) `camera`
 ```
 寫出一個html 使用webcam偵測人臉，利用rPPG演算法，感測出心跳BPM及顯示心跳波形,
 加入band-pass filter, 加入RWD
