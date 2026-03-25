@@ -44,16 +44,12 @@ Environment="OLLAMA_DEBUG=2"
 
 ### [Claud-code](https://github.com/anthropics/claude-code)
 **Install**: `curl -fsSL https://claude.ai/install.sh | bash` <br>
+![](https://github.com/anthropics/claude-code/raw/main/demo.gif)
 
 ---
 ### [OpenCode](https://github.com/anomalyco/opencode)
 **Install**: `curl -fsSL https://opencode.ai/install | bash` <br>
-
 ![](https://github.com/anomalyco/opencode/raw/dev/packages/web/src/assets/lander/screenshot.png)
-
-**OpenCode setup** <br>
-[![](https://markdown-videos-api.jorgenkh.no/youtube/8toBNmRDO90)](https://youtu.be/8toBNmRDO90)
-[![](https://markdown-videos-api.jorgenkh.no/youtube/JYVTUU9ClUA)](https://youtu.be/JYVTUU9ClUA)
 
 ---
 ## CLI
@@ -96,5 +92,18 @@ ZeroClaw is the runtime operating system for agentic workflows
 Pocket AI Assistant on a $5 Chip
 
 **Blog**: [mimiClaw](https://www.cnx-software.com/2026/02/13/mimiclaw-is-an-openclaw-like-ai-assistant-for-esp32-s3-boards/)<br>
+
+---
+### Openclaw dashboard & office
+
+#### [Pixel Agents](https://github.com/pablodelucca/pixel-agents)
+
+#### [OpenClaw Office](https://github.com/wickedapp/openclaw-office)
+
+#### [OpenClaw Dashboard](https://github.com/mudrii/openclaw-dashboard)
+
+#### [OpenClaw Dashboard & PixelOffice](https://github.com/xmanrui/OpenClaw-bot-review)
+![](https://github.com/xmanrui/OpenClaw-bot-review/raw/main/docs/bot_dashboard.png)
+![](https://github.com/xmanrui/OpenClaw-bot-review/raw/main/docs/pixel-office.png)
 
 
