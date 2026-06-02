@@ -108,9 +108,8 @@ model: `gemini-2.5-flash-image`<br>
 [https://kaggle.com/code/rkuo2000/Index-TTS2](https://kaggle.com/code/rkuo2000/Index-TTS2) ~ [gen.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/gen.mp3)<br>
 
 ### [FireRedTTS2](https://github.com/FireRedTeam/FireRedTTS2)
+`[audio.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/audio.mp3)`<br>
 ![](https://github.com/rkuo2000/GenAI/blob/main/assets/FireRedTTS2_gradio_monologue.png?raw=true) 
-
-[audio.mp3](https://rkuo2000.github.io/read-audio/?p=https://github.com/rkuo2000/GenAI/raw/refs/heads/main/assets/audio.mp3)<br>
 
 ### [Edge-TTS](https://github.com/rany2/edge-tts)
 !pip install edge-tts <br>
