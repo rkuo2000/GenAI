@@ -53,6 +53,7 @@ model: `gemini-2.5-flash-image`<br>
 ​🌟 簡潔重點總結
 ​她是一位外型清新、氣質溫柔的女性。擁有白皙透亮的自然裸妝，搭配柔順的深棕色半紮髮，整體散發出優雅而專注的氛圍。在咖啡廳
 ```
+![](https://github.com/rkuo2000/GenAI/blob/main/assets/NanoBanana_lady.png?raw=true)
 
 ---
 ### [Z-Image Turbo](https://docs.comfy.org/tutorials/image/z-image/z-image-turbo)
