@@ -6,5 +6,13 @@
 ---
 ## VLM FineTuning
 
-### FineTuning SmolVLM with TRL (for ChartQA) 
+### FineTune SmolVLM with TRL (for ChartQA) 
 #### [finetuning-smolvlm-with-trl.ipynb](https://github.com/rkuo2000/GenAI/blob/main/FineTuning/finetuning-smolvlm-with-trl.ipynb)
+
+---
+### FineTune Invoice Parser
+#### [fine-tune_invoice_parser.ipynb](https://github.com/rkuo2000/GenAI/blob/main/FineTuning/finetune_invoice_parser.ipynb)
+
+---
+### [FineTune VLM with DPO (for Super GPT-4V)](https://huggingface.tw/blog/dpo_vlm)
+#### [dpo_idefics2-8b.py](https://github.com/rkuo2000/GenAI/blob/main/FineTuning/dpo_idefics2-8b.py)
