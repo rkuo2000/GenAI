@@ -128,7 +128,3 @@ sudo ufw allow in on tailscale0 to any port 22
 sudo ufw enable #Type 『y』 to confirm`
 sudo ufw status
 ```
-
----
-#### Multiple Agents
-[![](https://markdown-videos-api.jorgenkh.no/youtube/masJoPqT-6A)](https://youtu.be/masJoPqT-6A)
