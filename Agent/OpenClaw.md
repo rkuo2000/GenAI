@@ -41,7 +41,6 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 
 ---
 ### OpenClaw setup
-[![](https://markdown-videos-api.jorgenkh.no/youtube/daXOXSSyudM)](https://youtu.be/daXOXSSyudM)
 
 #### install [OpenClaw](https://github.com/openclaw/openclaw)
 1. `sudo npm install -g openclaw@latest`
