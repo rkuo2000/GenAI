@@ -1,4 +1,4 @@
-## Personal Agent
+## OpenClaw ~ Personal Assistant
 
 ### OpenClaw Architecture
 ![](https://help.apiyi.com/wp-content/uploads/2026/01/clawdbot-beginner-guide-personal-ai-assistant-2026-fr-image-1.png)
