@@ -4,9 +4,9 @@
 ---
 ## Local LLM
 
-### llama-cpp-python
+### Ollama
 
-### install [Ollama](https://ollama.com/search)
+#### install [Ollama](https://ollama.com/search)
 `curl -fsSL https://ollama.com/install.sh | sh` <br>
 `ollama -v` <br>
 `ollama pull gpt-oss:latest` <br>
@@ -15,21 +15,11 @@
 **API:** `http://127.0.0.1:11434/v1`<br>
 
 ---
-### setup Ollama service
+#### setup Ollama service
 `sudo nano /etc/systemd/system/ollama.service` <br>
-
-#### to run with multiple GPUs
 ```
 Environment="OLLAMA_SCHED_SPREAD=1"
 Environment="CUDA_VISIBLE_DEVICES=1,0"
-```
-
----
-### set Ollama debugging 
-
-#### to run with DEBUG level 2
-```
-Environment="OLLAMA_DEBUG=2"
 ```
 
 #### restart Ollama service
@@ -38,6 +28,16 @@ Environment="OLLAMA_DEBUG=2"
 
 #### monitor Ollama debug message
 `journalctl -f -b -u ollama` <br> 
+
+---
+### LM Studio
+Download [LM-Studio](https://lmstudio.ai/download) & Install it.
+Select model to download
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*vvSU893p0CRr4D0i3KLTwg.png)
+Setup server
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zLs9n9keltMbpck4l4-baA.png)
+Start chat
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*g20rbYgC1NgRp9lKvScRdA.png)
 
 ---
 ## Agentic Coding Tools
