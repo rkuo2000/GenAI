@@ -5,14 +5,6 @@
 
 **Blog**: [OpenClaw (Clawdbot) Architecture: Engineering Reliable and Controllable AI Agents](https://vertu.com/ai-tools/openclaw-clawdbot-architecture-engineering-reliable-and-controllable-ai-agents/)<br>
 
-The 6-Stage Execution Pipeline:<br>
-1. **Channel Adapter**: Standardizes inputs from different platforms (e.g., Discord or Telegram) into a unified message format while extracting necessary attachments.
-2. **Gateway Server**: Acts as a session coordinator, determining which session a message belongs to and assigning it to the appropriate queue.
-3. **Lane Queue**: A critical reliability layer that enforces serial execution by default, allowing parallelism only for explicitly marked low-risk tasks.
-4. **Agent Runner**: The “assembly line” for the model. It handles model selection, API key cooling, prompt assembly, and context window management.
-5. **Agentic Loop**: The iterative cycle where the model proposes a tool call, the system executes it, the result is backfilled, and the loop continues until a resolution is reached or limits are hit.
-6. **Response Path**: Streams final content back to the user channel while simultaneously writing the entire process to a JSONL transcript for auditing and replay.
-
 ---
 ### install node & npm
 ```
@@ -21,23 +13,10 @@ nvm install node
 ```
 
 * `node -v`
-v25.6.1
+v25.9.0
 
 * `npm -v`
-v 11.9.0
-
-* `npm install -g npm@latest`
-v 11.10.0
-
----
-### install brew
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"`<br>
-
-```
-test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
-```
+v 11.12.1
 
 ---
 ### OpenClaw setup
@@ -54,7 +33,6 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 ---
 #### setup Ollama
 add the following into `~/.openclaw/openclaw.json` <br>
-
 ```
   "models": {
     "mode": "merge",
@@ -65,8 +43,9 @@ add the following into `~/.openclaw/openclaw.json` <br>
         "api": "openai-responses",
         "models": [
           {
-            "id": "gpt-oss:latest",
-            "name": "GPT-OSS:20b (Local)",
+            "id": "gemma4-e2b:latest",
+            "name": "Gemma4:e2b (Local)",
+            "modalities": { "input": ["text", "image"], "output": ["text"] },
             "reasoning": false,
             "input": ["text"],
             "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
@@ -77,9 +56,10 @@ add the following into `~/.openclaw/openclaw.json` <br>
       }
     }
 ```
+
 To access a remote Ollama server: <br>
 * modify openclaw.json, *replace `127.0.0.1` to `192.168.0.12` (remote ip addr)* 
-* modify ufw rules on Ollama server, *`sudo ufw allow from 192.168.0.18`*
+* modify ufw rules on Ollama server, *`sudo ufw allow from 192.168.0.22`*
 
 ---
 #### setup WhatsApp
@@ -97,28 +77,6 @@ To access a remote Ollama server: <br>
 ```
 
 ---
-#### setup Gmail
-* **API和服務**
-  - **建立專案** [Google Console && create project](https://console.cloud.google.com/projectcreate)
-  - **專案名稱** `Openclaw-Gmail-API`
-* **API和服務** ==> **+啟用API和服務** ==> **[Gmail API]** ==> Enable
-* **憑證** ==> **建立憑證** ==> **OAuth用戶端ID**
-  - **應用程式類型** : 選`電腦版應用程式`
-  - **名稱** : 填`OpenClaw` ==> 按`建立` ==> 下載JSON
-  - 下載後改名 `client_secret.json` 移至`.openclaw/workspace`
-* 在`localhost:18789`, prompt輸入 `read .openclaw/workspace/client_secret.json and make a gmail-auth.py to access Gmail API`
-* 自動會在workspace中產生 gmail_auth.py
-* `pip install --upgrade google-auth-oauthlib google-auth-httplib2`
-* `python gmail-auth.py`
-* 執行後會開啟瀏覽器，選定Gmail帳號，按**繼續** 即可完成授權。
-  
----
-#### setup VPN : Tailscale
-```
-curl -fsSL <https://tailscale.com/install.sh> | sh
-sudo tailscale up
-```
-
 #### setup Firewall
 ```
 sudo apt install ufw -y
