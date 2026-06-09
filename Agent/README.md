@@ -106,4 +106,5 @@ Pocket AI Assistant on a $5 Chip
 ![](https://github.com/xmanrui/OpenClaw-bot-review/raw/main/docs/bot_dashboard.png)
 ![](https://github.com/xmanrui/OpenClaw-bot-review/raw/main/docs/pixel-office.png)
 
-
+#### [Claw3D](https://github.com/iamlukethedev/claw3d)
+![](https://github.com/iamlukethedev/Claw3D/raw/main/assets/branding/claw3d-hero.png)
