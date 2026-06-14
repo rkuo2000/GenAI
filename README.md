@@ -119,12 +119,16 @@ model: `gemini-2.5-flash-image`<br>
 ---
 ## 5. Talking Avatar
 
-### [First Order Motion Model for Image Animation](https://github.com/AliaksandrSiarohin/first-order-model)
-![](https://github.com/AliaksandrSiarohin/first-order-model/raw/master/sup-mat/relative-demo.gif)
+### Open-LLM-VTuber
+![](https://github.com/rkuo2000/Jetson/blob/main/assets/Open_LLM_VTuber.png?raw=true)
 
 ---
-### [LipSync-Avatar](https://github.com/android-iceland/LipSync-Avatar)
-[![](https://markdown-videos-api.jorgenkh.no/youtube/w8Qwrh8t0n4)](https://youtu.be/w8Qwrh8t0n4) 
+### [Hermes + JARVIS（鋼鐵人助理）](https://github.com/eadmin2/jarvis_ai)
+![](https://github.com/rkuo2000/Jetson/blob/main/assets/Hermes_JARVIS.png?raw=true)
+
+---
+### [AI虛擬人（Live2D 語音助理）](https://github.com/YuriCrystal/ai-avatar-bot)
+![](https://github.com/rkuo2000/Jetson/blob/main/assets/AI_Avatar.png?raw=true)
 
 ---
 ### [TalkMateAI](https://github.com/kiranbaby14/TalkMateAI)
