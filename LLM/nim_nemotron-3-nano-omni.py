@@ -4,7 +4,7 @@ from openai import OpenAI
 
 client = OpenAI(
   base_url = "https://integrate.api.nvidia.com/v1",
-  api_key = os.getenv("NVIDIA_API_KEY", "")
+  api_key = os.getenv("NVIDIA_API_KEY", "copy & paste your nvidia api key here")
 )
 
 prompt = "What model are you?"
